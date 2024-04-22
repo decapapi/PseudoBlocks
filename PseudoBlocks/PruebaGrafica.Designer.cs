@@ -635,7 +635,6 @@
 		private Label lbl_sonido;
 		private Button btn_sound_p;
 		private FlowLayoutPanel pnl_escenario;
-		private Label lbl_escenario;
 		private Button btn_change_b;
 		private Button btn_change_p;
 		private FlowLayoutPanel pnl_logica;
@@ -644,7 +643,6 @@
 		private Button btn_logic_rs;
 		private Button btn_logic_re;
 		private FlowLayoutPanel pnl_movimiento;
-		private Label lbl_movimiento;
 		private Button btn_move_r;
 		private Button btn_move_l;
 		private Button btn_move_u;
@@ -656,5 +654,7 @@
 		private Button btn_sonido;
 		private Button btn_logica;
 		private Button btn_eventos;
+		private Label lbl_escenario;
+		private Label lbl_movimiento;
 	}
 }

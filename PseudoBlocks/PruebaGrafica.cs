@@ -132,8 +132,7 @@ namespace PseudoBlocks
 			control.BringToFront();
 		}
 
-		// ARREGLAR
-		// Cuando se presiona un botón de categoría
+		// Cuando se presiona un botón de categoría, mostrar los controles de esa categoría
 		private void CambiarCategoria(object sender, EventArgs e)
 		{
 			if (sender is Button btn)
@@ -143,51 +142,44 @@ namespace PseudoBlocks
 				{
 					case "movimiento":
 						btn_movimiento.BackColor = Color.LightGray;
-						pnl_components.VerticalScroll.Value += pnl_movimiento.Top;
+						pnl_components.ScrollControlIntoView(pnl_movimiento);
 						break;
 					case "escenario":
 						btn_escenario.BackColor = Color.LightGray;
-						pnl_components.VerticalScroll.Value += pnl_escenario.Top;
+						pnl_components.ScrollControlIntoView(pnl_escenario);
 						break;
 					case "sonido":
 						btn_sonido.BackColor = Color.LightGray;
-						pnl_components.VerticalScroll.Value += pnl_sonido.Top;
+						pnl_components.ScrollControlIntoView(pnl_sonido);
 						break;
 					case "logica":
 						btn_logica.BackColor = Color.LightGray;
-						pnl_components.VerticalScroll.Value += pnl_logica.Top;
+						pnl_components.ScrollControlIntoView(pnl_logica);
 						break;
 					case "eventos":
 						btn_eventos.BackColor = Color.LightGray;
-						pnl_components.VerticalScroll.Value += pnl_eventos.Top;
+						pnl_components.ScrollControlIntoView(pnl_eventos);
 						break;
 				}
+				pnl_components.Refresh();
 			}
 		}
-		// ARREGLAR
-		// Cuando se scrollea el panel de controles
+
+		// Cuando se scrollea el panel de controles -> Actualizar botones de categoría
 		private void CambiarCategoria(object sender, PaintEventArgs e)
 		{
 			if (sender is FlowLayoutPanel pnl)
 			{
 				ResetearBotones();
-				int scrollY = pnl.VerticalScroll.Value;
-				if (scrollY <= pnl_movimiento.Top || scrollY < pnl_escenario.Top)
-				{
-					btn_movimiento.BackColor = Color.LightGray;
-				}
-				else if (scrollY >= pnl_escenario.Top || (scrollY > pnl_escenario.Top && scrollY < pnl_sonido.Top))
-				{
-					btn_escenario.BackColor = Color.LightGray;
-				}
+
 			}
 		}
 
 		private void ResetearBotones()
 		{
 			List<Button> buttons = new List<Button> {
-					btn_movimiento, btn_escenario, btn_sonido, btn_logica, btn_eventos
-				};
+				btn_movimiento, btn_escenario, btn_sonido, btn_logica, btn_eventos
+			};
 			buttons.ForEach(b => b.BackColor = Color.Transparent);
 		}
 	}
