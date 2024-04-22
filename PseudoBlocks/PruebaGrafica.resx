@@ -125,13 +125,13 @@
     <value>Lexend Deca Medium, 9pt</value>
   </data>
   <data name="eliminarToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>127, 24</value>
+    <value>140, 28</value>
   </data>
   <data name="eliminarToolStripMenuItem.Text" xml:space="preserve">
     <value>Eliminar</value>
   </data>
   <data name="bloque_menu.Size" type="System.Drawing.Size, System.Drawing">
-    <value>128, 28</value>
+    <value>141, 32</value>
   </data>
   <data name="bloque_menu.Text" xml:space="preserve">
     <value>Ordenar</value>
@@ -156,18 +156,18 @@
     <value>Ctrl+E</value>
   </data>
   <data name="abrirToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>178, 26</value>
+    <value>213, 28</value>
   </data>
   <data name="abrirToolStripMenuItem.Text" xml:space="preserve">
     <value>&amp;Exportar</value>
   </data>
   <data name="toolStripSeparator5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>175, 6</value>
+    <value>210, 6</value>
   </data>
   <data name="nuevoToolStripMenuItem.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACcSURBVEhL7dUxDoQgEIVhzkbNYWzptuEShMKOs9Ds7k1W
+        YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAACcSURBVEhL7dUxDoQgEIVhzkbNYWzptuEShMKOs9Ds7k1W
         C2g1oxhtRnirnUzyR2MYvlJxnJTShBZj7PN6eWghhDA556ry3mMIHaZFKWV1xph65AgMv5HNWrucUUph
         CAp83l8MQQF6h5B/AIpBunztPihAzy2t9fKNysArX7sPCnBdBrg2uAFsDSjWgGIPA650CiA/fa5T4K5W
         QIgZ15ziURxSP0UAAAAASUVORK5CYII=
@@ -180,7 +180,7 @@
     <value>Ctrl+N</value>
   </data>
   <data name="nuevoToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>178, 26</value>
+    <value>213, 28</value>
   </data>
   <data name="nuevoToolStripMenuItem.Text" xml:space="preserve">
     <value>&amp;Nuevo</value>
@@ -188,7 +188,7 @@
   <data name="toolStripMenuItem1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAHYSURBVEhLrZS9SgNBFIXzBOIj+AKCLyD4CIKtgr2NtqbR
+        YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAHYSURBVEhLrZS9SgNBFIXzBOIj+AKCLyD4CIKtgr2NtqbR
         Uqu1jFgoWGihiIVEixAM+FMYLMRAkEQFI5qQxJifcpxvnLtsdpOwyebCYZOde8+5c8/MxgZFs9mcaTQa
         rzztq/EFpO12u66heI5VRMjvch9qYulAJS6fjEir1Zq3KdGi0+ks0/lxJq9iC3sGVkSxZtPChyU8052n
         BXQMIcSRRHSBQ5Eg915WyYdiFxad1OgiQsy8Z+PnLtEgkEtNKE9I/KzUjZkUT6+dqPjhfRdWdjMuObuR
@@ -206,18 +206,18 @@
     <value>Ctrl+O</value>
   </data>
   <data name="toolStripMenuItem1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>178, 26</value>
+    <value>213, 28</value>
   </data>
   <data name="toolStripMenuItem1.Text" xml:space="preserve">
     <value>&amp;Abrir</value>
   </data>
   <data name="toolStripSeparator.Size" type="System.Drawing.Size, System.Drawing">
-    <value>175, 6</value>
+    <value>210, 6</value>
   </data>
   <data name="guardarToolStripMenuItem.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADbSURBVEhL7ZUxCsIwGIVzAvFA3sJVDyK9gZMHcFGcHZyc
+        YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAADbSURBVEhL7ZUxCsIwGIVzAvFA3sJVDyK9gZMHcFGcHZyc
         xE0dFDdHJ+dYG7JGnpD4qkkDNYJgCx+0f9//PiiBCillWym11lqblKAT3cKWb08Xk812SUCXlQhb3upP
         jOiOk4AuK3kIYPUFPwGdXkEnW5jBdFML7EYFCF5lXgvsNoJKfkPw9VOUikYQJSrwnZIqXvf/TBCaM5wB
         JcFwfngLhJZ5znAGsOCIm95oVQqElnnOcAY4AX7MPklomecMZ4AT4GIJPhdeFrfCgWcLzxnOgOX+/BTg
@@ -231,28 +231,28 @@
     <value>Ctrl+S</value>
   </data>
   <data name="guardarToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>178, 26</value>
+    <value>213, 28</value>
   </data>
   <data name="guardarToolStripMenuItem.Text" xml:space="preserve">
     <value>&amp;Guardar</value>
   </data>
   <data name="guardarcomoToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>178, 26</value>
+    <value>213, 28</value>
   </data>
   <data name="guardarcomoToolStripMenuItem.Text" xml:space="preserve">
     <value>Guardar &amp;como</value>
   </data>
   <data name="toolStripSeparator2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>175, 6</value>
+    <value>210, 6</value>
   </data>
   <data name="salirToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>178, 26</value>
+    <value>213, 28</value>
   </data>
   <data name="salirToolStripMenuItem.Text" xml:space="preserve">
     <value>&amp;Salir</value>
   </data>
   <data name="archivoToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>65, 23</value>
+    <value>79, 28</value>
   </data>
   <data name="archivoToolStripMenuItem.Text" xml:space="preserve">
     <value>&amp;Archivo</value>
@@ -261,7 +261,7 @@
     <value>Ctrl+Z</value>
   </data>
   <data name="deshacerToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>182, 26</value>
+    <value>218, 28</value>
   </data>
   <data name="deshacerToolStripMenuItem.Text" xml:space="preserve">
     <value>&amp;Deshacer</value>
@@ -270,18 +270,18 @@
     <value>Ctrl+Y</value>
   </data>
   <data name="rehacerToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>182, 26</value>
+    <value>218, 28</value>
   </data>
   <data name="rehacerToolStripMenuItem.Text" xml:space="preserve">
     <value>&amp;Rehacer</value>
   </data>
   <data name="toolStripSeparator3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>179, 6</value>
+    <value>215, 6</value>
   </data>
   <data name="cortarToolStripMenuItem.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAIrSURBVEhLnZS/TgJBEMZ5BB/BR/AZ6EksKU3oCY9wDQ02
+        YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAIrSURBVEhLnZS/TgJBEMZ5BB/BR/AZ6EksKU3oCY9wDQ02
         YCkUdEQaDC2GWHKdUTs12FPcSfhTnve7zCx7yx6cfsmEY+b7Zmd2Z7fiQxRFF7vd7iW1ZL1ef4v7CMTg
         wEUj7tPQ5KvVKplOp4iT/X5/I2EDfMTgwN1sNs8SOo3tdttC2G63k2q1miyXS28X+IjBgSuFXEq4GOkC
         Q8gIHbHpQqvXIjD+p9pAKMXQDur1uhG7XdjVY3BlgZZQikGbkAeDgUlgd+GrHq7Ez28R4MA4uFqtZpJo
@@ -301,7 +301,7 @@
     <value>Ctrl+X</value>
   </data>
   <data name="cortarToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>182, 26</value>
+    <value>218, 28</value>
   </data>
   <data name="cortarToolStripMenuItem.Text" xml:space="preserve">
     <value>&amp;Cortar</value>
@@ -309,7 +309,7 @@
   <data name="copiarToolStripMenuItem.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADkSURBVEhLxdQ/DoIwFMdxj+QRDDt38QguLJjIBRjcOAHO
+        YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAADkSURBVEhLxdQ/DoIwFMdxj+QRDDt38QguLJjIBRjcOAHO
         Thh2NvUMYgJlrPwamhDpK/0Xfcl3eUA/YYANpu/7A2OMG9R2XbcVD9mMBPI819Y0jRsigSiKtMVx7IbM
         gaq68fb1XvS4PwXghJgASIXg2bH9dJR6TAGkQETjGefpuOWsAdjrSpJEj5gA2SkT1+ZhjzdZRUwAal+W
         F56mRz3iA8i9FgkBIBIJBSCJFEUhEG+ACr8WbwA7VcEAqv8C1AcVDKAKAlB5A8Mw7IB8N/7vr0EAaoD8
@@ -323,7 +323,7 @@
     <value>Ctrl+C</value>
   </data>
   <data name="copiarToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>182, 26</value>
+    <value>218, 28</value>
   </data>
   <data name="copiarToolStripMenuItem.Text" xml:space="preserve">
     <value>&amp;Copiar</value>
@@ -331,7 +331,7 @@
   <data name="pegarToolStripMenuItem.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAEuSURBVEhLtZU9boQwEEY5So4S0dPT03OGPcKWAdHT7Vqc
+        YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAEuSURBVEhLtZU9boQwEEY5So4S0dPT03OGPcKWAdHT7Vqc
         YFuaJAW3oMhGwlB6/Y1sZBDM8mvpyXg8nmeNEHjc6Lruo21boVEOAnGTsn2Y4s+6rlWe5yrLMpqxRny3
         BDdFsSiKlO/7PVgbiTCp74eU8qIPuG0gcGMUDYJA3W+CZqwRn8pHHVNyOKwAbXCJ45gK/nz/quffP81Y
         Iz7OXSTA4SlQ3DK1DxYL0jTtC9nnMYhj333eJEArsB5jW7db8I5dgqWcLkiSswVfCZ3TNdYLZCPpZlsY
@@ -346,46 +346,46 @@
     <value>Ctrl+V</value>
   </data>
   <data name="pegarToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>182, 26</value>
+    <value>218, 28</value>
   </data>
   <data name="pegarToolStripMenuItem.Text" xml:space="preserve">
     <value>&amp;Pegar</value>
   </data>
   <data name="toolStripSeparator4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>179, 6</value>
+    <value>215, 6</value>
   </data>
   <data name="seleccionartodoToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>182, 26</value>
+    <value>218, 28</value>
   </data>
   <data name="seleccionartodoToolStripMenuItem.Text" xml:space="preserve">
     <value>&amp;Seleccionar todo</value>
   </data>
   <data name="editarToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>58, 23</value>
+    <value>69, 28</value>
   </data>
   <data name="editarToolStripMenuItem.Text" xml:space="preserve">
     <value>&amp;Editar</value>
   </data>
   <data name="opcionesToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>133, 24</value>
+    <value>162, 28</value>
   </data>
   <data name="opcionesToolStripMenuItem.Text" xml:space="preserve">
     <value>&amp;Opciones</value>
   </data>
   <data name="herramientasToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>103, 23</value>
+    <value>126, 28</value>
   </data>
   <data name="herramientasToolStripMenuItem.Text" xml:space="preserve">
     <value>&amp;Herramientas</value>
   </data>
   <data name="acercadeToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>146, 24</value>
+    <value>180, 28</value>
   </data>
   <data name="acercadeToolStripMenuItem.Text" xml:space="preserve">
     <value>&amp;Acerca de...</value>
   </data>
   <data name="ayudaToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>59, 23</value>
+    <value>72, 28</value>
   </data>
   <data name="ayudaToolStripMenuItem.Text" xml:space="preserve">
     <value>&amp;Ayuda</value>
@@ -394,7 +394,7 @@
     <value>0, 0</value>
   </data>
   <data name="top_menu.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1264, 27</value>
+    <value>1264, 32</value>
   </data>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="top_menu.TabIndex" type="System.Int32, mscorlib">
@@ -465,7 +465,7 @@
     <value>11, 8</value>
   </data>
   <data name="lbl_eventos.Size" type="System.Drawing.Size, System.Drawing">
-    <value>65, 22</value>
+    <value>79, 27</value>
   </data>
   <data name="lbl_eventos.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -495,7 +495,7 @@
     <value>NoControl</value>
   </data>
   <data name="button1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>10, 32</value>
+    <value>10, 37</value>
   </data>
   <data name="button1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 2, 2, 2</value>
@@ -537,7 +537,7 @@
     <value>NoControl</value>
   </data>
   <data name="button2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>10, 71</value>
+    <value>10, 76</value>
   </data>
   <data name="button2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 2, 2, 2</value>
@@ -579,7 +579,7 @@
     <value>NoControl</value>
   </data>
   <data name="button3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>10, 110</value>
+    <value>10, 115</value>
   </data>
   <data name="button3.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 2, 2, 2</value>
@@ -621,7 +621,7 @@
     <value>NoControl</value>
   </data>
   <data name="button4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>10, 149</value>
+    <value>10, 154</value>
   </data>
   <data name="button4.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 2, 2, 2</value>
@@ -654,7 +654,7 @@
     <value>4</value>
   </data>
   <data name="pnl_eventos.Location" type="System.Drawing.Point, System.Drawing">
-    <value>13, 579</value>
+    <value>13, 599</value>
   </data>
   <data name="pnl_eventos.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 3, 3, 20</value>
@@ -663,7 +663,7 @@
     <value>8, 8, 8, 8</value>
   </data>
   <data name="pnl_eventos.Size" type="System.Drawing.Size, System.Drawing">
-    <value>300, 194</value>
+    <value>300, 199</value>
   </data>
   <data name="pnl_eventos.TabIndex" type="System.Int32, mscorlib">
     <value>7</value>
@@ -696,7 +696,7 @@
     <value>11, 8</value>
   </data>
   <data name="lbl_sonido.Size" type="System.Drawing.Size, System.Drawing">
-    <value>59, 22</value>
+    <value>71, 27</value>
   </data>
   <data name="lbl_sonido.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -726,7 +726,7 @@
     <value>NoControl</value>
   </data>
   <data name="btn_sound_p.Location" type="System.Drawing.Point, System.Drawing">
-    <value>10, 32</value>
+    <value>10, 37</value>
   </data>
   <data name="btn_sound_p.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 2, 2, 2</value>
@@ -759,13 +759,13 @@
     <value>1</value>
   </data>
   <data name="pnl_sonido.Location" type="System.Drawing.Point, System.Drawing">
-    <value>13, 335</value>
+    <value>13, 345</value>
   </data>
   <data name="pnl_sonido.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>8, 8, 8, 8</value>
   </data>
   <data name="pnl_sonido.Size" type="System.Drawing.Size, System.Drawing">
-    <value>300, 77</value>
+    <value>300, 82</value>
   </data>
   <data name="pnl_sonido.TabIndex" type="System.Int32, mscorlib">
     <value>6</value>
@@ -798,7 +798,7 @@
     <value>11, 8</value>
   </data>
   <data name="lbl_escenario.Size" type="System.Drawing.Size, System.Drawing">
-    <value>79, 22</value>
+    <value>94, 27</value>
   </data>
   <data name="lbl_escenario.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -828,7 +828,7 @@
     <value>NoControl</value>
   </data>
   <data name="btn_change_b.Location" type="System.Drawing.Point, System.Drawing">
-    <value>10, 32</value>
+    <value>10, 37</value>
   </data>
   <data name="btn_change_b.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 2, 2, 2</value>
@@ -870,7 +870,7 @@
     <value>NoControl</value>
   </data>
   <data name="btn_change_p.Location" type="System.Drawing.Point, System.Drawing">
-    <value>10, 71</value>
+    <value>10, 76</value>
   </data>
   <data name="btn_change_p.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 2, 2, 2</value>
@@ -903,13 +903,13 @@
     <value>2</value>
   </data>
   <data name="pnl_escenario.Location" type="System.Drawing.Point, System.Drawing">
-    <value>13, 213</value>
+    <value>13, 218</value>
   </data>
   <data name="pnl_escenario.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>8, 8, 8, 8</value>
   </data>
   <data name="pnl_escenario.Size" type="System.Drawing.Size, System.Drawing">
-    <value>300, 116</value>
+    <value>300, 121</value>
   </data>
   <data name="pnl_escenario.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
@@ -942,7 +942,7 @@
     <value>11, 8</value>
   </data>
   <data name="lbl_logica.Size" type="System.Drawing.Size, System.Drawing">
-    <value>57, 22</value>
+    <value>69, 27</value>
   </data>
   <data name="lbl_logica.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -972,7 +972,7 @@
     <value>NoControl</value>
   </data>
   <data name="btn_logic_w.Location" type="System.Drawing.Point, System.Drawing">
-    <value>10, 32</value>
+    <value>10, 37</value>
   </data>
   <data name="btn_logic_w.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 2, 2, 2</value>
@@ -1014,7 +1014,7 @@
     <value>NoControl</value>
   </data>
   <data name="btn_logic_rs.Location" type="System.Drawing.Point, System.Drawing">
-    <value>10, 71</value>
+    <value>10, 76</value>
   </data>
   <data name="btn_logic_rs.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 2, 2, 2</value>
@@ -1056,7 +1056,7 @@
     <value>NoControl</value>
   </data>
   <data name="btn_logic_re.Location" type="System.Drawing.Point, System.Drawing">
-    <value>10, 110</value>
+    <value>10, 115</value>
   </data>
   <data name="btn_logic_re.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 2, 2, 2</value>
@@ -1089,13 +1089,13 @@
     <value>3</value>
   </data>
   <data name="pnl_logica.Location" type="System.Drawing.Point, System.Drawing">
-    <value>13, 418</value>
+    <value>13, 433</value>
   </data>
   <data name="pnl_logica.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>8, 8, 8, 8</value>
   </data>
   <data name="pnl_logica.Size" type="System.Drawing.Size, System.Drawing">
-    <value>300, 155</value>
+    <value>300, 160</value>
   </data>
   <data name="pnl_logica.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
@@ -1128,7 +1128,7 @@
     <value>11, 8</value>
   </data>
   <data name="lbl_movimiento.Size" type="System.Drawing.Size, System.Drawing">
-    <value>91, 22</value>
+    <value>112, 27</value>
   </data>
   <data name="lbl_movimiento.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -1158,7 +1158,7 @@
     <value>NoControl</value>
   </data>
   <data name="btn_move_r.Location" type="System.Drawing.Point, System.Drawing">
-    <value>10, 32</value>
+    <value>10, 37</value>
   </data>
   <data name="btn_move_r.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 2, 2, 2</value>
@@ -1200,7 +1200,7 @@
     <value>NoControl</value>
   </data>
   <data name="btn_move_l.Location" type="System.Drawing.Point, System.Drawing">
-    <value>10, 71</value>
+    <value>10, 76</value>
   </data>
   <data name="btn_move_l.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 2, 2, 2</value>
@@ -1242,7 +1242,7 @@
     <value>NoControl</value>
   </data>
   <data name="btn_move_u.Location" type="System.Drawing.Point, System.Drawing">
-    <value>10, 110</value>
+    <value>10, 115</value>
   </data>
   <data name="btn_move_u.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 2, 2, 2</value>
@@ -1284,7 +1284,7 @@
     <value>NoControl</value>
   </data>
   <data name="btn_move_d.Location" type="System.Drawing.Point, System.Drawing">
-    <value>10, 149</value>
+    <value>10, 154</value>
   </data>
   <data name="btn_move_d.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 2, 2, 2</value>
@@ -1323,7 +1323,7 @@
     <value>8, 8, 8, 8</value>
   </data>
   <data name="pnl_movimiento.Size" type="System.Drawing.Size, System.Drawing">
-    <value>300, 194</value>
+    <value>300, 199</value>
   </data>
   <data name="pnl_movimiento.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -1383,7 +1383,7 @@
     <value>Flat</value>
   </data>
   <data name="btn_movimiento.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Lexend Deca Medium, 9.5pt</value>
+    <value>Lexend Deca Medium, 9pt</value>
   </data>
   <data name="btn_movimiento.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>TopCenter</value>
@@ -1431,7 +1431,7 @@
     <value>Flat</value>
   </data>
   <data name="btn_escenario.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Lexend Deca Medium, 9.5pt</value>
+    <value>Lexend Deca Medium, 9pt</value>
   </data>
   <data name="btn_escenario.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>TopCenter</value>
@@ -1479,7 +1479,7 @@
     <value>Flat</value>
   </data>
   <data name="btn_sonido.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Lexend Deca Medium, 9.5pt</value>
+    <value>Lexend Deca Medium, 9pt</value>
   </data>
   <data name="btn_sonido.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>TopCenter</value>
@@ -1527,7 +1527,7 @@
     <value>Flat</value>
   </data>
   <data name="btn_logica.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Lexend Deca Medium, 9.5pt</value>
+    <value>Lexend Deca Medium, 9pt</value>
   </data>
   <data name="btn_logica.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>TopCenter</value>
@@ -1575,7 +1575,7 @@
     <value>Flat</value>
   </data>
   <data name="btn_eventos.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Lexend Deca Medium, 9.5pt</value>
+    <value>Lexend Deca Medium, 9pt</value>
   </data>
   <data name="btn_eventos.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>TopCenter</value>
@@ -1803,7 +1803,7 @@
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
-    <value>PruebaGrafica_</value>
+    <value>PruebaGrafica</value>
   </data>
   <data name="&gt;&gt;$this.Type" xml:space="preserve">
     <value>System.Windows.Forms.Form, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>

@@ -1,6 +1,6 @@
 ﻿namespace PseudoBlocks
 {
-	partial class PruebaGrafica_
+	partial class PruebaGrafica
 	{
 		/// <summary>
 		///  Required designer variable.
@@ -29,7 +29,7 @@
 		private void InitializeComponent()
 		{
 			components = new System.ComponentModel.Container();
-			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PruebaGrafica_));
+			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PruebaGrafica));
 			bloque_menu = new ContextMenuStrip(components);
 			eliminarToolStripMenuItem = new ToolStripMenuItem();
 			top_menu = new MenuStrip();
@@ -567,7 +567,7 @@
 			btn_eventos.UseVisualStyleBackColor = false;
 			btn_eventos.Click += CambiarCategoria;
 			// 
-			// PruebaGrafica_
+			// PruebaGrafica
 			// 
 			AutoScaleMode = AutoScaleMode.None;
 			resources.ApplyResources(this, "$this");
@@ -576,7 +576,7 @@
 			Controls.Add(pnl_layout);
 			Controls.Add(pnl_components);
 			MainMenuStrip = top_menu;
-			Name = "PruebaGrafica_";
+			Name = "PruebaGrafica";
 			bloque_menu.ResumeLayout(false);
 			top_menu.ResumeLayout(false);
 			top_menu.PerformLayout();

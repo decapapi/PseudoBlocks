@@ -10,11 +10,11 @@ using PseudoBlocks.Controles.Extensiones;
 
 namespace PseudoBlocks
 {
-	public partial class PruebaGrafica_ : Form
+	public partial class PruebaGrafica : Form
 	{
 		private ListaItems listaItems = new ListaItems();
 
-		public PruebaGrafica_()
+		public PruebaGrafica()
 		{
 			InitializeComponent();
 		}
