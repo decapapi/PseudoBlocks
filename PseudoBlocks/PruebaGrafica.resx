@@ -117,1128 +117,18 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="pnl_components.AutoScroll" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="pnl_movimiento.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="&gt;&gt;label1.Name" xml:space="preserve">
-    <value>label1</value>
-  </data>
-  <data name="&gt;&gt;label1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label1.Parent" xml:space="preserve">
-    <value>pnl_movimiento</value>
-  </data>
-  <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;btn_move_r.Name" xml:space="preserve">
-    <value>btn_move_r</value>
-  </data>
-  <data name="&gt;&gt;btn_move_r.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btn_move_r.Parent" xml:space="preserve">
-    <value>pnl_movimiento</value>
-  </data>
-  <data name="&gt;&gt;btn_move_r.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;btn_move_l.Name" xml:space="preserve">
-    <value>btn_move_l</value>
-  </data>
-  <data name="&gt;&gt;btn_move_l.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btn_move_l.Parent" xml:space="preserve">
-    <value>pnl_movimiento</value>
-  </data>
-  <data name="&gt;&gt;btn_move_l.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;btn_move_u.Name" xml:space="preserve">
-    <value>btn_move_u</value>
-  </data>
-  <data name="&gt;&gt;btn_move_u.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btn_move_u.Parent" xml:space="preserve">
-    <value>pnl_movimiento</value>
-  </data>
-  <data name="&gt;&gt;btn_move_u.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="&gt;&gt;btn_move_d.Name" xml:space="preserve">
-    <value>btn_move_d</value>
-  </data>
-  <data name="&gt;&gt;btn_move_d.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btn_move_d.Parent" xml:space="preserve">
-    <value>pnl_movimiento</value>
-  </data>
-  <data name="&gt;&gt;btn_move_d.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="pnl_movimiento.Location" type="System.Drawing.Point, System.Drawing">
-    <value>13, 13</value>
-  </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="pnl_movimiento.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>8, 8, 8, 8</value>
-  </data>
-  <data name="pnl_movimiento.Size" type="System.Drawing.Size, System.Drawing">
-    <value>300, 191</value>
-  </data>
-  <data name="pnl_movimiento.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;pnl_movimiento.Name" xml:space="preserve">
-    <value>pnl_movimiento</value>
-  </data>
-  <data name="&gt;&gt;pnl_movimiento.Type" xml:space="preserve">
-    <value>System.Windows.Forms.FlowLayoutPanel, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;pnl_movimiento.Parent" xml:space="preserve">
-    <value>pnl_components</value>
-  </data>
-  <data name="&gt;&gt;pnl_movimiento.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="pnl_logica.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="&gt;&gt;label2.Name" xml:space="preserve">
-    <value>label2</value>
-  </data>
-  <data name="&gt;&gt;label2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label2.Parent" xml:space="preserve">
-    <value>pnl_logica</value>
-  </data>
-  <data name="&gt;&gt;label2.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;btn_logic_w.Name" xml:space="preserve">
-    <value>btn_logic_w</value>
-  </data>
-  <data name="&gt;&gt;btn_logic_w.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btn_logic_w.Parent" xml:space="preserve">
-    <value>pnl_logica</value>
-  </data>
-  <data name="&gt;&gt;btn_logic_w.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;btn_logic_rs.Name" xml:space="preserve">
-    <value>btn_logic_rs</value>
-  </data>
-  <data name="&gt;&gt;btn_logic_rs.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btn_logic_rs.Parent" xml:space="preserve">
-    <value>pnl_logica</value>
-  </data>
-  <data name="&gt;&gt;btn_logic_rs.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;btn_logic_re.Name" xml:space="preserve">
-    <value>btn_logic_re</value>
-  </data>
-  <data name="&gt;&gt;btn_logic_re.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btn_logic_re.Parent" xml:space="preserve">
-    <value>pnl_logica</value>
-  </data>
-  <data name="&gt;&gt;btn_logic_re.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="pnl_logica.Location" type="System.Drawing.Point, System.Drawing">
-    <value>13, 210</value>
-  </data>
-  <data name="pnl_logica.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>8, 8, 8, 8</value>
-  </data>
-  <data name="pnl_logica.Size" type="System.Drawing.Size, System.Drawing">
-    <value>300, 152</value>
-  </data>
-  <data name="pnl_logica.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
-  </data>
-  <data name="&gt;&gt;pnl_logica.Name" xml:space="preserve">
-    <value>pnl_logica</value>
-  </data>
-  <data name="&gt;&gt;pnl_logica.Type" xml:space="preserve">
-    <value>System.Windows.Forms.FlowLayoutPanel, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;pnl_logica.Parent" xml:space="preserve">
-    <value>pnl_components</value>
-  </data>
-  <data name="&gt;&gt;pnl_logica.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="pnl_3.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="&gt;&gt;label3.Name" xml:space="preserve">
-    <value>label3</value>
-  </data>
-  <data name="&gt;&gt;label3.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label3.Parent" xml:space="preserve">
-    <value>pnl_3</value>
-  </data>
-  <data name="&gt;&gt;label3.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;btn_change_b.Name" xml:space="preserve">
-    <value>btn_change_b</value>
-  </data>
-  <data name="&gt;&gt;btn_change_b.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btn_change_b.Parent" xml:space="preserve">
-    <value>pnl_3</value>
-  </data>
-  <data name="&gt;&gt;btn_change_b.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;btn_change_p.Name" xml:space="preserve">
-    <value>btn_change_p</value>
-  </data>
-  <data name="&gt;&gt;btn_change_p.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btn_change_p.Parent" xml:space="preserve">
-    <value>pnl_3</value>
-  </data>
-  <data name="&gt;&gt;btn_change_p.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="pnl_3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>13, 368</value>
-  </data>
-  <data name="pnl_3.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>8, 8, 8, 8</value>
-  </data>
-  <data name="pnl_3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>300, 113</value>
-  </data>
-  <data name="pnl_3.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
-  </data>
-  <data name="&gt;&gt;pnl_3.Name" xml:space="preserve">
-    <value>pnl_3</value>
-  </data>
-  <data name="&gt;&gt;pnl_3.Type" xml:space="preserve">
-    <value>System.Windows.Forms.FlowLayoutPanel, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;pnl_3.Parent" xml:space="preserve">
-    <value>pnl_components</value>
-  </data>
-  <data name="&gt;&gt;pnl_3.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="pnl_4.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="&gt;&gt;label4.Name" xml:space="preserve">
-    <value>label4</value>
-  </data>
-  <data name="&gt;&gt;label4.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label4.Parent" xml:space="preserve">
-    <value>pnl_4</value>
-  </data>
-  <data name="&gt;&gt;label4.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;btn_sound_p.Name" xml:space="preserve">
-    <value>btn_sound_p</value>
-  </data>
-  <data name="&gt;&gt;btn_sound_p.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btn_sound_p.Parent" xml:space="preserve">
-    <value>pnl_4</value>
-  </data>
-  <data name="&gt;&gt;btn_sound_p.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="pnl_4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>13, 487</value>
-  </data>
-  <data name="pnl_4.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>8, 8, 8, 8</value>
-  </data>
-  <data name="pnl_4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>300, 74</value>
-  </data>
-  <data name="pnl_4.TabIndex" type="System.Int32, mscorlib">
-    <value>6</value>
-  </data>
-  <data name="&gt;&gt;pnl_4.Name" xml:space="preserve">
-    <value>pnl_4</value>
-  </data>
-  <data name="&gt;&gt;pnl_4.Type" xml:space="preserve">
-    <value>System.Windows.Forms.FlowLayoutPanel, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;pnl_4.Parent" xml:space="preserve">
-    <value>pnl_components</value>
-  </data>
-  <data name="&gt;&gt;pnl_4.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="flowLayoutPanel1.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="&gt;&gt;label5.Name" xml:space="preserve">
-    <value>label5</value>
-  </data>
-  <data name="&gt;&gt;label5.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label5.Parent" xml:space="preserve">
-    <value>flowLayoutPanel1</value>
-  </data>
-  <data name="&gt;&gt;label5.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;button1.Name" xml:space="preserve">
-    <value>button1</value>
-  </data>
-  <data name="&gt;&gt;button1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;button1.Parent" xml:space="preserve">
-    <value>flowLayoutPanel1</value>
-  </data>
-  <data name="&gt;&gt;button1.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;button2.Name" xml:space="preserve">
-    <value>button2</value>
-  </data>
-  <data name="&gt;&gt;button2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;button2.Parent" xml:space="preserve">
-    <value>flowLayoutPanel1</value>
-  </data>
-  <data name="&gt;&gt;button2.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;button3.Name" xml:space="preserve">
-    <value>button3</value>
-  </data>
-  <data name="&gt;&gt;button3.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;button3.Parent" xml:space="preserve">
-    <value>flowLayoutPanel1</value>
-  </data>
-  <data name="&gt;&gt;button3.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="&gt;&gt;button4.Name" xml:space="preserve">
-    <value>button4</value>
-  </data>
-  <data name="&gt;&gt;button4.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;button4.Parent" xml:space="preserve">
-    <value>flowLayoutPanel1</value>
-  </data>
-  <data name="&gt;&gt;button4.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="flowLayoutPanel1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>13, 567</value>
-  </data>
-  <data name="flowLayoutPanel1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 3, 3, 20</value>
-  </data>
-  <data name="flowLayoutPanel1.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>8, 8, 8, 8</value>
-  </data>
-  <data name="flowLayoutPanel1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>300, 191</value>
-  </data>
-  <data name="flowLayoutPanel1.TabIndex" type="System.Int32, mscorlib">
-    <value>7</value>
-  </data>
-  <data name="&gt;&gt;flowLayoutPanel1.Name" xml:space="preserve">
-    <value>flowLayoutPanel1</value>
-  </data>
-  <data name="&gt;&gt;flowLayoutPanel1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.FlowLayoutPanel, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;flowLayoutPanel1.Parent" xml:space="preserve">
-    <value>pnl_components</value>
-  </data>
-  <data name="&gt;&gt;flowLayoutPanel1.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="pnl_components.Location" type="System.Drawing.Point, System.Drawing">
-    <value>732, 45</value>
-  </data>
-  <data name="pnl_components.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>6, 3, 3, 3</value>
-  </data>
-  <data name="pnl_components.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>10, 10, 10, 10</value>
-  </data>
-  <data name="pnl_components.Size" type="System.Drawing.Size, System.Drawing">
-    <value>340, 554</value>
-  </data>
-  <data name="pnl_components.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;pnl_components.Name" xml:space="preserve">
-    <value>pnl_components</value>
-  </data>
-  <data name="&gt;&gt;pnl_components.Type" xml:space="preserve">
-    <value>System.Windows.Forms.FlowLayoutPanel, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;pnl_components.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;pnl_components.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="label1.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="label1.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Lexend Deca Medium, 9pt</value>
-  </data>
-  <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>11, 8</value>
-  </data>
-  <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>78, 19</value>
-  </data>
-  <data name="label1.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="label1.Text" xml:space="preserve">
-    <value>Movimiento</value>
-  </data>
-  <data name="&gt;&gt;label1.Name" xml:space="preserve">
-    <value>label1</value>
-  </data>
-  <data name="&gt;&gt;label1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label1.Parent" xml:space="preserve">
-    <value>pnl_movimiento</value>
-  </data>
-  <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="btn_move_r.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
-  </data>
-  <data name="btn_move_r.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Lexend Deca Medium, 9pt</value>
-  </data>
-  <data name="btn_move_r.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="btn_move_r.Location" type="System.Drawing.Point, System.Drawing">
-    <value>10, 29</value>
-  </data>
-  <data name="btn_move_r.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
-  </data>
-  <data name="btn_move_r.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
-  </data>
-  <data name="btn_move_r.Size" type="System.Drawing.Size, System.Drawing">
-    <value>280, 35</value>
-  </data>
-  <data name="btn_move_r.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="btn_move_r.Text" xml:space="preserve">
-    <value>Mover derecha</value>
-  </data>
-  <data name="btn_move_r.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleLeft</value>
-  </data>
-  <data name="&gt;&gt;btn_move_r.Name" xml:space="preserve">
-    <value>btn_move_r</value>
-  </data>
-  <data name="&gt;&gt;btn_move_r.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btn_move_r.Parent" xml:space="preserve">
-    <value>pnl_movimiento</value>
-  </data>
-  <data name="&gt;&gt;btn_move_r.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="btn_move_l.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
-  </data>
-  <data name="btn_move_l.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Lexend Deca Medium, 9pt</value>
-  </data>
-  <data name="btn_move_l.Location" type="System.Drawing.Point, System.Drawing">
-    <value>10, 68</value>
-  </data>
-  <data name="btn_move_l.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
-  </data>
-  <data name="btn_move_l.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
-  </data>
-  <data name="btn_move_l.Size" type="System.Drawing.Size, System.Drawing">
-    <value>280, 35</value>
-  </data>
-  <data name="btn_move_l.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="btn_move_l.Text" xml:space="preserve">
-    <value>Mover izquierda</value>
-  </data>
-  <data name="btn_move_l.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleLeft</value>
-  </data>
-  <data name="&gt;&gt;btn_move_l.Name" xml:space="preserve">
-    <value>btn_move_l</value>
-  </data>
-  <data name="&gt;&gt;btn_move_l.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btn_move_l.Parent" xml:space="preserve">
-    <value>pnl_movimiento</value>
-  </data>
-  <data name="&gt;&gt;btn_move_l.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="btn_move_u.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
-  </data>
-  <data name="btn_move_u.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Lexend Deca Medium, 9pt</value>
-  </data>
-  <data name="btn_move_u.Location" type="System.Drawing.Point, System.Drawing">
-    <value>10, 107</value>
-  </data>
-  <data name="btn_move_u.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
-  </data>
-  <data name="btn_move_u.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
-  </data>
-  <data name="btn_move_u.Size" type="System.Drawing.Size, System.Drawing">
-    <value>280, 35</value>
-  </data>
-  <data name="btn_move_u.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="btn_move_u.Text" xml:space="preserve">
-    <value>Mover arriba</value>
-  </data>
-  <data name="btn_move_u.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleLeft</value>
-  </data>
-  <data name="&gt;&gt;btn_move_u.Name" xml:space="preserve">
-    <value>btn_move_u</value>
-  </data>
-  <data name="&gt;&gt;btn_move_u.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btn_move_u.Parent" xml:space="preserve">
-    <value>pnl_movimiento</value>
-  </data>
-  <data name="&gt;&gt;btn_move_u.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="btn_move_d.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
-  </data>
-  <data name="btn_move_d.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Lexend Deca Medium, 9pt</value>
-  </data>
-  <data name="btn_move_d.Location" type="System.Drawing.Point, System.Drawing">
-    <value>10, 146</value>
-  </data>
-  <data name="btn_move_d.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
-  </data>
-  <data name="btn_move_d.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
-  </data>
-  <data name="btn_move_d.Size" type="System.Drawing.Size, System.Drawing">
-    <value>280, 35</value>
-  </data>
-  <data name="btn_move_d.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="btn_move_d.Text" xml:space="preserve">
-    <value>Mover abajo</value>
-  </data>
-  <data name="btn_move_d.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleLeft</value>
-  </data>
-  <data name="&gt;&gt;btn_move_d.Name" xml:space="preserve">
-    <value>btn_move_d</value>
-  </data>
-  <data name="&gt;&gt;btn_move_d.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btn_move_d.Parent" xml:space="preserve">
-    <value>pnl_movimiento</value>
-  </data>
-  <data name="&gt;&gt;btn_move_d.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="label2.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="label2.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Lexend Deca Medium, 9pt</value>
-  </data>
-  <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>11, 8</value>
-  </data>
-  <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>49, 19</value>
-  </data>
-  <data name="label2.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="label2.Text" xml:space="preserve">
-    <value>Lógica</value>
-  </data>
-  <data name="&gt;&gt;label2.Name" xml:space="preserve">
-    <value>label2</value>
-  </data>
-  <data name="&gt;&gt;label2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label2.Parent" xml:space="preserve">
-    <value>pnl_logica</value>
-  </data>
-  <data name="&gt;&gt;label2.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="btn_logic_w.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
-  </data>
-  <data name="btn_logic_w.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Lexend Deca Medium, 9pt</value>
-  </data>
-  <data name="btn_logic_w.Location" type="System.Drawing.Point, System.Drawing">
-    <value>10, 29</value>
-  </data>
-  <data name="btn_logic_w.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
-  </data>
-  <data name="btn_logic_w.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
-  </data>
-  <data name="btn_logic_w.Size" type="System.Drawing.Size, System.Drawing">
-    <value>280, 35</value>
-  </data>
-  <data name="btn_logic_w.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
-  </data>
-  <data name="btn_logic_w.Text" xml:space="preserve">
-    <value>Esperar</value>
-  </data>
-  <data name="btn_logic_w.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleLeft</value>
-  </data>
-  <data name="&gt;&gt;btn_logic_w.Name" xml:space="preserve">
-    <value>btn_logic_w</value>
-  </data>
-  <data name="&gt;&gt;btn_logic_w.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btn_logic_w.Parent" xml:space="preserve">
-    <value>pnl_logica</value>
-  </data>
-  <data name="&gt;&gt;btn_logic_w.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="btn_logic_rs.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
-  </data>
-  <data name="btn_logic_rs.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Lexend Deca Medium, 9pt</value>
-  </data>
-  <data name="btn_logic_rs.Location" type="System.Drawing.Point, System.Drawing">
-    <value>10, 68</value>
-  </data>
-  <data name="btn_logic_rs.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
-  </data>
-  <data name="btn_logic_rs.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
-  </data>
-  <data name="btn_logic_rs.Size" type="System.Drawing.Size, System.Drawing">
-    <value>280, 35</value>
-  </data>
-  <data name="btn_logic_rs.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
-  </data>
-  <data name="btn_logic_rs.Text" xml:space="preserve">
-    <value>Repetir</value>
-  </data>
-  <data name="btn_logic_rs.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleLeft</value>
-  </data>
-  <data name="&gt;&gt;btn_logic_rs.Name" xml:space="preserve">
-    <value>btn_logic_rs</value>
-  </data>
-  <data name="&gt;&gt;btn_logic_rs.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btn_logic_rs.Parent" xml:space="preserve">
-    <value>pnl_logica</value>
-  </data>
-  <data name="&gt;&gt;btn_logic_rs.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="btn_logic_re.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
-  </data>
-  <data name="btn_logic_re.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Lexend Deca Medium, 9pt</value>
-  </data>
-  <data name="btn_logic_re.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="btn_logic_re.Location" type="System.Drawing.Point, System.Drawing">
-    <value>10, 107</value>
-  </data>
-  <data name="btn_logic_re.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
-  </data>
-  <data name="btn_logic_re.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
-  </data>
-  <data name="btn_logic_re.Size" type="System.Drawing.Size, System.Drawing">
-    <value>280, 35</value>
-  </data>
-  <data name="btn_logic_re.TabIndex" type="System.Int32, mscorlib">
-    <value>6</value>
-  </data>
-  <data name="btn_logic_re.Text" xml:space="preserve">
-    <value>Fin (Repetir)</value>
-  </data>
-  <data name="btn_logic_re.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleLeft</value>
-  </data>
-  <data name="&gt;&gt;btn_logic_re.Name" xml:space="preserve">
-    <value>btn_logic_re</value>
-  </data>
-  <data name="&gt;&gt;btn_logic_re.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btn_logic_re.Parent" xml:space="preserve">
-    <value>pnl_logica</value>
-  </data>
-  <data name="&gt;&gt;btn_logic_re.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="label3.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="label3.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Lexend Deca Medium, 9pt</value>
-  </data>
-  <data name="label3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>11, 8</value>
-  </data>
-  <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>66, 19</value>
-  </data>
-  <data name="label3.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="label3.Text" xml:space="preserve">
-    <value>Escenario</value>
-  </data>
-  <data name="&gt;&gt;label3.Name" xml:space="preserve">
-    <value>label3</value>
-  </data>
-  <data name="&gt;&gt;label3.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label3.Parent" xml:space="preserve">
-    <value>pnl_3</value>
-  </data>
-  <data name="&gt;&gt;label3.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="btn_change_b.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
-  </data>
-  <data name="btn_change_b.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Lexend Deca Medium, 9pt</value>
-  </data>
-  <data name="btn_change_b.Location" type="System.Drawing.Point, System.Drawing">
-    <value>10, 29</value>
-  </data>
-  <data name="btn_change_b.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
-  </data>
-  <data name="btn_change_b.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
-  </data>
-  <data name="btn_change_b.Size" type="System.Drawing.Size, System.Drawing">
-    <value>280, 35</value>
-  </data>
-  <data name="btn_change_b.TabIndex" type="System.Int32, mscorlib">
-    <value>6</value>
-  </data>
-  <data name="btn_change_b.Text" xml:space="preserve">
-    <value>Cambiar fondo</value>
-  </data>
-  <data name="btn_change_b.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleLeft</value>
-  </data>
-  <data name="&gt;&gt;btn_change_b.Name" xml:space="preserve">
-    <value>btn_change_b</value>
-  </data>
-  <data name="&gt;&gt;btn_change_b.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btn_change_b.Parent" xml:space="preserve">
-    <value>pnl_3</value>
-  </data>
-  <data name="&gt;&gt;btn_change_b.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="btn_change_p.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
-  </data>
-  <data name="btn_change_p.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Lexend Deca Medium, 9pt</value>
-  </data>
-  <data name="btn_change_p.Location" type="System.Drawing.Point, System.Drawing">
-    <value>10, 68</value>
-  </data>
-  <data name="btn_change_p.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
-  </data>
-  <data name="btn_change_p.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
-  </data>
-  <data name="btn_change_p.Size" type="System.Drawing.Size, System.Drawing">
-    <value>280, 35</value>
-  </data>
-  <data name="btn_change_p.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="btn_change_p.Text" xml:space="preserve">
-    <value>Cambiar personaje</value>
-  </data>
-  <data name="btn_change_p.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleLeft</value>
-  </data>
-  <data name="&gt;&gt;btn_change_p.Name" xml:space="preserve">
-    <value>btn_change_p</value>
-  </data>
-  <data name="&gt;&gt;btn_change_p.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btn_change_p.Parent" xml:space="preserve">
-    <value>pnl_3</value>
-  </data>
-  <data name="&gt;&gt;btn_change_p.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="label4.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="label4.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Lexend Deca Medium, 9pt</value>
-  </data>
-  <data name="label4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>11, 8</value>
-  </data>
-  <data name="label4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>50, 19</value>
-  </data>
-  <data name="label4.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="label4.Text" xml:space="preserve">
-    <value>Sonido</value>
-  </data>
-  <data name="&gt;&gt;label4.Name" xml:space="preserve">
-    <value>label4</value>
-  </data>
-  <data name="&gt;&gt;label4.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label4.Parent" xml:space="preserve">
-    <value>pnl_4</value>
-  </data>
-  <data name="&gt;&gt;label4.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="btn_sound_p.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
-  </data>
-  <data name="btn_sound_p.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Lexend Deca Medium, 9pt</value>
-  </data>
-  <data name="btn_sound_p.Location" type="System.Drawing.Point, System.Drawing">
-    <value>10, 29</value>
-  </data>
-  <data name="btn_sound_p.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
-  </data>
-  <data name="btn_sound_p.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
-  </data>
-  <data name="btn_sound_p.Size" type="System.Drawing.Size, System.Drawing">
-    <value>280, 35</value>
-  </data>
-  <data name="btn_sound_p.TabIndex" type="System.Int32, mscorlib">
-    <value>7</value>
-  </data>
-  <data name="btn_sound_p.Text" xml:space="preserve">
-    <value>Reproducir sonido</value>
-  </data>
-  <data name="btn_sound_p.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleLeft</value>
-  </data>
-  <data name="&gt;&gt;btn_sound_p.Name" xml:space="preserve">
-    <value>btn_sound_p</value>
-  </data>
-  <data name="&gt;&gt;btn_sound_p.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btn_sound_p.Parent" xml:space="preserve">
-    <value>pnl_4</value>
-  </data>
-  <data name="&gt;&gt;btn_sound_p.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="label5.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="label5.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Lexend Deca Medium, 9pt</value>
-  </data>
-  <data name="label5.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="label5.Location" type="System.Drawing.Point, System.Drawing">
-    <value>11, 8</value>
-  </data>
-  <data name="label5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>55, 19</value>
-  </data>
-  <data name="label5.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="label5.Text" xml:space="preserve">
-    <value>Ejemplo</value>
-  </data>
-  <data name="&gt;&gt;label5.Name" xml:space="preserve">
-    <value>label5</value>
-  </data>
-  <data name="&gt;&gt;label5.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label5.Parent" xml:space="preserve">
-    <value>flowLayoutPanel1</value>
-  </data>
-  <data name="&gt;&gt;label5.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="button1.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
-  </data>
-  <data name="button1.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Lexend Deca Medium, 9pt</value>
-  </data>
-  <data name="button1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="button1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>10, 29</value>
-  </data>
-  <data name="button1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
-  </data>
-  <data name="button1.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
-  </data>
-  <data name="button1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>280, 35</value>
-  </data>
-  <data name="button1.TabIndex" type="System.Int32, mscorlib">
-    <value>7</value>
-  </data>
-  <data name="button1.Text" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="button1.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleLeft</value>
-  </data>
-  <data name="&gt;&gt;button1.Name" xml:space="preserve">
-    <value>button1</value>
-  </data>
-  <data name="&gt;&gt;button1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;button1.Parent" xml:space="preserve">
-    <value>flowLayoutPanel1</value>
-  </data>
-  <data name="&gt;&gt;button1.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="button2.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
-  </data>
-  <data name="button2.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Lexend Deca Medium, 9pt</value>
-  </data>
-  <data name="button2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="button2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>10, 68</value>
-  </data>
-  <data name="button2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
-  </data>
-  <data name="button2.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
-  </data>
-  <data name="button2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>280, 35</value>
-  </data>
-  <data name="button2.TabIndex" type="System.Int32, mscorlib">
-    <value>8</value>
-  </data>
-  <data name="button2.Text" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="button2.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleLeft</value>
-  </data>
-  <data name="&gt;&gt;button2.Name" xml:space="preserve">
-    <value>button2</value>
-  </data>
-  <data name="&gt;&gt;button2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;button2.Parent" xml:space="preserve">
-    <value>flowLayoutPanel1</value>
-  </data>
-  <data name="&gt;&gt;button2.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="button3.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
-  </data>
-  <data name="button3.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Lexend Deca Medium, 9pt</value>
-  </data>
-  <data name="button3.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="button3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>10, 107</value>
-  </data>
-  <data name="button3.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
-  </data>
-  <data name="button3.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
-  </data>
-  <data name="button3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>280, 35</value>
-  </data>
-  <data name="button3.TabIndex" type="System.Int32, mscorlib">
-    <value>9</value>
-  </data>
-  <data name="button3.Text" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="button3.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleLeft</value>
-  </data>
-  <data name="&gt;&gt;button3.Name" xml:space="preserve">
-    <value>button3</value>
-  </data>
-  <data name="&gt;&gt;button3.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;button3.Parent" xml:space="preserve">
-    <value>flowLayoutPanel1</value>
-  </data>
-  <data name="&gt;&gt;button3.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="button4.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
-  </data>
-  <data name="button4.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Lexend Deca Medium, 9pt</value>
-  </data>
-  <data name="button4.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="button4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>10, 146</value>
-  </data>
-  <data name="button4.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
-  </data>
-  <data name="button4.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
-  </data>
-  <data name="button4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>280, 35</value>
-  </data>
-  <data name="button4.TabIndex" type="System.Int32, mscorlib">
-    <value>10</value>
-  </data>
-  <data name="button4.Text" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="button4.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleLeft</value>
-  </data>
-  <data name="&gt;&gt;button4.Name" xml:space="preserve">
-    <value>button4</value>
-  </data>
-  <data name="&gt;&gt;button4.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;button4.Parent" xml:space="preserve">
-    <value>flowLayoutPanel1</value>
-  </data>
-  <data name="&gt;&gt;button4.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
   <metadata name="bloque_menu.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>299, 17</value>
   </metadata>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="bloque_menu.Font" type="System.Drawing.Font, System.Drawing">
     <value>Lexend Deca Medium, 9pt</value>
+  </data>
+  <data name="eliminarToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>127, 24</value>
+  </data>
+  <data name="eliminarToolStripMenuItem.Text" xml:space="preserve">
+    <value>Eliminar</value>
   </data>
   <data name="bloque_menu.Size" type="System.Drawing.Size, System.Drawing">
     <value>128, 28</value>
@@ -1252,51 +142,16 @@
   <data name="&gt;&gt;bloque_menu.Type" xml:space="preserve">
     <value>System.Windows.Forms.ContextMenuStrip, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="eliminarToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>127, 24</value>
-  </data>
-  <data name="eliminarToolStripMenuItem.Text" xml:space="preserve">
-    <value>Eliminar</value>
-  </data>
   <metadata name="top_menu.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>441, 16</value>
   </metadata>
   <data name="top_menu.Font" type="System.Drawing.Font, System.Drawing">
     <value>Lexend Deca Medium, 9pt</value>
   </data>
-  <data name="top_menu.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <data name="top_menu.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1084, 27</value>
-  </data>
-  <data name="top_menu.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
-  </data>
-  <data name="top_menu.Text" xml:space="preserve">
-    <value>menuStrip1</value>
-  </data>
-  <data name="&gt;&gt;top_menu.Name" xml:space="preserve">
-    <value>top_menu</value>
-  </data>
-  <data name="&gt;&gt;top_menu.Type" xml:space="preserve">
-    <value>System.Windows.Forms.MenuStrip, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;top_menu.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;top_menu.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="archivoToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>65, 23</value>
-  </data>
-  <data name="archivoToolStripMenuItem.Text" xml:space="preserve">
-    <value>&amp;Archivo</value>
-  </data>
   <data name="abrirToolStripMenuItem.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
     <value>Magenta</value>
   </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="abrirToolStripMenuItem.ShortcutKeys" type="System.Windows.Forms.Keys, System.Windows.Forms">
     <value>Ctrl+E</value>
   </data>
@@ -1396,11 +251,11 @@
   <data name="salirToolStripMenuItem.Text" xml:space="preserve">
     <value>&amp;Salir</value>
   </data>
-  <data name="editarToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>58, 23</value>
+  <data name="archivoToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>65, 23</value>
   </data>
-  <data name="editarToolStripMenuItem.Text" xml:space="preserve">
-    <value>&amp;Editar</value>
+  <data name="archivoToolStripMenuItem.Text" xml:space="preserve">
+    <value>&amp;Archivo</value>
   </data>
   <data name="deshacerToolStripMenuItem.ShortcutKeys" type="System.Windows.Forms.Keys, System.Windows.Forms">
     <value>Ctrl+Z</value>
@@ -1505,11 +360,11 @@
   <data name="seleccionartodoToolStripMenuItem.Text" xml:space="preserve">
     <value>&amp;Seleccionar todo</value>
   </data>
-  <data name="herramientasToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>103, 23</value>
+  <data name="editarToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>58, 23</value>
   </data>
-  <data name="herramientasToolStripMenuItem.Text" xml:space="preserve">
-    <value>&amp;Herramientas</value>
+  <data name="editarToolStripMenuItem.Text" xml:space="preserve">
+    <value>&amp;Editar</value>
   </data>
   <data name="opcionesToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>133, 24</value>
@@ -1517,17 +372,48 @@
   <data name="opcionesToolStripMenuItem.Text" xml:space="preserve">
     <value>&amp;Opciones</value>
   </data>
-  <data name="ayudaToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>59, 23</value>
+  <data name="herramientasToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>103, 23</value>
   </data>
-  <data name="ayudaToolStripMenuItem.Text" xml:space="preserve">
-    <value>&amp;Ayuda</value>
+  <data name="herramientasToolStripMenuItem.Text" xml:space="preserve">
+    <value>&amp;Herramientas</value>
   </data>
   <data name="acercadeToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>146, 24</value>
   </data>
   <data name="acercadeToolStripMenuItem.Text" xml:space="preserve">
     <value>&amp;Acerca de...</value>
+  </data>
+  <data name="ayudaToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>59, 23</value>
+  </data>
+  <data name="ayudaToolStripMenuItem.Text" xml:space="preserve">
+    <value>&amp;Ayuda</value>
+  </data>
+  <data name="top_menu.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="top_menu.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1264, 27</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="top_menu.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="top_menu.Text" xml:space="preserve">
+    <value>menuStrip1</value>
+  </data>
+  <data name="&gt;&gt;top_menu.Name" xml:space="preserve">
+    <value>top_menu</value>
+  </data>
+  <data name="&gt;&gt;top_menu.Type" xml:space="preserve">
+    <value>System.Windows.Forms.MenuStrip, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;top_menu.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;top_menu.ZOrder" xml:space="preserve">
+    <value>2</value>
   </data>
   <data name="pnl_layout.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Bottom, Left, Right</value>
@@ -1538,6 +424,7 @@
   <data name="pnl_layout.Location" type="System.Drawing.Point, System.Drawing">
     <value>12, 45</value>
   </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="pnl_layout.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 3, 6, 3</value>
   </data>
@@ -1545,7 +432,7 @@
     <value>10, 10, 10, 10</value>
   </data>
   <data name="pnl_layout.Size" type="System.Drawing.Size, System.Drawing">
-    <value>708, 554</value>
+    <value>772, 654</value>
   </data>
   <data name="pnl_layout.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
@@ -1560,7 +447,1195 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;pnl_layout.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="pnl_eventos.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lbl_eventos.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lbl_eventos.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Lexend Deca Medium, 10pt</value>
+  </data>
+  <data name="lbl_eventos.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lbl_eventos.Location" type="System.Drawing.Point, System.Drawing">
+    <value>11, 8</value>
+  </data>
+  <data name="lbl_eventos.Size" type="System.Drawing.Size, System.Drawing">
+    <value>65, 22</value>
+  </data>
+  <data name="lbl_eventos.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="lbl_eventos.Text" xml:space="preserve">
+    <value>Eventos</value>
+  </data>
+  <data name="&gt;&gt;lbl_eventos.Name" xml:space="preserve">
+    <value>lbl_eventos</value>
+  </data>
+  <data name="&gt;&gt;lbl_eventos.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbl_eventos.Parent" xml:space="preserve">
+    <value>pnl_eventos</value>
+  </data>
+  <data name="&gt;&gt;lbl_eventos.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="button1.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="button1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Lexend Deca Medium, 9pt</value>
+  </data>
+  <data name="button1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="button1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>10, 32</value>
+  </data>
+  <data name="button1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="button1.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="button1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>280, 35</value>
+  </data>
+  <data name="button1.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="button1.Text" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="button1.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="&gt;&gt;button1.Name" xml:space="preserve">
+    <value>button1</value>
+  </data>
+  <data name="&gt;&gt;button1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;button1.Parent" xml:space="preserve">
+    <value>pnl_eventos</value>
+  </data>
+  <data name="&gt;&gt;button1.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="button2.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="button2.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Lexend Deca Medium, 9pt</value>
+  </data>
+  <data name="button2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="button2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>10, 71</value>
+  </data>
+  <data name="button2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="button2.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="button2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>280, 35</value>
+  </data>
+  <data name="button2.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="button2.Text" xml:space="preserve">
     <value>2</value>
+  </data>
+  <data name="button2.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="&gt;&gt;button2.Name" xml:space="preserve">
+    <value>button2</value>
+  </data>
+  <data name="&gt;&gt;button2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;button2.Parent" xml:space="preserve">
+    <value>pnl_eventos</value>
+  </data>
+  <data name="&gt;&gt;button2.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="button3.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="button3.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Lexend Deca Medium, 9pt</value>
+  </data>
+  <data name="button3.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="button3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>10, 110</value>
+  </data>
+  <data name="button3.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="button3.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="button3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>280, 35</value>
+  </data>
+  <data name="button3.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="button3.Text" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="button3.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="&gt;&gt;button3.Name" xml:space="preserve">
+    <value>button3</value>
+  </data>
+  <data name="&gt;&gt;button3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;button3.Parent" xml:space="preserve">
+    <value>pnl_eventos</value>
+  </data>
+  <data name="&gt;&gt;button3.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="button4.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="button4.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Lexend Deca Medium, 9pt</value>
+  </data>
+  <data name="button4.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="button4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>10, 149</value>
+  </data>
+  <data name="button4.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="button4.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="button4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>280, 35</value>
+  </data>
+  <data name="button4.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="button4.Text" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="button4.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="&gt;&gt;button4.Name" xml:space="preserve">
+    <value>button4</value>
+  </data>
+  <data name="&gt;&gt;button4.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;button4.Parent" xml:space="preserve">
+    <value>pnl_eventos</value>
+  </data>
+  <data name="&gt;&gt;button4.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="pnl_eventos.Location" type="System.Drawing.Point, System.Drawing">
+    <value>13, 579</value>
+  </data>
+  <data name="pnl_eventos.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 3, 3, 20</value>
+  </data>
+  <data name="pnl_eventos.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>8, 8, 8, 8</value>
+  </data>
+  <data name="pnl_eventos.Size" type="System.Drawing.Size, System.Drawing">
+    <value>300, 194</value>
+  </data>
+  <data name="pnl_eventos.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;pnl_eventos.Name" xml:space="preserve">
+    <value>pnl_eventos</value>
+  </data>
+  <data name="&gt;&gt;pnl_eventos.Type" xml:space="preserve">
+    <value>System.Windows.Forms.FlowLayoutPanel, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pnl_eventos.Parent" xml:space="preserve">
+    <value>pnl_components</value>
+  </data>
+  <data name="&gt;&gt;pnl_eventos.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="pnl_sonido.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lbl_sonido.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lbl_sonido.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Lexend Deca Medium, 10pt</value>
+  </data>
+  <data name="lbl_sonido.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lbl_sonido.Location" type="System.Drawing.Point, System.Drawing">
+    <value>11, 8</value>
+  </data>
+  <data name="lbl_sonido.Size" type="System.Drawing.Size, System.Drawing">
+    <value>59, 22</value>
+  </data>
+  <data name="lbl_sonido.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="lbl_sonido.Text" xml:space="preserve">
+    <value>Sonido</value>
+  </data>
+  <data name="&gt;&gt;lbl_sonido.Name" xml:space="preserve">
+    <value>lbl_sonido</value>
+  </data>
+  <data name="&gt;&gt;lbl_sonido.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbl_sonido.Parent" xml:space="preserve">
+    <value>pnl_sonido</value>
+  </data>
+  <data name="&gt;&gt;lbl_sonido.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="btn_sound_p.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="btn_sound_p.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Lexend Deca Medium, 9pt</value>
+  </data>
+  <data name="btn_sound_p.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btn_sound_p.Location" type="System.Drawing.Point, System.Drawing">
+    <value>10, 32</value>
+  </data>
+  <data name="btn_sound_p.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="btn_sound_p.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="btn_sound_p.Size" type="System.Drawing.Size, System.Drawing">
+    <value>280, 35</value>
+  </data>
+  <data name="btn_sound_p.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="btn_sound_p.Text" xml:space="preserve">
+    <value>Reproducir sonido</value>
+  </data>
+  <data name="btn_sound_p.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="&gt;&gt;btn_sound_p.Name" xml:space="preserve">
+    <value>btn_sound_p</value>
+  </data>
+  <data name="&gt;&gt;btn_sound_p.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_sound_p.Parent" xml:space="preserve">
+    <value>pnl_sonido</value>
+  </data>
+  <data name="&gt;&gt;btn_sound_p.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="pnl_sonido.Location" type="System.Drawing.Point, System.Drawing">
+    <value>13, 335</value>
+  </data>
+  <data name="pnl_sonido.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>8, 8, 8, 8</value>
+  </data>
+  <data name="pnl_sonido.Size" type="System.Drawing.Size, System.Drawing">
+    <value>300, 77</value>
+  </data>
+  <data name="pnl_sonido.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;pnl_sonido.Name" xml:space="preserve">
+    <value>pnl_sonido</value>
+  </data>
+  <data name="&gt;&gt;pnl_sonido.Type" xml:space="preserve">
+    <value>System.Windows.Forms.FlowLayoutPanel, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pnl_sonido.Parent" xml:space="preserve">
+    <value>pnl_components</value>
+  </data>
+  <data name="&gt;&gt;pnl_sonido.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="pnl_escenario.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lbl_escenario.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lbl_escenario.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Lexend Deca Medium, 10pt</value>
+  </data>
+  <data name="lbl_escenario.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lbl_escenario.Location" type="System.Drawing.Point, System.Drawing">
+    <value>11, 8</value>
+  </data>
+  <data name="lbl_escenario.Size" type="System.Drawing.Size, System.Drawing">
+    <value>79, 22</value>
+  </data>
+  <data name="lbl_escenario.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="lbl_escenario.Text" xml:space="preserve">
+    <value>Escenario</value>
+  </data>
+  <data name="&gt;&gt;lbl_escenario.Name" xml:space="preserve">
+    <value>lbl_escenario</value>
+  </data>
+  <data name="&gt;&gt;lbl_escenario.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbl_escenario.Parent" xml:space="preserve">
+    <value>pnl_escenario</value>
+  </data>
+  <data name="&gt;&gt;lbl_escenario.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="btn_change_b.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="btn_change_b.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Lexend Deca Medium, 9pt</value>
+  </data>
+  <data name="btn_change_b.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btn_change_b.Location" type="System.Drawing.Point, System.Drawing">
+    <value>10, 32</value>
+  </data>
+  <data name="btn_change_b.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="btn_change_b.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="btn_change_b.Size" type="System.Drawing.Size, System.Drawing">
+    <value>280, 35</value>
+  </data>
+  <data name="btn_change_b.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="btn_change_b.Text" xml:space="preserve">
+    <value>Cambiar fondo</value>
+  </data>
+  <data name="btn_change_b.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="&gt;&gt;btn_change_b.Name" xml:space="preserve">
+    <value>btn_change_b</value>
+  </data>
+  <data name="&gt;&gt;btn_change_b.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_change_b.Parent" xml:space="preserve">
+    <value>pnl_escenario</value>
+  </data>
+  <data name="&gt;&gt;btn_change_b.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="btn_change_p.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="btn_change_p.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Lexend Deca Medium, 9pt</value>
+  </data>
+  <data name="btn_change_p.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btn_change_p.Location" type="System.Drawing.Point, System.Drawing">
+    <value>10, 71</value>
+  </data>
+  <data name="btn_change_p.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="btn_change_p.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="btn_change_p.Size" type="System.Drawing.Size, System.Drawing">
+    <value>280, 35</value>
+  </data>
+  <data name="btn_change_p.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="btn_change_p.Text" xml:space="preserve">
+    <value>Cambiar personaje</value>
+  </data>
+  <data name="btn_change_p.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="&gt;&gt;btn_change_p.Name" xml:space="preserve">
+    <value>btn_change_p</value>
+  </data>
+  <data name="&gt;&gt;btn_change_p.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_change_p.Parent" xml:space="preserve">
+    <value>pnl_escenario</value>
+  </data>
+  <data name="&gt;&gt;btn_change_p.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="pnl_escenario.Location" type="System.Drawing.Point, System.Drawing">
+    <value>13, 213</value>
+  </data>
+  <data name="pnl_escenario.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>8, 8, 8, 8</value>
+  </data>
+  <data name="pnl_escenario.Size" type="System.Drawing.Size, System.Drawing">
+    <value>300, 116</value>
+  </data>
+  <data name="pnl_escenario.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;pnl_escenario.Name" xml:space="preserve">
+    <value>pnl_escenario</value>
+  </data>
+  <data name="&gt;&gt;pnl_escenario.Type" xml:space="preserve">
+    <value>System.Windows.Forms.FlowLayoutPanel, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pnl_escenario.Parent" xml:space="preserve">
+    <value>pnl_components</value>
+  </data>
+  <data name="&gt;&gt;pnl_escenario.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="pnl_logica.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lbl_logica.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lbl_logica.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Lexend Deca Medium, 10pt</value>
+  </data>
+  <data name="lbl_logica.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lbl_logica.Location" type="System.Drawing.Point, System.Drawing">
+    <value>11, 8</value>
+  </data>
+  <data name="lbl_logica.Size" type="System.Drawing.Size, System.Drawing">
+    <value>57, 22</value>
+  </data>
+  <data name="lbl_logica.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="lbl_logica.Text" xml:space="preserve">
+    <value>Lógica</value>
+  </data>
+  <data name="&gt;&gt;lbl_logica.Name" xml:space="preserve">
+    <value>lbl_logica</value>
+  </data>
+  <data name="&gt;&gt;lbl_logica.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbl_logica.Parent" xml:space="preserve">
+    <value>pnl_logica</value>
+  </data>
+  <data name="&gt;&gt;lbl_logica.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="btn_logic_w.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="btn_logic_w.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Lexend Deca Medium, 9pt</value>
+  </data>
+  <data name="btn_logic_w.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btn_logic_w.Location" type="System.Drawing.Point, System.Drawing">
+    <value>10, 32</value>
+  </data>
+  <data name="btn_logic_w.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="btn_logic_w.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="btn_logic_w.Size" type="System.Drawing.Size, System.Drawing">
+    <value>280, 35</value>
+  </data>
+  <data name="btn_logic_w.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="btn_logic_w.Text" xml:space="preserve">
+    <value>Esperar</value>
+  </data>
+  <data name="btn_logic_w.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="&gt;&gt;btn_logic_w.Name" xml:space="preserve">
+    <value>btn_logic_w</value>
+  </data>
+  <data name="&gt;&gt;btn_logic_w.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_logic_w.Parent" xml:space="preserve">
+    <value>pnl_logica</value>
+  </data>
+  <data name="&gt;&gt;btn_logic_w.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="btn_logic_rs.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="btn_logic_rs.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Lexend Deca Medium, 9pt</value>
+  </data>
+  <data name="btn_logic_rs.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btn_logic_rs.Location" type="System.Drawing.Point, System.Drawing">
+    <value>10, 71</value>
+  </data>
+  <data name="btn_logic_rs.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="btn_logic_rs.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="btn_logic_rs.Size" type="System.Drawing.Size, System.Drawing">
+    <value>280, 35</value>
+  </data>
+  <data name="btn_logic_rs.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="btn_logic_rs.Text" xml:space="preserve">
+    <value>Repetir</value>
+  </data>
+  <data name="btn_logic_rs.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="&gt;&gt;btn_logic_rs.Name" xml:space="preserve">
+    <value>btn_logic_rs</value>
+  </data>
+  <data name="&gt;&gt;btn_logic_rs.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_logic_rs.Parent" xml:space="preserve">
+    <value>pnl_logica</value>
+  </data>
+  <data name="&gt;&gt;btn_logic_rs.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="btn_logic_re.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="btn_logic_re.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Lexend Deca Medium, 9pt</value>
+  </data>
+  <data name="btn_logic_re.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btn_logic_re.Location" type="System.Drawing.Point, System.Drawing">
+    <value>10, 110</value>
+  </data>
+  <data name="btn_logic_re.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="btn_logic_re.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="btn_logic_re.Size" type="System.Drawing.Size, System.Drawing">
+    <value>280, 35</value>
+  </data>
+  <data name="btn_logic_re.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="btn_logic_re.Text" xml:space="preserve">
+    <value>Fin (Repetir)</value>
+  </data>
+  <data name="btn_logic_re.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="&gt;&gt;btn_logic_re.Name" xml:space="preserve">
+    <value>btn_logic_re</value>
+  </data>
+  <data name="&gt;&gt;btn_logic_re.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_logic_re.Parent" xml:space="preserve">
+    <value>pnl_logica</value>
+  </data>
+  <data name="&gt;&gt;btn_logic_re.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="pnl_logica.Location" type="System.Drawing.Point, System.Drawing">
+    <value>13, 418</value>
+  </data>
+  <data name="pnl_logica.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>8, 8, 8, 8</value>
+  </data>
+  <data name="pnl_logica.Size" type="System.Drawing.Size, System.Drawing">
+    <value>300, 155</value>
+  </data>
+  <data name="pnl_logica.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;pnl_logica.Name" xml:space="preserve">
+    <value>pnl_logica</value>
+  </data>
+  <data name="&gt;&gt;pnl_logica.Type" xml:space="preserve">
+    <value>System.Windows.Forms.FlowLayoutPanel, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pnl_logica.Parent" xml:space="preserve">
+    <value>pnl_components</value>
+  </data>
+  <data name="&gt;&gt;pnl_logica.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="pnl_movimiento.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lbl_movimiento.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lbl_movimiento.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Lexend Deca Medium, 10pt</value>
+  </data>
+  <data name="lbl_movimiento.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lbl_movimiento.Location" type="System.Drawing.Point, System.Drawing">
+    <value>11, 8</value>
+  </data>
+  <data name="lbl_movimiento.Size" type="System.Drawing.Size, System.Drawing">
+    <value>91, 22</value>
+  </data>
+  <data name="lbl_movimiento.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="lbl_movimiento.Text" xml:space="preserve">
+    <value>Movimiento</value>
+  </data>
+  <data name="&gt;&gt;lbl_movimiento.Name" xml:space="preserve">
+    <value>lbl_movimiento</value>
+  </data>
+  <data name="&gt;&gt;lbl_movimiento.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbl_movimiento.Parent" xml:space="preserve">
+    <value>pnl_movimiento</value>
+  </data>
+  <data name="&gt;&gt;lbl_movimiento.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="btn_move_r.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="btn_move_r.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Lexend Deca Medium, 9pt</value>
+  </data>
+  <data name="btn_move_r.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btn_move_r.Location" type="System.Drawing.Point, System.Drawing">
+    <value>10, 32</value>
+  </data>
+  <data name="btn_move_r.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="btn_move_r.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="btn_move_r.Size" type="System.Drawing.Size, System.Drawing">
+    <value>280, 35</value>
+  </data>
+  <data name="btn_move_r.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="btn_move_r.Text" xml:space="preserve">
+    <value>Mover derecha</value>
+  </data>
+  <data name="btn_move_r.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="&gt;&gt;btn_move_r.Name" xml:space="preserve">
+    <value>btn_move_r</value>
+  </data>
+  <data name="&gt;&gt;btn_move_r.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_move_r.Parent" xml:space="preserve">
+    <value>pnl_movimiento</value>
+  </data>
+  <data name="&gt;&gt;btn_move_r.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="btn_move_l.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="btn_move_l.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Lexend Deca Medium, 9pt</value>
+  </data>
+  <data name="btn_move_l.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btn_move_l.Location" type="System.Drawing.Point, System.Drawing">
+    <value>10, 71</value>
+  </data>
+  <data name="btn_move_l.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="btn_move_l.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="btn_move_l.Size" type="System.Drawing.Size, System.Drawing">
+    <value>280, 35</value>
+  </data>
+  <data name="btn_move_l.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="btn_move_l.Text" xml:space="preserve">
+    <value>Mover izquierda</value>
+  </data>
+  <data name="btn_move_l.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="&gt;&gt;btn_move_l.Name" xml:space="preserve">
+    <value>btn_move_l</value>
+  </data>
+  <data name="&gt;&gt;btn_move_l.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_move_l.Parent" xml:space="preserve">
+    <value>pnl_movimiento</value>
+  </data>
+  <data name="&gt;&gt;btn_move_l.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="btn_move_u.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="btn_move_u.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Lexend Deca Medium, 9pt</value>
+  </data>
+  <data name="btn_move_u.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btn_move_u.Location" type="System.Drawing.Point, System.Drawing">
+    <value>10, 110</value>
+  </data>
+  <data name="btn_move_u.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="btn_move_u.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="btn_move_u.Size" type="System.Drawing.Size, System.Drawing">
+    <value>280, 35</value>
+  </data>
+  <data name="btn_move_u.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="btn_move_u.Text" xml:space="preserve">
+    <value>Mover arriba</value>
+  </data>
+  <data name="btn_move_u.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="&gt;&gt;btn_move_u.Name" xml:space="preserve">
+    <value>btn_move_u</value>
+  </data>
+  <data name="&gt;&gt;btn_move_u.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_move_u.Parent" xml:space="preserve">
+    <value>pnl_movimiento</value>
+  </data>
+  <data name="&gt;&gt;btn_move_u.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="btn_move_d.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="btn_move_d.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Lexend Deca Medium, 9pt</value>
+  </data>
+  <data name="btn_move_d.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btn_move_d.Location" type="System.Drawing.Point, System.Drawing">
+    <value>10, 149</value>
+  </data>
+  <data name="btn_move_d.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="btn_move_d.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="btn_move_d.Size" type="System.Drawing.Size, System.Drawing">
+    <value>280, 35</value>
+  </data>
+  <data name="btn_move_d.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="btn_move_d.Text" xml:space="preserve">
+    <value>Mover abajo</value>
+  </data>
+  <data name="btn_move_d.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="&gt;&gt;btn_move_d.Name" xml:space="preserve">
+    <value>btn_move_d</value>
+  </data>
+  <data name="&gt;&gt;btn_move_d.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_move_d.Parent" xml:space="preserve">
+    <value>pnl_movimiento</value>
+  </data>
+  <data name="&gt;&gt;btn_move_d.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="pnl_movimiento.Location" type="System.Drawing.Point, System.Drawing">
+    <value>13, 13</value>
+  </data>
+  <data name="pnl_movimiento.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>8, 8, 8, 8</value>
+  </data>
+  <data name="pnl_movimiento.Size" type="System.Drawing.Size, System.Drawing">
+    <value>300, 194</value>
+  </data>
+  <data name="pnl_movimiento.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;pnl_movimiento.Name" xml:space="preserve">
+    <value>pnl_movimiento</value>
+  </data>
+  <data name="&gt;&gt;pnl_movimiento.Type" xml:space="preserve">
+    <value>System.Windows.Forms.FlowLayoutPanel, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pnl_movimiento.Parent" xml:space="preserve">
+    <value>pnl_components</value>
+  </data>
+  <data name="&gt;&gt;pnl_movimiento.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="pnl_components.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom, Right</value>
+  </data>
+  <data name="pnl_components.AutoScroll" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="pnl_components.Location" type="System.Drawing.Point, System.Drawing">
+    <value>796, 45</value>
+  </data>
+  <data name="pnl_components.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>6, 3, 3, 3</value>
+  </data>
+  <data name="pnl_components.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>10, 10, 10, 10</value>
+  </data>
+  <data name="pnl_components.Size" type="System.Drawing.Size, System.Drawing">
+    <value>340, 654</value>
+  </data>
+  <data name="pnl_components.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;pnl_components.Name" xml:space="preserve">
+    <value>pnl_components</value>
+  </data>
+  <data name="&gt;&gt;pnl_components.Type" xml:space="preserve">
+    <value>System.Windows.Forms.FlowLayoutPanel, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pnl_components.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;pnl_components.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="flowLayoutPanel2.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom, Right</value>
+  </data>
+  <data name="btn_movimiento.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Center</value>
+  </data>
+  <data name="btn_movimiento.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="btn_movimiento.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Lexend Deca Medium, 9.5pt</value>
+  </data>
+  <data name="btn_movimiento.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>TopCenter</value>
+  </data>
+  <data name="btn_movimiento.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btn_movimiento.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="btn_movimiento.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="btn_movimiento.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 5, 2, 2</value>
+  </data>
+  <data name="btn_movimiento.Size" type="System.Drawing.Size, System.Drawing">
+    <value>110, 70</value>
+  </data>
+  <data name="btn_movimiento.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="btn_movimiento.Text" xml:space="preserve">
+    <value>Movimiento</value>
+  </data>
+  <data name="btn_movimiento.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>BottomCenter</value>
+  </data>
+  <data name="&gt;&gt;btn_movimiento.Name" xml:space="preserve">
+    <value>btn_movimiento</value>
+  </data>
+  <data name="&gt;&gt;btn_movimiento.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_movimiento.Parent" xml:space="preserve">
+    <value>flowLayoutPanel2</value>
+  </data>
+  <data name="&gt;&gt;btn_movimiento.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="btn_escenario.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Center</value>
+  </data>
+  <data name="btn_escenario.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="btn_escenario.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Lexend Deca Medium, 9.5pt</value>
+  </data>
+  <data name="btn_escenario.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>TopCenter</value>
+  </data>
+  <data name="btn_escenario.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btn_escenario.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 70</value>
+  </data>
+  <data name="btn_escenario.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="btn_escenario.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 5, 2, 2</value>
+  </data>
+  <data name="btn_escenario.Size" type="System.Drawing.Size, System.Drawing">
+    <value>110, 70</value>
+  </data>
+  <data name="btn_escenario.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="btn_escenario.Text" xml:space="preserve">
+    <value>Escenario</value>
+  </data>
+  <data name="btn_escenario.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>BottomCenter</value>
+  </data>
+  <data name="&gt;&gt;btn_escenario.Name" xml:space="preserve">
+    <value>btn_escenario</value>
+  </data>
+  <data name="&gt;&gt;btn_escenario.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_escenario.Parent" xml:space="preserve">
+    <value>flowLayoutPanel2</value>
+  </data>
+  <data name="&gt;&gt;btn_escenario.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="btn_sonido.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Center</value>
+  </data>
+  <data name="btn_sonido.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="btn_sonido.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Lexend Deca Medium, 9.5pt</value>
+  </data>
+  <data name="btn_sonido.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>TopCenter</value>
+  </data>
+  <data name="btn_sonido.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btn_sonido.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 140</value>
+  </data>
+  <data name="btn_sonido.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="btn_sonido.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 5, 2, 2</value>
+  </data>
+  <data name="btn_sonido.Size" type="System.Drawing.Size, System.Drawing">
+    <value>110, 70</value>
+  </data>
+  <data name="btn_sonido.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="btn_sonido.Text" xml:space="preserve">
+    <value>Sonido</value>
+  </data>
+  <data name="btn_sonido.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>BottomCenter</value>
+  </data>
+  <data name="&gt;&gt;btn_sonido.Name" xml:space="preserve">
+    <value>btn_sonido</value>
+  </data>
+  <data name="&gt;&gt;btn_sonido.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_sonido.Parent" xml:space="preserve">
+    <value>flowLayoutPanel2</value>
+  </data>
+  <data name="&gt;&gt;btn_sonido.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="btn_logica.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Center</value>
+  </data>
+  <data name="btn_logica.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="btn_logica.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Lexend Deca Medium, 9.5pt</value>
+  </data>
+  <data name="btn_logica.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>TopCenter</value>
+  </data>
+  <data name="btn_logica.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btn_logica.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 210</value>
+  </data>
+  <data name="btn_logica.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="btn_logica.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 5, 2, 2</value>
+  </data>
+  <data name="btn_logica.Size" type="System.Drawing.Size, System.Drawing">
+    <value>110, 70</value>
+  </data>
+  <data name="btn_logica.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="btn_logica.Text" xml:space="preserve">
+    <value>Lógica</value>
+  </data>
+  <data name="btn_logica.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>BottomCenter</value>
+  </data>
+  <data name="&gt;&gt;btn_logica.Name" xml:space="preserve">
+    <value>btn_logica</value>
+  </data>
+  <data name="&gt;&gt;btn_logica.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_logica.Parent" xml:space="preserve">
+    <value>flowLayoutPanel2</value>
+  </data>
+  <data name="&gt;&gt;btn_logica.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="btn_eventos.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Center</value>
+  </data>
+  <data name="btn_eventos.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="btn_eventos.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Lexend Deca Medium, 9.5pt</value>
+  </data>
+  <data name="btn_eventos.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>TopCenter</value>
+  </data>
+  <data name="btn_eventos.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btn_eventos.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 280</value>
+  </data>
+  <data name="btn_eventos.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="btn_eventos.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 5, 2, 2</value>
+  </data>
+  <data name="btn_eventos.Size" type="System.Drawing.Size, System.Drawing">
+    <value>110, 70</value>
+  </data>
+  <data name="btn_eventos.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="btn_eventos.Text" xml:space="preserve">
+    <value>Eventos</value>
+  </data>
+  <data name="btn_eventos.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>BottomCenter</value>
+  </data>
+  <data name="&gt;&gt;btn_eventos.Name" xml:space="preserve">
+    <value>btn_eventos</value>
+  </data>
+  <data name="&gt;&gt;btn_eventos.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_eventos.Parent" xml:space="preserve">
+    <value>flowLayoutPanel2</value>
+  </data>
+  <data name="&gt;&gt;btn_eventos.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="flowLayoutPanel2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1142, 45</value>
+  </data>
+  <data name="flowLayoutPanel2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>110, 654</value>
+  </data>
+  <data name="flowLayoutPanel2.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;flowLayoutPanel2.Name" xml:space="preserve">
+    <value>flowLayoutPanel2</value>
+  </data>
+  <data name="&gt;&gt;flowLayoutPanel2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.FlowLayoutPanel, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;flowLayoutPanel2.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;flowLayoutPanel2.ZOrder" xml:space="preserve">
+    <value>1</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
@@ -1572,7 +1647,7 @@
     <value>None</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>1084, 611</value>
+    <value>1264, 711</value>
   </data>
   <data name="$this.Font" type="System.Drawing.Font, System.Drawing">
     <value>Lexend Deca Medium, 9pt</value>
