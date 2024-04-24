@@ -14,7 +14,7 @@ namespace PseudoBlocks.Controles
 		private static int _id = 0;
 
 		public Bloque(string tipo, string nombre, Color colorFondo,
-			MouseEventHandler ordenarBotones, MouseEventHandler actualizarPanel)
+			MouseEventHandler ordenarBotones)
 		{
 			this.Font = new Font("Lexend Deca Medium", 9F);
 			this.Size = new Size(300, 40);
@@ -25,7 +25,6 @@ namespace PseudoBlocks.Controles
 			this.Padding = new Padding(0);
 			this.Location = new Point(10, 10);
 			this.MouseUp += new MouseEventHandler(ordenarBotones);
-			this.MouseUp += new MouseEventHandler(actualizarPanel);
 			this.Draggable(true);
 
 			// Configurar el TableLayoutPanel

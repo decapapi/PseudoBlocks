@@ -10,7 +10,7 @@ namespace PseudoBlocks
 {
 	class ListaItems
 	{
-		public List<Control> Items { get; private set; } = new List<Control>();
+		private List<Control> Items = new List<Control>();
 
 		public void Mover(Control item, int movimiento)
 		{
@@ -34,6 +34,7 @@ namespace PseudoBlocks
 		public void Eliminar(Control item)
 		{
 			this.Items.Remove(item);
+			this.OrdenarControles();
 		}
 
 		public void Eliminar(int index)
@@ -56,16 +57,31 @@ namespace PseudoBlocks
 			return this.Items.Contains(c);
 		}
 
-		public void OrdenarControles()
-		{
-			this.Items.Sort(delegate (Control c1, Control c2) {
-				return c1.Location.Y.CompareTo(c2.Location.Y);
-			});
-		}
-
 		public void OrdenarControles(object? sender, EventArgs e)
 		{
-			this.OrdenarControles();
+			if (this.Items.Count > 0)
+			{
+				this.Items.Sort(delegate (Control c1, Control c2) {
+					return c1.Location.Y.CompareTo(c2.Location.Y);
+				});
+
+				Point localizacion = this.PrimeraPosicion();
+				if (localizacion.Y < 10)
+					localizacion.Y = 10;
+				if (localizacion.X < 10)
+					localizacion.X = 10;
+
+				foreach (Control item in this.Items)
+				{
+					item.Location = localizacion;
+					localizacion.Y += 40;
+				}
+			}
+		}
+
+		public void OrdenarControles()
+		{
+			this.OrdenarControles(null, null);
 		}
 
 		public Point PrimeraPosicion()

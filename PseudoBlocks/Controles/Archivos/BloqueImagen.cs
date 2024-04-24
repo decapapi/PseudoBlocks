@@ -12,8 +12,8 @@ namespace PseudoBlocks.Controles
 		private ImagePicker imagePicker;
 
 		public BloqueImagen(string tipo, string nombre, Color colorFondo,
-			MouseEventHandler ordenarBotones, MouseEventHandler actualizarPanel, bool decimales = false)
-			: base(tipo, nombre, colorFondo, ordenarBotones, actualizarPanel) 
+			MouseEventHandler ordenarBotones, bool decimales = false)
+			: base(tipo, nombre, colorFondo, ordenarBotones) 
 		{
 			this.imagePicker = new ImagePicker();
 			base.AgregarControl(this.imagePicker);

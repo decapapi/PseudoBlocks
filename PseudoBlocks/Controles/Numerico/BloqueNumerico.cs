@@ -11,8 +11,8 @@ namespace PseudoBlocks.Controles
 		private Numerico numerico;
 
 		public BloqueNumerico(string tipo, string nombre, Color colorFondo,
-			MouseEventHandler ordenarBotones, MouseEventHandler actualizarPanel, bool decimales = false)
-			: base(tipo, nombre, colorFondo, ordenarBotones, actualizarPanel) 
+			MouseEventHandler ordenarBotones, bool decimales = false)
+			: base(tipo, nombre, colorFondo, ordenarBotones) 
 		{
 			this.numerico = new Numerico(decimales);
 			base.AgregarControl(this.numerico);

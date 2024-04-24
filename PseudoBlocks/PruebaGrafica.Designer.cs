@@ -509,9 +509,13 @@
 			// 
 			// btn_movimiento
 			// 
+			btn_movimiento.BackColor = SystemColors.Window;
 			resources.ApplyResources(btn_movimiento, "btn_movimiento");
 			btn_movimiento.Cursor = Cursors.Hand;
 			btn_movimiento.FlatAppearance.BorderSize = 0;
+			btn_movimiento.FlatAppearance.CheckedBackColor = SystemColors.Window;
+			btn_movimiento.FlatAppearance.MouseDownBackColor = SystemColors.Window;
+			btn_movimiento.FlatAppearance.MouseOverBackColor = SystemColors.Window;
 			btn_movimiento.Image = Properties.Resources.circle_1;
 			btn_movimiento.Name = "btn_movimiento";
 			btn_movimiento.Tag = "";
@@ -521,9 +525,13 @@
 			// 
 			// btn_escenario
 			// 
+			btn_escenario.BackColor = SystemColors.Window;
 			resources.ApplyResources(btn_escenario, "btn_escenario");
 			btn_escenario.Cursor = Cursors.Hand;
 			btn_escenario.FlatAppearance.BorderSize = 0;
+			btn_escenario.FlatAppearance.CheckedBackColor = SystemColors.Window;
+			btn_escenario.FlatAppearance.MouseDownBackColor = SystemColors.Window;
+			btn_escenario.FlatAppearance.MouseOverBackColor = SystemColors.Window;
 			btn_escenario.Image = Properties.Resources.circle_2;
 			btn_escenario.Name = "btn_escenario";
 			btn_escenario.Tag = "";
@@ -533,9 +541,13 @@
 			// 
 			// btn_sonido
 			// 
+			btn_sonido.BackColor = SystemColors.Window;
 			resources.ApplyResources(btn_sonido, "btn_sonido");
 			btn_sonido.Cursor = Cursors.Hand;
 			btn_sonido.FlatAppearance.BorderSize = 0;
+			btn_sonido.FlatAppearance.CheckedBackColor = SystemColors.Window;
+			btn_sonido.FlatAppearance.MouseDownBackColor = SystemColors.Window;
+			btn_sonido.FlatAppearance.MouseOverBackColor = SystemColors.Window;
 			btn_sonido.Image = Properties.Resources.circle_3;
 			btn_sonido.Name = "btn_sonido";
 			btn_sonido.Tag = "";
@@ -545,9 +557,13 @@
 			// 
 			// btn_logica
 			// 
+			btn_logica.BackColor = SystemColors.Window;
 			resources.ApplyResources(btn_logica, "btn_logica");
 			btn_logica.Cursor = Cursors.Hand;
 			btn_logica.FlatAppearance.BorderSize = 0;
+			btn_logica.FlatAppearance.CheckedBackColor = SystemColors.Window;
+			btn_logica.FlatAppearance.MouseDownBackColor = SystemColors.Window;
+			btn_logica.FlatAppearance.MouseOverBackColor = SystemColors.Window;
 			btn_logica.Image = Properties.Resources.circle_4;
 			btn_logica.Name = "btn_logica";
 			btn_logica.Tag = "";
@@ -557,9 +573,13 @@
 			// 
 			// btn_eventos
 			// 
+			btn_eventos.BackColor = SystemColors.Window;
 			resources.ApplyResources(btn_eventos, "btn_eventos");
 			btn_eventos.Cursor = Cursors.Hand;
 			btn_eventos.FlatAppearance.BorderSize = 0;
+			btn_eventos.FlatAppearance.CheckedBackColor = SystemColors.Window;
+			btn_eventos.FlatAppearance.MouseDownBackColor = SystemColors.Window;
+			btn_eventos.FlatAppearance.MouseOverBackColor = SystemColors.Window;
 			btn_eventos.Image = Properties.Resources.circle_5;
 			btn_eventos.Name = "btn_eventos";
 			btn_eventos.Tag = "";

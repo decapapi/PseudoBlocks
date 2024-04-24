@@ -12,8 +12,8 @@ namespace PseudoBlocks.Controles
 		private AudioPicker audioPicker;
 
 		public BloqueAudio(string tipo, string nombre, Color colorFondo,
-			MouseEventHandler ordenarBotones, MouseEventHandler actualizarPanel, bool decimales = false)
-			: base(tipo, nombre, colorFondo, ordenarBotones, actualizarPanel) 
+			MouseEventHandler ordenarBotones, bool decimales = false)
+			: base(tipo, nombre, colorFondo, ordenarBotones) 
 		{
 			this.audioPicker = new AudioPicker();
 			base.AgregarControl(this.audioPicker);

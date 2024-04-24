@@ -60,16 +60,16 @@ namespace PseudoBlocks
 					switch (controlType)
 					{
 						case 0:
-							nuevoBloque = new Bloque(control.Name, control.Text, color, listaItems.OrdenarControles, ActualizarPanel);
+							nuevoBloque = new Bloque(control.Name, control.Text, color, listaItems.OrdenarControles);
 							break;
 						case 1:
-							nuevoBloque = new BloqueNumerico(control.Name, control.Text, color, listaItems.OrdenarControles, ActualizarPanel, decimales);
+							nuevoBloque = new BloqueNumerico(control.Name, control.Text, color, listaItems.OrdenarControles, decimales);
 							break;
 						case 2:
-							nuevoBloque = new BloqueImagen(control.Name, control.Text, color, listaItems.OrdenarControles, ActualizarPanel);
+							nuevoBloque = new BloqueImagen(control.Name, control.Text, color, listaItems.OrdenarControles);
 							break;
 						case 3:
-							nuevoBloque = new BloqueAudio(control.Name, control.Text, color, listaItems.OrdenarControles, ActualizarPanel);
+							nuevoBloque = new BloqueAudio(control.Name, control.Text, color, listaItems.OrdenarControles);
 							break;
 					}
 
@@ -80,7 +80,6 @@ namespace PseudoBlocks
 						listaItems.Agregar(nuevoBloque);
 						listaItems.OrdenarControles();
 						AgregarControl(pnl_layout, nuevoBloque);
-						ActualizarPanel();
 					}
 				}
 			}
@@ -95,32 +94,8 @@ namespace PseudoBlocks
 					if (contextMenu.SourceControl is Control control)
 					{
 						pnl_layout.Controls.Remove(control);
-						listaItems.Items.Remove(control);
-						ActualizarPanel();
+						listaItems.Eliminar(control);
 					}
-				}
-			}
-		}
-
-		private void ActualizarPanel()
-		{
-			ActualizarPanel(null!, null!);
-		}
-
-		private void ActualizarPanel(object? sender, EventArgs? e)
-		{
-			if (listaItems.Items.Count > 0)
-			{
-				Point localizacion = listaItems.PrimeraPosicion();
-				if (localizacion.Y < 10)
-					localizacion.Y = 10;
-				if (localizacion.X < 10)
-					localizacion.X = 10;
-
-				foreach (Control item in listaItems.Items)
-				{
-					item.Location = localizacion;
-					localizacion.Y += 40;
 				}
 			}
 		}
@@ -137,7 +112,6 @@ namespace PseudoBlocks
 		{
 			if (sender is Button btn)
 			{
-				ResetearBotones();
 				switch (btn.Name.Substring(btn.Name.IndexOf('_') + 1))
 				{
 					case "movimiento":
@@ -163,24 +137,6 @@ namespace PseudoBlocks
 				}
 				pnl_components.Refresh();
 			}
-		}
-
-		// Cuando se scrollea el panel de controles -> Actualizar botones de categoría
-		private void CambiarCategoria(object sender, PaintEventArgs e)
-		{
-			if (sender is FlowLayoutPanel pnl)
-			{
-				ResetearBotones();
-
-			}
-		}
-
-		private void ResetearBotones()
-		{
-			List<Button> buttons = new List<Button> {
-				btn_movimiento, btn_escenario, btn_sonido, btn_logica, btn_eventos
-			};
-			buttons.ForEach(b => b.BackColor = Color.Transparent);
 		}
 	}
 }
