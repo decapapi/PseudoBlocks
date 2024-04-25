@@ -23,65 +23,10 @@ namespace PseudoBlocks
 		{
 			if (sender is Control control)
 			{
-				string controlName = control.Name;
-				int controlType = 0;
-				bool decimales = false;
-				Color color = Color.Empty;
-
-				switch (controlName.Substring(0, controlName.LastIndexOf('_')))
-				{
-					case "btn_move":
-						color = Color.MediumAquamarine;
-						break;
-					case "btn_logic":
-						if (controlName.EndsWith("_w") || controlName.EndsWith("_rs"))
-							controlType = 1;
-						if (controlName.EndsWith("_w"))
-							decimales = true;
-						color = Color.LightSalmon;
-						break;
-					case "btn_change":
-						color = Color.LightBlue;
-						controlType = 2;
-						break;
-					case "btn_sound":
-						color = Color.MediumPurple;
-						controlType = 3;
-						break;
-					default:
-						MessageBox.Show("Control no reconocido", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-						controlType = -1;
-						break;
-				}
-
-				if (!color.IsEmpty)
-				{
-					Bloque? nuevoBloque = null;
-					switch (controlType)
-					{
-						case 0:
-							nuevoBloque = new Bloque(control.Name, control.Text, color, listaItems.OrdenarControles);
-							break;
-						case 1:
-							nuevoBloque = new BloqueNumerico(control.Name, control.Text, color, listaItems.OrdenarControles, decimales);
-							break;
-						case 2:
-							nuevoBloque = new BloqueImagen(control.Name, control.Text, color, listaItems.OrdenarControles);
-							break;
-						case 3:
-							nuevoBloque = new BloqueAudio(control.Name, control.Text, color, listaItems.OrdenarControles);
-							break;
-					}
-
-					if (nuevoBloque != null)
-					{
-						nuevoBloque.ContextMenuStrip = bloque_menu;
-						nuevoBloque.SetPosicion(listaItems.UltimaPosicion());
-						listaItems.Agregar(nuevoBloque);
-						listaItems.OrdenarControles();
-						AgregarControl(pnl_layout, nuevoBloque);
-					}
-				}
+				BloquePanel bloque = new BloquePanel();
+				bloque.ContextMenuStrip = bloque_menu;
+				listaItems.Agregar(bloque);
+				AgregarControl(pnl_layout, bloque);
 			}
 		}
 

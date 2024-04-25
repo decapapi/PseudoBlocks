@@ -501,7 +501,7 @@
     <value>2, 2, 2, 2</value>
   </data>
   <data name="button1.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
+    <value>10, 0, 0, 0</value>
   </data>
   <data name="button1.Size" type="System.Drawing.Size, System.Drawing">
     <value>280, 35</value>
@@ -510,7 +510,7 @@
     <value>7</value>
   </data>
   <data name="button1.Text" xml:space="preserve">
-    <value>1</value>
+    <value>Al inicio</value>
   </data>
   <data name="button1.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleLeft</value>
@@ -543,7 +543,7 @@
     <value>2, 2, 2, 2</value>
   </data>
   <data name="button2.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
+    <value>10, 0, 0, 0</value>
   </data>
   <data name="button2.Size" type="System.Drawing.Size, System.Drawing">
     <value>280, 35</value>
@@ -552,7 +552,7 @@
     <value>8</value>
   </data>
   <data name="button2.Text" xml:space="preserve">
-    <value>2</value>
+    <value>Al pulsar</value>
   </data>
   <data name="button2.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleLeft</value>
@@ -585,7 +585,7 @@
     <value>2, 2, 2, 2</value>
   </data>
   <data name="button3.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
+    <value>10, 0, 0, 0</value>
   </data>
   <data name="button3.Size" type="System.Drawing.Size, System.Drawing">
     <value>280, 35</value>
@@ -594,7 +594,7 @@
     <value>9</value>
   </data>
   <data name="button3.Text" xml:space="preserve">
-    <value>3</value>
+    <value>Al hacer click</value>
   </data>
   <data name="button3.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleLeft</value>
@@ -627,7 +627,7 @@
     <value>2, 2, 2, 2</value>
   </data>
   <data name="button4.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
+    <value>10, 0, 0, 0</value>
   </data>
   <data name="button4.Size" type="System.Drawing.Size, System.Drawing">
     <value>280, 35</value>
@@ -732,7 +732,7 @@
     <value>2, 2, 2, 2</value>
   </data>
   <data name="btn_sound_p.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
+    <value>10, 0, 0, 0</value>
   </data>
   <data name="btn_sound_p.Size" type="System.Drawing.Size, System.Drawing">
     <value>280, 35</value>
@@ -834,7 +834,7 @@
     <value>2, 2, 2, 2</value>
   </data>
   <data name="btn_change_b.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
+    <value>10, 0, 0, 0</value>
   </data>
   <data name="btn_change_b.Size" type="System.Drawing.Size, System.Drawing">
     <value>280, 35</value>
@@ -876,7 +876,7 @@
     <value>2, 2, 2, 2</value>
   </data>
   <data name="btn_change_p.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
+    <value>10, 0, 0, 0</value>
   </data>
   <data name="btn_change_p.Size" type="System.Drawing.Size, System.Drawing">
     <value>280, 35</value>
@@ -978,7 +978,7 @@
     <value>2, 2, 2, 2</value>
   </data>
   <data name="btn_logic_w.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
+    <value>10, 0, 0, 0</value>
   </data>
   <data name="btn_logic_w.Size" type="System.Drawing.Size, System.Drawing">
     <value>280, 35</value>
@@ -1020,7 +1020,7 @@
     <value>2, 2, 2, 2</value>
   </data>
   <data name="btn_logic_rs.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
+    <value>10, 0, 0, 0</value>
   </data>
   <data name="btn_logic_rs.Size" type="System.Drawing.Size, System.Drawing">
     <value>280, 35</value>
@@ -1062,7 +1062,7 @@
     <value>2, 2, 2, 2</value>
   </data>
   <data name="btn_logic_re.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
+    <value>10, 0, 0, 0</value>
   </data>
   <data name="btn_logic_re.Size" type="System.Drawing.Size, System.Drawing">
     <value>280, 35</value>
@@ -1164,7 +1164,7 @@
     <value>2, 2, 2, 2</value>
   </data>
   <data name="btn_move_r.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
+    <value>10, 0, 0, 0</value>
   </data>
   <data name="btn_move_r.Size" type="System.Drawing.Size, System.Drawing">
     <value>280, 35</value>
@@ -1206,7 +1206,7 @@
     <value>2, 2, 2, 2</value>
   </data>
   <data name="btn_move_l.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
+    <value>10, 0, 0, 0</value>
   </data>
   <data name="btn_move_l.Size" type="System.Drawing.Size, System.Drawing">
     <value>280, 35</value>
@@ -1248,7 +1248,7 @@
     <value>2, 2, 2, 2</value>
   </data>
   <data name="btn_move_u.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
+    <value>10, 0, 0, 0</value>
   </data>
   <data name="btn_move_u.Size" type="System.Drawing.Size, System.Drawing">
     <value>280, 35</value>
@@ -1290,7 +1290,7 @@
     <value>2, 2, 2, 2</value>
   </data>
   <data name="btn_move_d.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
+    <value>10, 0, 0, 0</value>
   </data>
   <data name="btn_move_d.Size" type="System.Drawing.Size, System.Drawing">
     <value>280, 35</value>

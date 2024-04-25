@@ -1,16 +1,31 @@
-﻿using System;
+﻿using PseudoBlocks.Controles.Extensiones;
+using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.ComponentModel;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace PseudoBlocks
 {
 	class ListaItems
 	{
-		private List<Control> Items = new List<Control>();
+		public List<Control> Items { get; private set; } = new List<Control>();
+		private Point margin;
+		private bool libre;
+
+		public ListaItems() : this (new Point(10, 0)) { }
+
+		public ListaItems(bool libre) : this(new Point(10, 0), libre) { }
+
+		public ListaItems(Point marging, bool libre = true)
+		{
+			this.margin = marging;
+			this.libre = libre;
+		}
 
 		public void Mover(Control item, int movimiento)
 		{
@@ -28,7 +43,11 @@ namespace PseudoBlocks
 
 		public void Agregar(Control item)
 		{
+			item.Location = this.UltimaPosicion();
+			item.Draggable(true);
+			item.BringToFront();
 			this.Items.Add(item);
+			OrdenarControles();
 		}
 
 		public void Eliminar(Control item)
@@ -57,6 +76,30 @@ namespace PseudoBlocks
 			return this.Items.Contains(c);
 		}
 
+		public Control Primero()
+		{
+			if (this.Items.Count > 0)
+			{
+				return this.Items.First();
+			}
+			else
+			{
+				return null;
+			}
+		}
+
+		public Control Ultimo()
+		{
+			if (this.Items.Count > 0)
+			{
+				return this.Items.Last();
+			}
+			else
+			{
+				return null;
+			}
+		}
+
 		public void OrdenarControles(object? sender, EventArgs e)
 		{
 			if (this.Items.Count > 0)
@@ -65,16 +108,12 @@ namespace PseudoBlocks
 					return c1.Location.Y.CompareTo(c2.Location.Y);
 				});
 
-				Point localizacion = this.PrimeraPosicion();
-				if (localizacion.Y < 10)
-					localizacion.Y = 10;
-				if (localizacion.X < 10)
-					localizacion.X = 10;
+				int localizacionY = libre ? this.PrimeraPosicion().Y : margin.Y;
 
-				foreach (Control item in this.Items)
+				for (int i = 0; i < this.Items.Count; i++)
 				{
-					item.Location = localizacion;
-					localizacion.Y += 40;
+					this.Items[i].Location = new Point(margin.X, localizacionY);
+					localizacionY += 40;
 				}
 			}
 		}
@@ -88,12 +127,17 @@ namespace PseudoBlocks
 		{
 			if (this.Items.Count == 0)
 			{
-				return new Point(10, 10);
+				return new Point(0, 0);
 			}
 			else
 			{
-				Control c = this.Items.First();
-				return new Point(c.Location.X, c.Location.Y);
+				Control c = Primero();
+				Point pos = new Point(c.Location.X, c.Location.Y);
+				if (pos.Y < 0)
+					pos.Y = 0;
+				if (pos.X < 0)
+					pos.X = 0;
+				return pos;
 			}
 		}
 
@@ -101,12 +145,17 @@ namespace PseudoBlocks
 		{
 			if (this.Items.Count == 0)
 			{
-				return new Point(10, 10);
+				return new Point(0, 0);
 			}
 			else
 			{
-				Control c = this.Items.Last();
-				return new Point(c.Location.X, c.Location.Y);
+				Control c = Ultimo();
+				Point pos = new Point(c.Location.X, c.Location.Y);
+				if (pos.Y < 0)
+					pos.Y = 0;
+				if (pos.X < 0)
+					pos.X = 0;
+				return pos;
 			}
 		}
 

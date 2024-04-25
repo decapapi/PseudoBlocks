@@ -9,7 +9,7 @@ namespace PseudoBlocks.Controles
 {
 	class Numerico : NumericUpDown
 	{
-		public Numerico(bool decimales = false) 
+		public Numerico(bool decimales = false)
 		{ 
 			this.BackColor = SystemColors.Control;
 			this.Font = new Font("Lexend Deca Medium", 9F);
