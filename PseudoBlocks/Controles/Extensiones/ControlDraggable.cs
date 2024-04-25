@@ -7,8 +7,8 @@ namespace PseudoBlocks.Controles.Extensiones
 {
 	public static class ControlDraggable
 	{
-		private static readonly Dictionary<Control, bool> draggables = new Dictionary<Control, bool>();
-		private static readonly Dictionary<Control, Point> mouseOffset = new Dictionary<Control, Point>();
+		private static Dictionary<Control, bool> draggables = new Dictionary<Control, bool>();
+		private static Size mouseOffset;
 
 		public static void Draggable(this Control control, bool enable)
 		{
@@ -37,26 +37,26 @@ namespace PseudoBlocks.Controles.Extensiones
 
 		private static void Control_MouseDown(object sender, MouseEventArgs e)
 		{
-			var control = (Control)sender;
-			mouseOffset[control] = e.Location;
-			draggables[control] = true;
-			control.BringToFront();
+			mouseOffset = new Size(e.Location);
+			draggables[(Control)sender] = true;
+			((Control)sender).BringToFront();
 		}
 
 		private static void Control_MouseUp(object sender, MouseEventArgs e)
 		{
-			draggables[(Control)sender] = false;
+			Control control = (Control)sender;
+			draggables[control] = false;
+			if (control is Bloque bloque)
+				bloque.DoDragDrop(bloque, DragDropEffects.Copy);
 		}
 
 		private static void Control_MouseMove(object sender, MouseEventArgs e)
 		{
-			var control = (Control)sender;
-
-			if (draggables[control])
+			if (draggables[(Control)sender] == true)
 			{
-				Point newLocation = control.PointToScreen(new Point(e.X, e.Y));
-				newLocation.Offset(-mouseOffset[control].X, -mouseOffset[control].Y);
-				control.Location = control.Parent.PointToClient(newLocation);
+				Point newLocationOffset = e.Location - mouseOffset;
+				((Control)sender).Left += newLocationOffset.X;
+				((Control)sender).Top += newLocationOffset.Y;
 			}
 		}
 	}

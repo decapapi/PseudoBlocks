@@ -17,9 +17,9 @@ namespace PseudoBlocks
 		private Point margin;
 		private bool libre;
 
-		public ListaItems() : this (new Point(10, 0)) { }
+		public ListaItems() : this (new Point(5, 5)) { }
 
-		public ListaItems(bool libre) : this(new Point(10, 0), libre) { }
+		public ListaItems(bool libre) : this(new Point(5, 5), libre) { }
 
 		public ListaItems(Point marging, bool libre = true)
 		{
@@ -43,7 +43,7 @@ namespace PseudoBlocks
 
 		public void Agregar(Control item)
 		{
-			item.Location = this.UltimaPosicion();
+			item.Location = libre ? margin : this.UltimaPosicion();
 			item.Draggable(true);
 			item.BringToFront();
 			this.Items.Add(item);
@@ -100,20 +100,28 @@ namespace PseudoBlocks
 			}
 		}
 
+		public Control Anterior(Control control)
+		{
+			if (this.Items.IndexOf(control) > 0)
+				return this.Items[this.Items.IndexOf(control) - 1];
+			else
+				return control;
+		}
+
 		public void OrdenarControles(object? sender, EventArgs e)
 		{
-			if (this.Items.Count > 0)
+			if (!libre && this.Items.Count > 0)
 			{
+				// Ordenar controles por posición Y
 				this.Items.Sort(delegate (Control c1, Control c2) {
 					return c1.Location.Y.CompareTo(c2.Location.Y);
 				});
 
-				int localizacionY = libre ? this.PrimeraPosicion().Y : margin.Y;
-
+				Point localizacion = margin;
 				for (int i = 0; i < this.Items.Count; i++)
 				{
-					this.Items[i].Location = new Point(margin.X, localizacionY);
-					localizacionY += 40;
+					this.Items[i].Location = localizacion;
+					localizacion.Y += Anterior(this.Items[i]).Height;
 				}
 			}
 		}
@@ -132,7 +140,7 @@ namespace PseudoBlocks
 			else
 			{
 				Control c = Primero();
-				Point pos = new Point(c.Location.X, c.Location.Y);
+				Point pos = c.Location;
 				if (pos.Y < 0)
 					pos.Y = 0;
 				if (pos.X < 0)
@@ -150,13 +158,18 @@ namespace PseudoBlocks
 			else
 			{
 				Control c = Ultimo();
-				Point pos = new Point(c.Location.X, c.Location.Y);
+				Point pos = c.Location;
 				if (pos.Y < 0)
 					pos.Y = 0;
 				if (pos.X < 0)
 					pos.X = 0;
 				return pos;
 			}
+		}
+
+		public bool Contiene(Control control)
+		{
+			return this.Items.Contains(control);
 		}
 
 		public void Limpiar()

@@ -32,6 +32,7 @@
 			controlName = new Label();
 			bloque_menu = new ContextMenuStrip(components);
 			eliminarToolStripMenuItem = new ToolStripMenuItem();
+			panel1 = new Panel();
 			bloque_menu.SuspendLayout();
 			SuspendLayout();
 			// 
@@ -44,8 +45,8 @@
 			controlName.Location = new Point(0, 0);
 			controlName.Margin = new Padding(0);
 			controlName.Name = "controlName";
-			controlName.Padding = new Padding(10, 10, 0, 0);
-			controlName.Size = new Size(144, 31);
+			controlName.Padding = new Padding(10, 8, 0, 0);
+			controlName.Size = new Size(175, 33);
 			controlName.TabIndex = 2;
 			controlName.Text = "Nombre del control";
 			// 
@@ -55,26 +56,38 @@
 			bloque_menu.ImageScalingSize = new Size(20, 20);
 			bloque_menu.Items.AddRange(new ToolStripItem[] { eliminarToolStripMenuItem });
 			bloque_menu.Name = "menu_control";
-			bloque_menu.Size = new Size(128, 28);
+			bloque_menu.Size = new Size(141, 32);
 			bloque_menu.Text = "Ordenar";
 			// 
 			// eliminarToolStripMenuItem
 			// 
 			eliminarToolStripMenuItem.Name = "eliminarToolStripMenuItem";
-			eliminarToolStripMenuItem.Size = new Size(127, 24);
+			eliminarToolStripMenuItem.Size = new Size(140, 28);
 			eliminarToolStripMenuItem.Text = "Eliminar";
+			// 
+			// panel1
+			// 
+			panel1.BackColor = Color.Black;
+			panel1.Dock = DockStyle.Bottom;
+			panel1.Location = new Point(0, 43);
+			panel1.Margin = new Padding(0);
+			panel1.Name = "panel1";
+			panel1.Size = new Size(305, 2);
+			panel1.TabIndex = 3;
 			// 
 			// Bloque
 			// 
-			AutoScaleDimensions = new SizeF(8F, 19F);
+			AutoScaleDimensions = new SizeF(10F, 24F);
 			AutoScaleMode = AutoScaleMode.Font;
 			AutoSize = true;
 			BackColor = Color.Tan;
+			Controls.Add(panel1);
 			Controls.Add(controlName);
+			Cursor = Cursors.Hand;
 			Font = new Font("Lexend Deca Medium", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
 			Margin = new Padding(0);
 			Name = "Bloque";
-			Size = new Size(305, 42);
+			Size = new Size(305, 45);
 			bloque_menu.ResumeLayout(false);
 			ResumeLayout(false);
 			PerformLayout();
@@ -84,5 +97,6 @@
 		private Label controlName;
 		private ContextMenuStrip bloque_menu;
 		private ToolStripMenuItem eliminarToolStripMenuItem;
+		private Panel panel1;
 	}
 }

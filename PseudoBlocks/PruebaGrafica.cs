@@ -12,22 +12,36 @@ namespace PseudoBlocks
 {
 	public partial class PruebaGrafica : Form
 	{
-		private ListaItems listaItems = new ListaItems();
+		private ListaItems listaItems = new ListaItems(new Point(10, 10));
 
 		public PruebaGrafica()
 		{
 			InitializeComponent();
+			AgregarComponente(null, null);
 		}
 
 		public void AgregarComponente(object sender, EventArgs e)
 		{
 			if (sender is Control control)
 			{
-				BloquePanel bloque = new BloquePanel();
-				bloque.ContextMenuStrip = bloque_menu;
-				listaItems.Agregar(bloque);
-				AgregarControl(pnl_layout, bloque);
+				BloquePanel bloquePanel = new BloquePanel();
+				AgregarControl(bloquePanel);
+				for (int i = 0; i <= 4; i++)
+					if (i < 2)
+						AgregarControl(new Bloque($"Bloque #{i}"));
+					else
+						bloquePanel.AgregarComponente(new Bloque($"Bloque #{i}"));
 			}
+		}
+
+		private void AgregarControl(Control control)
+		{
+			control.ContextMenuStrip = bloque_menu;
+			control.MouseUp += listaItems.OrdenarControles;
+			listaItems.Agregar(control);
+			pnl_layout.Controls.Add(control);
+			control.Draggable(true);
+			control.BringToFront();
 		}
 
 		private void EliminarComponente(object sender, EventArgs e)
@@ -43,13 +57,6 @@ namespace PseudoBlocks
 					}
 				}
 			}
-		}
-
-		private void AgregarControl(Panel panel, Control control)
-		{
-			panel.Controls.Add(control);
-			control.Draggable(true);
-			control.BringToFront();
 		}
 
 		// Cuando se presiona un botón de categoría, mostrar los controles de esa categoría
