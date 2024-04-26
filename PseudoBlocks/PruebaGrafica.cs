@@ -37,7 +37,14 @@ namespace PseudoBlocks
 		{
 			listaItems.Agregar(control);
 			pnl_layout_principal.Controls.Add(control);
+			control.ContextMenuStrip.ItemClicked += (sender, e) => EliminarComponente(control);
 			control.BringToFront();
+		}
+
+		public void EliminarComponente(Control control)
+		{
+			pnl_layout_principal.Controls.Remove(control);
+			listaItems.Eliminar(control);
 		}
 
 		// Cuando se presiona un botón de categoría, mostrar los controles de esa categoría

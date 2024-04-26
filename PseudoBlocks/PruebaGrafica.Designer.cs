@@ -28,6 +28,7 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
+			components = new System.ComponentModel.Container();
 			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PruebaGrafica));
 			top_menu = new MenuStrip();
 			archivoToolStripMenuItem = new ToolStripMenuItem();
@@ -85,6 +86,8 @@
 			btn_sonido = new Button();
 			btn_logica = new Button();
 			btn_eventos = new Button();
+			bloque_menu = new ContextMenuStrip(components);
+			eliminarToolStripMenuItem = new ToolStripMenuItem();
 			top_menu.SuspendLayout();
 			pnl_eventos.SuspendLayout();
 			pnl_sonido.SuspendLayout();
@@ -93,6 +96,7 @@
 			pnl_movimiento.SuspendLayout();
 			pnl_components.SuspendLayout();
 			flowLayoutPanel2.SuspendLayout();
+			bloque_menu.SuspendLayout();
 			SuspendLayout();
 			// 
 			// top_menu
@@ -570,6 +574,18 @@
 			btn_eventos.UseVisualStyleBackColor = false;
 			btn_eventos.Click += CambiarCategoria;
 			// 
+			// bloque_menu
+			// 
+			resources.ApplyResources(bloque_menu, "bloque_menu");
+			bloque_menu.ImageScalingSize = new Size(20, 20);
+			bloque_menu.Items.AddRange(new ToolStripItem[] { eliminarToolStripMenuItem });
+			bloque_menu.Name = "menu_control";
+			// 
+			// eliminarToolStripMenuItem
+			// 
+			eliminarToolStripMenuItem.Name = "eliminarToolStripMenuItem";
+			resources.ApplyResources(eliminarToolStripMenuItem, "eliminarToolStripMenuItem");
+			// 
 			// PruebaGrafica
 			// 
 			AutoScaleMode = AutoScaleMode.None;
@@ -595,6 +611,7 @@
 			pnl_components.ResumeLayout(false);
 			pnl_components.PerformLayout();
 			flowLayoutPanel2.ResumeLayout(false);
+			bloque_menu.ResumeLayout(false);
 			ResumeLayout(false);
 			PerformLayout();
 		}
@@ -656,5 +673,7 @@
 		private Button btn_eventos;
 		private Label lbl_escenario;
 		private Label lbl_movimiento;
+		protected ContextMenuStrip bloque_menu;
+		private ToolStripMenuItem eliminarToolStripMenuItem;
 	}
 }

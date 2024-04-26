@@ -29,25 +29,24 @@ namespace PseudoBlocks.Controles
 			if (control is Bloque bloque)
 			{
 				bloque.AllowDragDrop = false;
+				bloque.MouseUp += (sender, e) => listaItems.OrdenarControles();
+				bloque.ContextMenuStrip.ItemClicked += (sender, e) => EliminarComponente(bloque);
 				pnl_layout.Controls.Add(bloque);
 				listaItems.Agregar(bloque);
-				bloque.MouseUp += listaItems.OrdenarControles;
-				bloque.ContextMenuStrip.ItemClicked += (sender, e) => EliminarComponente(bloque);
 			}
 		}
 
-		public void EliminarComponente(Control componente)
+		public void EliminarComponente(Bloque bloque)
 		{
-			pnl_layout.Controls.Remove(componente);
-			listaItems.Eliminar(componente);
+			pnl_layout.Controls.Remove(bloque);
+			listaItems.Eliminar(bloque);
+			Actualizar();
 		}
 
 		private void pnl_layout_DragEnter(object sender, DragEventArgs e)
 		{
-			if ((e.Data.GetData(typeof(Bloque)) is Bloque bloque
-					&& !listaItems.Contiene(bloque) && !pnl_layout.Contains(bloque))
-				|| (e.Data.GetData(typeof(BloquePanel)) is BloquePanel bloquePanel
-					&& !listaItems.Contiene(bloquePanel) && !pnl_layout.Contains(bloquePanel)))
+			if ((e.Data.GetData(typeof(Bloque)) is Bloque)
+				|| (e.Data.GetData(typeof(BloquePanel)) is BloquePanel))
 			{
 				e.Effect = DragDropEffects.Move;
 			}
@@ -78,9 +77,16 @@ namespace PseudoBlocks.Controles
 			e.Effect = DragDropEffects.Move;
 		}
 
-		private void OrdenarControles()
+		private void Actualizar()
 		{
 			listaItems.OrdenarControles();
+			if (Parent is Panel panel)
+			{
+				if (panel.Parent is BloquePanel bloquePanel)
+				{
+					bloquePanel.Actualizar();
+				}
+			}
 		}
 	}
 }

@@ -27,11 +27,11 @@ namespace PseudoBlocks.Controles
 			controlName.Text = texto;
 			this.ContextMenuStrip = bloque_menu;
 		}
-	
+
 
 		private void Arrastrar(object sender, MouseEventArgs e) // MouseDown
 		{
-			if (e.Button == System.Windows.Forms.MouseButtons.Left)
+			if (e.Button == MouseButtons.Left)
 			{
 				MouseDownLocation = e.Location;
 				this.BringToFront();
@@ -40,7 +40,7 @@ namespace PseudoBlocks.Controles
 
 		private void Mover(object sender, MouseEventArgs e) // MouseMove
 		{
-			if (e.Button == System.Windows.Forms.MouseButtons.Left)
+			if (e.Button == MouseButtons.Left)
 			{
 				this.Left = e.X + this.Left - MouseDownLocation.X;
 				this.Top = e.Y + this.Top - MouseDownLocation.Y;
@@ -49,7 +49,7 @@ namespace PseudoBlocks.Controles
 
 		private void Soltar(object sender, MouseEventArgs e) // MouseUp
 		{
-			if (AllowDragDrop && e.Button == System.Windows.Forms.MouseButtons.Left)
+			if (AllowDragDrop && e.Button == MouseButtons.Left)
 			{
 				this.DoDragDrop(this, DragDropEffects.Move);
 			}
