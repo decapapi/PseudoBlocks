@@ -7,11 +7,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using PseudoBlocks.Controles.Extensiones;
 
 namespace PseudoBlocks.Controles
 {
-	public partial class BloquePanel : UserControl
+	public partial class BloquePanel : Bloque
 	{
 		private ListaItems listaItems = new ListaItems(false);
 
@@ -20,12 +19,21 @@ namespace PseudoBlocks.Controles
 			InitializeComponent();
 		}
 
-		public void AgregarComponente(Control control)
+		public BloquePanel(string nombre) : base(nombre)
 		{
-			control.ContextMenuStrip = bloque_menu;
-			control.MouseUp += listaItems.OrdenarControles;
-			listaItems.Agregar(control);
-			pnl_layout.Controls.Add(control);
+			InitializeComponent();
+		}
+
+		public void AgregarBloque(Control control)
+		{
+			if (control is Bloque bloque)
+			{
+				bloque.AllowDragDrop = false;
+				pnl_layout.Controls.Add(bloque);
+				listaItems.Agregar(bloque);
+				bloque.MouseUp += listaItems.OrdenarControles;
+				bloque.ContextMenuStrip.ItemClicked += (sender, e) => EliminarComponente(bloque);
+			}
 		}
 
 		public void EliminarComponente(Control componente)
@@ -36,10 +44,12 @@ namespace PseudoBlocks.Controles
 
 		private void pnl_layout_DragEnter(object sender, DragEventArgs e)
 		{
-			if (e.Data.GetData(typeof(Bloque)) is Bloque bloque
+			if ((e.Data.GetData(typeof(Bloque)) is Bloque bloque
 					&& !listaItems.Contiene(bloque) && !pnl_layout.Contains(bloque))
+				|| (e.Data.GetData(typeof(BloquePanel)) is BloquePanel bloquePanel
+					&& !listaItems.Contiene(bloquePanel) && !pnl_layout.Contains(bloquePanel)))
 			{
-				e.Effect = DragDropEffects.Copy;
+				e.Effect = DragDropEffects.Move;
 			}
 			else
 			{
@@ -49,33 +59,28 @@ namespace PseudoBlocks.Controles
 
 		private void pnl_layout_DragDrop(object sender, DragEventArgs e)
 		{
-			e.Effect = DragDropEffects.Copy;
+			if (e.Data.GetData(typeof(Bloque)) is Bloque bloque)
+			{
+				Point clientPoint = pnl_layout.PointToClient(new Point(e.X, e.Y));
+				bloque.Location = clientPoint;
+				AgregarBloque(bloque);
+			}
+			if (e.Data.GetData(typeof(BloquePanel)) is BloquePanel bloquePanel)
+			{
+				Point clientPoint = pnl_layout.PointToClient(new Point(e.X, e.Y));
+				bloquePanel.Location = clientPoint;
+				AgregarBloque(bloquePanel);
+			}
 		}
 
 		private void pnl_layout_DragOver(object sender, DragEventArgs e)
 		{
-			if (e.Data.GetData(typeof(Bloque)) is Bloque bloque
-									&& !listaItems.Contiene(bloque))
-			{
-				Point clientPoint = pnl_layout.PointToClient(new Point(e.X, e.Y));
-				bloque.Location = clientPoint;
-				AgregarComponente(bloque);
-			}
+			e.Effect = DragDropEffects.Move;
 		}
 
-		private void EliminarComponente(object sender, EventArgs e)
+		private void OrdenarControles()
 		{
-			if (sender is ToolStripMenuItem menuItem)
-			{
-				if (menuItem.Owner is ContextMenuStrip contextMenu)
-				{
-					if (contextMenu.SourceControl is Control control)
-					{
-						pnl_layout.Controls.Remove(control);
-						listaItems.Eliminar(control);
-					}
-				}
-			}
+			listaItems.OrdenarControles();
 		}
 	}
 }

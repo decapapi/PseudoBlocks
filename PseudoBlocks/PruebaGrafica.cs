@@ -6,7 +6,6 @@ using System.Reflection;
 using System.Reflection.Emit;
 using System.Windows.Forms;
 using PseudoBlocks.Controles;
-using PseudoBlocks.Controles.Extensiones;
 
 namespace PseudoBlocks
 {
@@ -30,33 +29,15 @@ namespace PseudoBlocks
 					if (i < 2)
 						AgregarControl(new Bloque($"Bloque #{i}"));
 					else
-						bloquePanel.AgregarComponente(new Bloque($"Bloque #{i}"));
+						bloquePanel.AgregarBloque(new Bloque($"Bloque #{i}"));
 			}
 		}
 
 		private void AgregarControl(Control control)
 		{
-			control.ContextMenuStrip = bloque_menu;
-			control.MouseUp += listaItems.OrdenarControles;
 			listaItems.Agregar(control);
-			pnl_layout.Controls.Add(control);
-			control.Draggable(true);
+			pnl_layout_principal.Controls.Add(control);
 			control.BringToFront();
-		}
-
-		private void EliminarComponente(object sender, EventArgs e)
-		{
-			if (sender is ToolStripMenuItem menuItem)
-			{
-				if (menuItem.Owner is ContextMenuStrip contextMenu)
-				{
-					if (contextMenu.SourceControl is Control control)
-					{
-						pnl_layout.Controls.Remove(control);
-						listaItems.Eliminar(control);
-					}
-				}
-			}
 		}
 
 		// Cuando se presiona un botón de categoría, mostrar los controles de esa categoría

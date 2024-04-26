@@ -1,5 +1,4 @@
-﻿using PseudoBlocks.Controles.Extensiones;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.ComponentModel;
@@ -44,7 +43,6 @@ namespace PseudoBlocks
 		public void Agregar(Control item)
 		{
 			item.Location = libre ? margin : this.UltimaPosicion();
-			item.Draggable(true);
 			item.BringToFront();
 			this.Items.Add(item);
 			OrdenarControles();
@@ -121,7 +119,7 @@ namespace PseudoBlocks
 				for (int i = 0; i < this.Items.Count; i++)
 				{
 					this.Items[i].Location = localizacion;
-					localizacion.Y += Anterior(this.Items[i]).Height;
+					localizacion.Y += this.Items[i].Height;
 				}
 			}
 		}

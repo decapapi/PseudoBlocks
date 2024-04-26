@@ -88,6 +88,9 @@
 			Margin = new Padding(0);
 			Name = "Bloque";
 			Size = new Size(305, 45);
+			MouseDown += Arrastrar;
+			MouseMove += Mover;
+			MouseUp += Soltar;
 			bloque_menu.ResumeLayout(false);
 			ResumeLayout(false);
 			PerformLayout();

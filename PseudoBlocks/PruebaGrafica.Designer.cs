@@ -28,10 +28,7 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
-			components = new System.ComponentModel.Container();
 			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PruebaGrafica));
-			bloque_menu = new ContextMenuStrip(components);
-			eliminarToolStripMenuItem = new ToolStripMenuItem();
 			top_menu = new MenuStrip();
 			archivoToolStripMenuItem = new ToolStripMenuItem();
 			abrirToolStripMenuItem = new ToolStripMenuItem();
@@ -56,7 +53,7 @@
 			opcionesToolStripMenuItem = new ToolStripMenuItem();
 			ayudaToolStripMenuItem = new ToolStripMenuItem();
 			acercadeToolStripMenuItem = new ToolStripMenuItem();
-			pnl_layout = new Panel();
+			pnl_layout_principal = new Panel();
 			pnl_eventos = new FlowLayoutPanel();
 			lbl_eventos = new Label();
 			button1 = new Button();
@@ -88,7 +85,6 @@
 			btn_sonido = new Button();
 			btn_logica = new Button();
 			btn_eventos = new Button();
-			bloque_menu.SuspendLayout();
 			top_menu.SuspendLayout();
 			pnl_eventos.SuspendLayout();
 			pnl_sonido.SuspendLayout();
@@ -98,19 +94,6 @@
 			pnl_components.SuspendLayout();
 			flowLayoutPanel2.SuspendLayout();
 			SuspendLayout();
-			// 
-			// bloque_menu
-			// 
-			resources.ApplyResources(bloque_menu, "bloque_menu");
-			bloque_menu.ImageScalingSize = new Size(20, 20);
-			bloque_menu.Items.AddRange(new ToolStripItem[] { eliminarToolStripMenuItem });
-			bloque_menu.Name = "menu_control";
-			// 
-			// eliminarToolStripMenuItem
-			// 
-			eliminarToolStripMenuItem.Name = "eliminarToolStripMenuItem";
-			resources.ApplyResources(eliminarToolStripMenuItem, "eliminarToolStripMenuItem");
-			eliminarToolStripMenuItem.Click += EliminarComponente;
 			// 
 			// top_menu
 			// 
@@ -239,12 +222,12 @@
 			acercadeToolStripMenuItem.Name = "acercadeToolStripMenuItem";
 			resources.ApplyResources(acercadeToolStripMenuItem, "acercadeToolStripMenuItem");
 			// 
-			// pnl_layout
+			// pnl_layout_principal
 			// 
-			pnl_layout.AllowDrop = true;
-			resources.ApplyResources(pnl_layout, "pnl_layout");
-			pnl_layout.BackColor = SystemColors.Window;
-			pnl_layout.Name = "pnl_layout";
+			pnl_layout_principal.AllowDrop = true;
+			resources.ApplyResources(pnl_layout_principal, "pnl_layout_principal");
+			pnl_layout_principal.BackColor = SystemColors.Window;
+			pnl_layout_principal.Name = "pnl_layout_principal";
 			// 
 			// pnl_eventos
 			// 
@@ -593,11 +576,10 @@
 			resources.ApplyResources(this, "$this");
 			Controls.Add(flowLayoutPanel2);
 			Controls.Add(top_menu);
-			Controls.Add(pnl_layout);
+			Controls.Add(pnl_layout_principal);
 			Controls.Add(pnl_components);
 			MainMenuStrip = top_menu;
 			Name = "PruebaGrafica";
-			bloque_menu.ResumeLayout(false);
 			top_menu.ResumeLayout(false);
 			top_menu.PerformLayout();
 			pnl_eventos.ResumeLayout(false);
@@ -618,8 +600,6 @@
 		}
 
 		#endregion
-		private ContextMenuStrip bloque_menu;
-		private ToolStripMenuItem eliminarToolStripMenuItem;
 		private MenuStrip top_menu;
 		private ToolStripMenuItem archivoToolStripMenuItem;
 		private ToolStripMenuItem nuevoToolStripMenuItem;
@@ -644,7 +624,7 @@
 		private ToolStripMenuItem acercadeToolStripMenuItem;
 		private ToolStripMenuItem toolStripMenuItem1;
 		private ToolStripSeparator toolStripSeparator5;
-		private Panel pnl_layout;
+		private Panel pnl_layout_principal;
 		private FlowLayoutPanel pnl_eventos;
 		private Label lbl_eventos;
 		private Button button1;
