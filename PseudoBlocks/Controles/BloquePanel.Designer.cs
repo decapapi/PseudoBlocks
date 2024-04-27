@@ -38,12 +38,12 @@
 			pnl_layout.AutoSize = true;
 			pnl_layout.AutoSizeMode = AutoSizeMode.GrowAndShrink;
 			pnl_layout.BackColor = SystemColors.Window;
-			pnl_layout.Location = new Point(6, 42);
-			pnl_layout.Margin = new Padding(5, 0, 5, 0);
-			pnl_layout.MinimumSize = new Size(315, 10);
+			pnl_layout.Location = new Point(5, 36);
+			pnl_layout.Margin = new Padding(4, 0, 4, 0);
+			pnl_layout.MinimumSize = new Size(315, 8);
 			pnl_layout.Name = "pnl_layout";
-			pnl_layout.Padding = new Padding(5);
-			pnl_layout.Size = new Size(315, 10);
+			pnl_layout.Padding = new Padding(4, 4, 4, 4);
+			pnl_layout.Size = new Size(315, 8);
 			pnl_layout.TabIndex = 5;
 			pnl_layout.DragDrop += pnl_layout_DragDrop;
 			pnl_layout.DragEnter += pnl_layout_DragEnter;
@@ -51,15 +51,15 @@
 			// 
 			// BloquePanel
 			// 
-			AutoScaleDimensions = new SizeF(10F, 24F);
+			AutoScaleDimensions = new SizeF(8F, 19F);
 			AutoScaleMode = AutoScaleMode.Font;
 			AutoSizeMode = AutoSizeMode.GrowAndShrink;
 			BackColor = SystemColors.GradientInactiveCaption;
 			Controls.Add(pnl_layout);
 			Cursor = Cursors.Hand;
-			MinimumSize = new Size(325, 65);
+			MinimumSize = new Size(260, 55);
 			Name = "BloquePanel";
-			Size = new Size(325, 75);
+			Size = new Size(325, 55);
 			Controls.SetChildIndex(pnl_layout, 0);
 			ResumeLayout(false);
 			PerformLayout();
