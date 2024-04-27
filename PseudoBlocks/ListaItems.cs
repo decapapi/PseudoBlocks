@@ -50,6 +50,7 @@ namespace PseudoBlocks
 
 		public void Eliminar(Control item)
 		{
+			item.Dispose();
 			this.Items.Remove(item);
 			this.OrdenarControles();
 		}
@@ -172,6 +173,12 @@ namespace PseudoBlocks
 
 		public void Limpiar()
 		{
+			this.Items.Clear();
+		}
+
+		~ListaItems()
+		{
+			this.Items.ForEach(control => control.Dispose());
 			this.Items.Clear();
 		}
 	}

@@ -42,7 +42,7 @@
 			pnl_layout.Margin = new Padding(4, 0, 4, 0);
 			pnl_layout.MinimumSize = new Size(315, 8);
 			pnl_layout.Name = "pnl_layout";
-			pnl_layout.Padding = new Padding(4, 4, 4, 4);
+			pnl_layout.Padding = new Padding(4);
 			pnl_layout.Size = new Size(315, 8);
 			pnl_layout.TabIndex = 5;
 			pnl_layout.DragDrop += pnl_layout_DragDrop;
