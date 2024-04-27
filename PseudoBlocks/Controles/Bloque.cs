@@ -12,6 +12,7 @@ namespace PseudoBlocks.Controles
 {
 	public partial class Bloque : UserControl
 	{
+		public string Tipo { get; private set; }
 		public bool AllowDragDrop { get; set; } = true;
 		private Point MouseDownLocation;
 
@@ -21,10 +22,12 @@ namespace PseudoBlocks.Controles
 			this.ContextMenuStrip = bloque_menu;
 		}
 
-		public Bloque(string texto)
+		public Bloque(string tipo, string texto, Color color)
 		{
 			InitializeComponent();
+			this.Tipo = tipo;
 			controlName.Text = texto;
+			this.BackColor = color;
 			this.ContextMenuStrip = bloque_menu;
 		}
 
@@ -52,6 +55,14 @@ namespace PseudoBlocks.Controles
 			if (AllowDragDrop && e.Button == MouseButtons.Left)
 			{
 				this.DoDragDrop(this, DragDropEffects.Move);
+				if (this.Location.Y < 0)
+				{
+					this.Location = new Point(this.Location.X, 0);
+				}
+				if (this.Location.X < 0)
+				{
+					this.Location = new Point(0, this.Location.Y);
+				}
 			}
 		}
 	}

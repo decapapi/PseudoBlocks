@@ -19,7 +19,7 @@ namespace PseudoBlocks.Controles
 			InitializeComponent();
 		}
 
-		public BloquePanel(string nombre) : base(nombre)
+		public BloquePanel(string tipo, string texto, Color color) : base(tipo, texto, color)
 		{
 			InitializeComponent();
 		}

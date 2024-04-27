@@ -9,7 +9,7 @@ namespace PseudoBlocks
 		static void Main()
 		{
 			ApplicationConfiguration.Initialize();
-			Application.Run(new PruebaGrafica());
+			Application.Run(new frm_Editor());
 		}
 	}
 }

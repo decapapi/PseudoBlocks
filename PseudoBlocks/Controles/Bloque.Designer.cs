@@ -46,7 +46,7 @@
 			controlName.Margin = new Padding(0);
 			controlName.Name = "controlName";
 			controlName.Padding = new Padding(10, 8, 0, 0);
-			controlName.Size = new Size(175, 33);
+			controlName.Size = new Size(144, 29);
 			controlName.TabIndex = 2;
 			controlName.Text = "Nombre del control";
 			// 
@@ -56,20 +56,20 @@
 			bloque_menu.ImageScalingSize = new Size(20, 20);
 			bloque_menu.Items.AddRange(new ToolStripItem[] { eliminarToolStripMenuItem });
 			bloque_menu.Name = "menu_control";
-			bloque_menu.Size = new Size(141, 32);
+			bloque_menu.Size = new Size(128, 28);
 			bloque_menu.Text = "Ordenar";
 			// 
 			// eliminarToolStripMenuItem
 			// 
 			eliminarToolStripMenuItem.Name = "eliminarToolStripMenuItem";
-			eliminarToolStripMenuItem.Size = new Size(140, 28);
+			eliminarToolStripMenuItem.Size = new Size(127, 24);
 			eliminarToolStripMenuItem.Text = "Eliminar";
 			// 
 			// panel1
 			// 
 			panel1.BackColor = Color.Black;
 			panel1.Dock = DockStyle.Bottom;
-			panel1.Location = new Point(0, 38);
+			panel1.Location = new Point(0, 41);
 			panel1.Margin = new Padding(0);
 			panel1.Name = "panel1";
 			panel1.Size = new Size(305, 2);
@@ -77,7 +77,7 @@
 			// 
 			// Bloque
 			// 
-			AutoScaleDimensions = new SizeF(10F, 24F);
+			AutoScaleDimensions = new SizeF(8F, 19F);
 			AutoScaleMode = AutoScaleMode.Font;
 			AutoSize = true;
 			BackColor = Color.Tan;
@@ -87,7 +87,7 @@
 			Font = new Font("Lexend Deca Medium", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
 			Margin = new Padding(0);
 			Name = "Bloque";
-			Size = new Size(305, 40);
+			Size = new Size(305, 43);
 			MouseDown += Arrastrar;
 			MouseMove += Mover;
 			MouseUp += Soltar;

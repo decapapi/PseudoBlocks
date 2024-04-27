@@ -1,6 +1,6 @@
 ﻿namespace PseudoBlocks
 {
-	partial class PruebaGrafica
+	partial class frm_Editor
 	{
 		/// <summary>
 		///  Required designer variable.
@@ -29,7 +29,7 @@
 		private void InitializeComponent()
 		{
 			components = new System.ComponentModel.Container();
-			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PruebaGrafica));
+			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frm_Editor));
 			top_menu = new MenuStrip();
 			archivoToolStripMenuItem = new ToolStripMenuItem();
 			abrirToolStripMenuItem = new ToolStripMenuItem();
@@ -586,7 +586,7 @@
 			eliminarToolStripMenuItem.Name = "eliminarToolStripMenuItem";
 			resources.ApplyResources(eliminarToolStripMenuItem, "eliminarToolStripMenuItem");
 			// 
-			// PruebaGrafica
+			// frm_Editor
 			// 
 			AutoScaleMode = AutoScaleMode.None;
 			resources.ApplyResources(this, "$this");
@@ -595,7 +595,7 @@
 			Controls.Add(pnl_layout_principal);
 			Controls.Add(pnl_components);
 			MainMenuStrip = top_menu;
-			Name = "PruebaGrafica";
+			Name = "frm_Editor";
 			top_menu.ResumeLayout(false);
 			top_menu.PerformLayout();
 			pnl_eventos.ResumeLayout(false);
