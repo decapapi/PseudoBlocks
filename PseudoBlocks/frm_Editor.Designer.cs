@@ -57,28 +57,28 @@
 			pnl_layout_principal = new Panel();
 			pnl_eventos = new FlowLayoutPanel();
 			lbl_eventos = new Label();
-			button1 = new Button();
-			button2 = new Button();
-			button3 = new Button();
-			button4 = new Button();
+			btn_event_onload = new Button();
+			btn_event_onpress = new Button();
+			btn_event_onclick = new Button();
 			pnl_sonido = new FlowLayoutPanel();
 			lbl_sonido = new Label();
-			btn_sound_p = new Button();
+			btn_sound_play = new Button();
 			pnl_escenario = new FlowLayoutPanel();
 			lbl_escenario = new Label();
-			btn_change_b = new Button();
-			btn_change_p = new Button();
+			btn_change_background = new Button();
+			btn_change_character = new Button();
+			btn_change_size = new Button();
 			pnl_logica = new FlowLayoutPanel();
 			lbl_logica = new Label();
-			btn_logic_w = new Button();
-			btn_logic_rs = new Button();
-			btn_logic_re = new Button();
+			btn_logic_wait = new Button();
+			btn_logic_repeat = new Button();
+			btn_logic_repeat_always = new Button();
 			pnl_movimiento = new FlowLayoutPanel();
 			lbl_movimiento = new Label();
-			btn_move_r = new Button();
-			btn_move_l = new Button();
-			btn_move_u = new Button();
-			btn_move_d = new Button();
+			btn_move_right = new Button();
+			btn_move_left = new Button();
+			btn_move_up = new Button();
+			btn_move_down = new Button();
 			pnl_components = new FlowLayoutPanel();
 			flowLayoutPanel2 = new FlowLayoutPanel();
 			btn_movimiento = new Button();
@@ -238,10 +238,9 @@
 			resources.ApplyResources(pnl_eventos, "pnl_eventos");
 			pnl_eventos.BackColor = SystemColors.Window;
 			pnl_eventos.Controls.Add(lbl_eventos);
-			pnl_eventos.Controls.Add(button1);
-			pnl_eventos.Controls.Add(button2);
-			pnl_eventos.Controls.Add(button3);
-			pnl_eventos.Controls.Add(button4);
+			pnl_eventos.Controls.Add(btn_event_onload);
+			pnl_eventos.Controls.Add(btn_event_onpress);
+			pnl_eventos.Controls.Add(btn_event_onclick);
 			pnl_eventos.Name = "pnl_eventos";
 			// 
 			// lbl_eventos
@@ -249,56 +248,48 @@
 			resources.ApplyResources(lbl_eventos, "lbl_eventos");
 			lbl_eventos.Name = "lbl_eventos";
 			// 
-			// button1
+			// btn_event_onload
 			// 
-			button1.BackColor = Color.LightCoral;
-			button1.Cursor = Cursors.Hand;
-			button1.FlatAppearance.BorderSize = 0;
-			resources.ApplyResources(button1, "button1");
-			button1.Name = "button1";
-			button1.Tag = "";
-			button1.UseMnemonic = false;
-			button1.UseVisualStyleBackColor = false;
+			btn_event_onload.BackColor = Color.LightCoral;
+			btn_event_onload.Cursor = Cursors.Hand;
+			btn_event_onload.FlatAppearance.BorderSize = 0;
+			resources.ApplyResources(btn_event_onload, "btn_event_onload");
+			btn_event_onload.Name = "btn_event_onload";
+			btn_event_onload.Tag = "";
+			btn_event_onload.UseMnemonic = false;
+			btn_event_onload.UseVisualStyleBackColor = false;
+			btn_event_onload.Click += AgregarComponente;
 			// 
-			// button2
+			// btn_event_onpress
 			// 
-			button2.BackColor = Color.LightCoral;
-			button2.Cursor = Cursors.Hand;
-			button2.FlatAppearance.BorderSize = 0;
-			resources.ApplyResources(button2, "button2");
-			button2.Name = "button2";
-			button2.Tag = "";
-			button2.UseMnemonic = false;
-			button2.UseVisualStyleBackColor = false;
+			btn_event_onpress.BackColor = Color.LightCoral;
+			btn_event_onpress.Cursor = Cursors.Hand;
+			btn_event_onpress.FlatAppearance.BorderSize = 0;
+			resources.ApplyResources(btn_event_onpress, "btn_event_onpress");
+			btn_event_onpress.Name = "btn_event_onpress";
+			btn_event_onpress.Tag = "";
+			btn_event_onpress.UseMnemonic = false;
+			btn_event_onpress.UseVisualStyleBackColor = false;
+			btn_event_onpress.Click += AgregarComponente;
 			// 
-			// button3
+			// btn_event_onclick
 			// 
-			button3.BackColor = Color.LightCoral;
-			button3.Cursor = Cursors.Hand;
-			button3.FlatAppearance.BorderSize = 0;
-			resources.ApplyResources(button3, "button3");
-			button3.Name = "button3";
-			button3.Tag = "";
-			button3.UseMnemonic = false;
-			button3.UseVisualStyleBackColor = false;
-			// 
-			// button4
-			// 
-			button4.BackColor = Color.LightCoral;
-			button4.Cursor = Cursors.Hand;
-			button4.FlatAppearance.BorderSize = 0;
-			resources.ApplyResources(button4, "button4");
-			button4.Name = "button4";
-			button4.Tag = "";
-			button4.UseMnemonic = false;
-			button4.UseVisualStyleBackColor = false;
+			btn_event_onclick.BackColor = Color.LightCoral;
+			btn_event_onclick.Cursor = Cursors.Hand;
+			btn_event_onclick.FlatAppearance.BorderSize = 0;
+			resources.ApplyResources(btn_event_onclick, "btn_event_onclick");
+			btn_event_onclick.Name = "btn_event_onclick";
+			btn_event_onclick.Tag = "";
+			btn_event_onclick.UseMnemonic = false;
+			btn_event_onclick.UseVisualStyleBackColor = false;
+			btn_event_onclick.Click += AgregarComponente;
 			// 
 			// pnl_sonido
 			// 
 			resources.ApplyResources(pnl_sonido, "pnl_sonido");
 			pnl_sonido.BackColor = SystemColors.Window;
 			pnl_sonido.Controls.Add(lbl_sonido);
-			pnl_sonido.Controls.Add(btn_sound_p);
+			pnl_sonido.Controls.Add(btn_sound_play);
 			pnl_sonido.Name = "pnl_sonido";
 			// 
 			// lbl_sonido
@@ -306,25 +297,26 @@
 			resources.ApplyResources(lbl_sonido, "lbl_sonido");
 			lbl_sonido.Name = "lbl_sonido";
 			// 
-			// btn_sound_p
+			// btn_sound_play
 			// 
-			btn_sound_p.BackColor = Color.MediumPurple;
-			btn_sound_p.Cursor = Cursors.Hand;
-			btn_sound_p.FlatAppearance.BorderSize = 0;
-			resources.ApplyResources(btn_sound_p, "btn_sound_p");
-			btn_sound_p.Name = "btn_sound_p";
-			btn_sound_p.Tag = "";
-			btn_sound_p.UseMnemonic = false;
-			btn_sound_p.UseVisualStyleBackColor = false;
-			btn_sound_p.Click += AgregarComponente;
+			btn_sound_play.BackColor = Color.FromArgb(255, 192, 255);
+			btn_sound_play.Cursor = Cursors.Hand;
+			btn_sound_play.FlatAppearance.BorderSize = 0;
+			resources.ApplyResources(btn_sound_play, "btn_sound_play");
+			btn_sound_play.Name = "btn_sound_play";
+			btn_sound_play.Tag = "";
+			btn_sound_play.UseMnemonic = false;
+			btn_sound_play.UseVisualStyleBackColor = false;
+			btn_sound_play.Click += AgregarComponente;
 			// 
 			// pnl_escenario
 			// 
 			resources.ApplyResources(pnl_escenario, "pnl_escenario");
 			pnl_escenario.BackColor = SystemColors.Window;
 			pnl_escenario.Controls.Add(lbl_escenario);
-			pnl_escenario.Controls.Add(btn_change_b);
-			pnl_escenario.Controls.Add(btn_change_p);
+			pnl_escenario.Controls.Add(btn_change_background);
+			pnl_escenario.Controls.Add(btn_change_character);
+			pnl_escenario.Controls.Add(btn_change_size);
 			pnl_escenario.Name = "pnl_escenario";
 			// 
 			// lbl_escenario
@@ -332,38 +324,50 @@
 			resources.ApplyResources(lbl_escenario, "lbl_escenario");
 			lbl_escenario.Name = "lbl_escenario";
 			// 
-			// btn_change_b
+			// btn_change_background
 			// 
-			btn_change_b.BackColor = Color.LightBlue;
-			btn_change_b.Cursor = Cursors.Hand;
-			btn_change_b.FlatAppearance.BorderSize = 0;
-			resources.ApplyResources(btn_change_b, "btn_change_b");
-			btn_change_b.Name = "btn_change_b";
-			btn_change_b.Tag = "";
-			btn_change_b.UseMnemonic = false;
-			btn_change_b.UseVisualStyleBackColor = false;
-			btn_change_b.Click += AgregarComponente;
+			btn_change_background.BackColor = Color.LightBlue;
+			btn_change_background.Cursor = Cursors.Hand;
+			btn_change_background.FlatAppearance.BorderSize = 0;
+			resources.ApplyResources(btn_change_background, "btn_change_background");
+			btn_change_background.Name = "btn_change_background";
+			btn_change_background.Tag = "";
+			btn_change_background.UseMnemonic = false;
+			btn_change_background.UseVisualStyleBackColor = false;
+			btn_change_background.Click += AgregarComponente;
 			// 
-			// btn_change_p
+			// btn_change_character
 			// 
-			btn_change_p.BackColor = Color.LightBlue;
-			btn_change_p.Cursor = Cursors.Hand;
-			btn_change_p.FlatAppearance.BorderSize = 0;
-			resources.ApplyResources(btn_change_p, "btn_change_p");
-			btn_change_p.Name = "btn_change_p";
-			btn_change_p.Tag = "";
-			btn_change_p.UseMnemonic = false;
-			btn_change_p.UseVisualStyleBackColor = false;
-			btn_change_p.Click += AgregarComponente;
+			btn_change_character.BackColor = Color.LightBlue;
+			btn_change_character.Cursor = Cursors.Hand;
+			btn_change_character.FlatAppearance.BorderSize = 0;
+			resources.ApplyResources(btn_change_character, "btn_change_character");
+			btn_change_character.Name = "btn_change_character";
+			btn_change_character.Tag = "";
+			btn_change_character.UseMnemonic = false;
+			btn_change_character.UseVisualStyleBackColor = false;
+			btn_change_character.Click += AgregarComponente;
+			// 
+			// btn_change_size
+			// 
+			btn_change_size.BackColor = Color.LightBlue;
+			btn_change_size.Cursor = Cursors.Hand;
+			btn_change_size.FlatAppearance.BorderSize = 0;
+			resources.ApplyResources(btn_change_size, "btn_change_size");
+			btn_change_size.Name = "btn_change_size";
+			btn_change_size.Tag = "";
+			btn_change_size.UseMnemonic = false;
+			btn_change_size.UseVisualStyleBackColor = false;
+			btn_change_size.Click += AgregarComponente;
 			// 
 			// pnl_logica
 			// 
 			resources.ApplyResources(pnl_logica, "pnl_logica");
 			pnl_logica.BackColor = SystemColors.Window;
 			pnl_logica.Controls.Add(lbl_logica);
-			pnl_logica.Controls.Add(btn_logic_w);
-			pnl_logica.Controls.Add(btn_logic_rs);
-			pnl_logica.Controls.Add(btn_logic_re);
+			pnl_logica.Controls.Add(btn_logic_wait);
+			pnl_logica.Controls.Add(btn_logic_repeat);
+			pnl_logica.Controls.Add(btn_logic_repeat_always);
 			pnl_logica.Name = "pnl_logica";
 			// 
 			// lbl_logica
@@ -371,51 +375,51 @@
 			resources.ApplyResources(lbl_logica, "lbl_logica");
 			lbl_logica.Name = "lbl_logica";
 			// 
-			// btn_logic_w
+			// btn_logic_wait
 			// 
-			btn_logic_w.BackColor = Color.LightSalmon;
-			btn_logic_w.Cursor = Cursors.Hand;
-			btn_logic_w.FlatAppearance.BorderSize = 0;
-			resources.ApplyResources(btn_logic_w, "btn_logic_w");
-			btn_logic_w.Name = "btn_logic_w";
-			btn_logic_w.Tag = "";
-			btn_logic_w.UseMnemonic = false;
-			btn_logic_w.UseVisualStyleBackColor = false;
-			btn_logic_w.Click += AgregarComponente;
+			btn_logic_wait.BackColor = Color.LightSalmon;
+			btn_logic_wait.Cursor = Cursors.Hand;
+			btn_logic_wait.FlatAppearance.BorderSize = 0;
+			resources.ApplyResources(btn_logic_wait, "btn_logic_wait");
+			btn_logic_wait.Name = "btn_logic_wait";
+			btn_logic_wait.Tag = "";
+			btn_logic_wait.UseMnemonic = false;
+			btn_logic_wait.UseVisualStyleBackColor = false;
+			btn_logic_wait.Click += AgregarComponente;
 			// 
-			// btn_logic_rs
+			// btn_logic_repeat
 			// 
-			btn_logic_rs.BackColor = Color.LightSalmon;
-			btn_logic_rs.Cursor = Cursors.Hand;
-			btn_logic_rs.FlatAppearance.BorderSize = 0;
-			resources.ApplyResources(btn_logic_rs, "btn_logic_rs");
-			btn_logic_rs.Name = "btn_logic_rs";
-			btn_logic_rs.Tag = "";
-			btn_logic_rs.UseMnemonic = false;
-			btn_logic_rs.UseVisualStyleBackColor = false;
-			btn_logic_rs.Click += AgregarComponente;
+			btn_logic_repeat.BackColor = Color.LightSalmon;
+			btn_logic_repeat.Cursor = Cursors.Hand;
+			btn_logic_repeat.FlatAppearance.BorderSize = 0;
+			resources.ApplyResources(btn_logic_repeat, "btn_logic_repeat");
+			btn_logic_repeat.Name = "btn_logic_repeat";
+			btn_logic_repeat.Tag = "";
+			btn_logic_repeat.UseMnemonic = false;
+			btn_logic_repeat.UseVisualStyleBackColor = false;
+			btn_logic_repeat.Click += AgregarComponente;
 			// 
-			// btn_logic_re
+			// btn_logic_repeat_always
 			// 
-			btn_logic_re.BackColor = Color.LightSalmon;
-			btn_logic_re.Cursor = Cursors.Hand;
-			btn_logic_re.FlatAppearance.BorderSize = 0;
-			resources.ApplyResources(btn_logic_re, "btn_logic_re");
-			btn_logic_re.Name = "btn_logic_re";
-			btn_logic_re.Tag = "";
-			btn_logic_re.UseMnemonic = false;
-			btn_logic_re.UseVisualStyleBackColor = false;
-			btn_logic_re.Click += AgregarComponente;
+			btn_logic_repeat_always.BackColor = Color.LightSalmon;
+			btn_logic_repeat_always.Cursor = Cursors.Hand;
+			btn_logic_repeat_always.FlatAppearance.BorderSize = 0;
+			resources.ApplyResources(btn_logic_repeat_always, "btn_logic_repeat_always");
+			btn_logic_repeat_always.Name = "btn_logic_repeat_always";
+			btn_logic_repeat_always.Tag = "";
+			btn_logic_repeat_always.UseMnemonic = false;
+			btn_logic_repeat_always.UseVisualStyleBackColor = false;
+			btn_logic_repeat_always.Click += AgregarComponente;
 			// 
 			// pnl_movimiento
 			// 
 			resources.ApplyResources(pnl_movimiento, "pnl_movimiento");
 			pnl_movimiento.BackColor = SystemColors.Window;
 			pnl_movimiento.Controls.Add(lbl_movimiento);
-			pnl_movimiento.Controls.Add(btn_move_r);
-			pnl_movimiento.Controls.Add(btn_move_l);
-			pnl_movimiento.Controls.Add(btn_move_u);
-			pnl_movimiento.Controls.Add(btn_move_d);
+			pnl_movimiento.Controls.Add(btn_move_right);
+			pnl_movimiento.Controls.Add(btn_move_left);
+			pnl_movimiento.Controls.Add(btn_move_up);
+			pnl_movimiento.Controls.Add(btn_move_down);
 			pnl_movimiento.Name = "pnl_movimiento";
 			// 
 			// lbl_movimiento
@@ -423,53 +427,53 @@
 			resources.ApplyResources(lbl_movimiento, "lbl_movimiento");
 			lbl_movimiento.Name = "lbl_movimiento";
 			// 
-			// btn_move_r
+			// btn_move_right
 			// 
-			btn_move_r.BackColor = Color.MediumAquamarine;
-			btn_move_r.Cursor = Cursors.Hand;
-			btn_move_r.FlatAppearance.BorderSize = 0;
-			resources.ApplyResources(btn_move_r, "btn_move_r");
-			btn_move_r.Name = "btn_move_r";
-			btn_move_r.Tag = "";
-			btn_move_r.UseMnemonic = false;
-			btn_move_r.UseVisualStyleBackColor = false;
-			btn_move_r.Click += AgregarComponente;
+			btn_move_right.BackColor = Color.MediumAquamarine;
+			btn_move_right.Cursor = Cursors.Hand;
+			btn_move_right.FlatAppearance.BorderSize = 0;
+			resources.ApplyResources(btn_move_right, "btn_move_right");
+			btn_move_right.Name = "btn_move_right";
+			btn_move_right.Tag = "";
+			btn_move_right.UseMnemonic = false;
+			btn_move_right.UseVisualStyleBackColor = false;
+			btn_move_right.Click += AgregarComponente;
 			// 
-			// btn_move_l
+			// btn_move_left
 			// 
-			btn_move_l.BackColor = Color.MediumAquamarine;
-			btn_move_l.Cursor = Cursors.Hand;
-			btn_move_l.FlatAppearance.BorderSize = 0;
-			resources.ApplyResources(btn_move_l, "btn_move_l");
-			btn_move_l.Name = "btn_move_l";
-			btn_move_l.Tag = "";
-			btn_move_l.UseMnemonic = false;
-			btn_move_l.UseVisualStyleBackColor = false;
-			btn_move_l.Click += AgregarComponente;
+			btn_move_left.BackColor = Color.MediumAquamarine;
+			btn_move_left.Cursor = Cursors.Hand;
+			btn_move_left.FlatAppearance.BorderSize = 0;
+			resources.ApplyResources(btn_move_left, "btn_move_left");
+			btn_move_left.Name = "btn_move_left";
+			btn_move_left.Tag = "";
+			btn_move_left.UseMnemonic = false;
+			btn_move_left.UseVisualStyleBackColor = false;
+			btn_move_left.Click += AgregarComponente;
 			// 
-			// btn_move_u
+			// btn_move_up
 			// 
-			btn_move_u.BackColor = Color.MediumAquamarine;
-			btn_move_u.Cursor = Cursors.Hand;
-			btn_move_u.FlatAppearance.BorderSize = 0;
-			resources.ApplyResources(btn_move_u, "btn_move_u");
-			btn_move_u.Name = "btn_move_u";
-			btn_move_u.Tag = "";
-			btn_move_u.UseMnemonic = false;
-			btn_move_u.UseVisualStyleBackColor = false;
-			btn_move_u.Click += AgregarComponente;
+			btn_move_up.BackColor = Color.MediumAquamarine;
+			btn_move_up.Cursor = Cursors.Hand;
+			btn_move_up.FlatAppearance.BorderSize = 0;
+			resources.ApplyResources(btn_move_up, "btn_move_up");
+			btn_move_up.Name = "btn_move_up";
+			btn_move_up.Tag = "";
+			btn_move_up.UseMnemonic = false;
+			btn_move_up.UseVisualStyleBackColor = false;
+			btn_move_up.Click += AgregarComponente;
 			// 
-			// btn_move_d
+			// btn_move_down
 			// 
-			btn_move_d.BackColor = Color.MediumAquamarine;
-			btn_move_d.Cursor = Cursors.Hand;
-			btn_move_d.FlatAppearance.BorderSize = 0;
-			resources.ApplyResources(btn_move_d, "btn_move_d");
-			btn_move_d.Name = "btn_move_d";
-			btn_move_d.Tag = "";
-			btn_move_d.UseMnemonic = false;
-			btn_move_d.UseVisualStyleBackColor = false;
-			btn_move_d.Click += AgregarComponente;
+			btn_move_down.BackColor = Color.MediumAquamarine;
+			btn_move_down.Cursor = Cursors.Hand;
+			btn_move_down.FlatAppearance.BorderSize = 0;
+			resources.ApplyResources(btn_move_down, "btn_move_down");
+			btn_move_down.Name = "btn_move_down";
+			btn_move_down.Tag = "";
+			btn_move_down.UseMnemonic = false;
+			btn_move_down.UseVisualStyleBackColor = false;
+			btn_move_down.Click += AgregarComponente;
 			// 
 			// pnl_components
 			// 
@@ -644,26 +648,24 @@
 		private Panel pnl_layout_principal;
 		private FlowLayoutPanel pnl_eventos;
 		private Label lbl_eventos;
-		private Button button1;
-		private Button button2;
-		private Button button3;
-		private Button button4;
+		private Button btn_event_onload;
+		private Button btn_event_onpress;
+		private Button btn_event_onclick;
 		private FlowLayoutPanel pnl_sonido;
 		private Label lbl_sonido;
-		private Button btn_sound_p;
+		private Button btn_sound_play;
 		private FlowLayoutPanel pnl_escenario;
-		private Button btn_change_b;
-		private Button btn_change_p;
+		private Button btn_change_background;
+		private Button btn_change_character;
 		private FlowLayoutPanel pnl_logica;
 		private Label lbl_logica;
-		private Button btn_logic_w;
-		private Button btn_logic_rs;
-		private Button btn_logic_re;
+		private Button btn_logic_wait;
+		private Button btn_logic_repeat;
 		private FlowLayoutPanel pnl_movimiento;
-		private Button btn_move_r;
-		private Button btn_move_l;
-		private Button btn_move_u;
-		private Button btn_move_d;
+		private Button btn_move_right;
+		private Button btn_move_left;
+		private Button btn_move_up;
+		private Button btn_move_down;
 		private FlowLayoutPanel pnl_components;
 		private FlowLayoutPanel flowLayoutPanel2;
 		private Button btn_movimiento;
@@ -675,5 +677,7 @@
 		private Label lbl_movimiento;
 		protected ContextMenuStrip bloque_menu;
 		private ToolStripMenuItem eliminarToolStripMenuItem;
+		private Button btn_change_size;
+		private Button btn_logic_repeat_always;
 	}
 }

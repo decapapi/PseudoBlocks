@@ -6,6 +6,10 @@ using System.Reflection;
 using System.Reflection.Emit;
 using System.Windows.Forms;
 using PseudoBlocks.Controles;
+using PseudoBlocks.Controles.Archivos;
+using PseudoBlocks.Controles.Numerico;
+using PseudoBlocks.Controles.Logica;
+using PseudoBlocks.Controles.Eventos;
 
 namespace PseudoBlocks
 {
@@ -16,7 +20,6 @@ namespace PseudoBlocks
 		public frm_Editor()
 		{
 			InitializeComponent();
-			AgregarControl(new BloquePanel());
 		}
 
 		public void AgregarComponente(object sender, EventArgs e)
@@ -28,6 +31,56 @@ namespace PseudoBlocks
 				if (controlType.StartsWith("move"))
 				{
 					AgregarControl(new Bloque(controlType, control.Text, Color.MediumAquamarine));
+				}
+				if (controlType.StartsWith("change"))
+				{
+					if (controlType.EndsWith("background"))
+					{
+						AgregarControl(new BloqueImagen(controlType, control.Text, Color.LightBlue));
+					}
+					if (controlType.EndsWith("character"))
+					{
+						AgregarControl(new BloqueImagen(controlType, control.Text, Color.LightBlue));
+					}
+
+					if (controlType.EndsWith("size"))
+					{
+						AgregarControl(new BloqueXY(controlType, control.Text, Color.LightBlue));
+					}
+				}
+				if (controlType.StartsWith("sound"))
+				{
+					AgregarControl(new BloqueAudio(controlType, control.Text, Color.FromArgb(255, 192, 255)));
+				}
+				if (controlType.StartsWith("logic"))
+				{
+					if (controlType.EndsWith("wait"))
+					{
+						AgregarControl(new BloqueNumerico(controlType, control.Text, Color.LightSalmon));
+					}
+					if (controlType.EndsWith("repeat"))
+					{
+						AgregarControl(new BloqueRepetir(controlType, control.Text, Color.LightSalmon));
+					}
+					if (controlType.EndsWith("repeat_always"))
+					{
+						AgregarControl(new BloquePanel(controlType, control.Text, Color.LightSalmon));
+					}
+				}
+				if (controlType.StartsWith("event"))
+				{
+					if (controlType.EndsWith("onload"))
+					{
+						AgregarControl(new BloquePanel(controlType, control.Text, Color.LightCoral));
+					}
+					if (controlType.EndsWith("onpress"))
+					{
+						AgregarControl(new BloqueHotkey(controlType, control.Text, Color.LightCoral));
+					}
+					if (controlType.EndsWith("onclick"))
+					{
+						AgregarControl(new BloquePanel(controlType, control.Text, Color.LightCoral));
+					}
 				}
 			}
 		}

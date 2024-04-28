@@ -22,6 +22,7 @@ namespace PseudoBlocks.Controles
 		public BloquePanel(string tipo, string texto, Color color) : base(tipo, texto, color)
 		{
 			InitializeComponent();
+			this.BackColor = color;
 		}
 
 		public void AgregarBloque(Control control)

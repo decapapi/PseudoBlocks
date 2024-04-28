@@ -10,13 +10,15 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Update="Controles\Archivos\BloqueAudio.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Update="Controles\Bloque.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Update="Controles\Componentes\AudioPicker.cs">
-      <SubType>Component</SubType>
+    <Compile Update="Controles\Logica\BloqueRepetir.cs">
+      <SubType>UserControl</SubType>
     </Compile>
-    <Compile Update="Controles\Componentes\FilePicker.cs" />
     <Compile Update="Properties\Resources.Designer.cs">
       <DesignTime>True</DesignTime>
       <AutoGen>True</AutoGen>

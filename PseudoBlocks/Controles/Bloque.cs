@@ -31,7 +31,6 @@ namespace PseudoBlocks.Controles
 			this.ContextMenuStrip = bloque_menu;
 		}
 
-
 		private void Arrastrar(object sender, MouseEventArgs e) // MouseDown
 		{
 			if (e.Button == MouseButtons.Left)
