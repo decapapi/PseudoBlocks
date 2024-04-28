@@ -46,8 +46,7 @@ namespace PseudoBlocks.Controles
 
 		private void pnl_layout_DragEnter(object sender, DragEventArgs e)
 		{
-			if ((e.Data.GetData(typeof(Bloque)) is Bloque)
-				|| (e.Data.GetData(typeof(BloquePanel)) is BloquePanel))
+			if (e.Data.GetData(DataFormats.Serializable) is Bloque)
 			{
 				e.Effect = DragDropEffects.Move;
 			}
@@ -59,22 +58,13 @@ namespace PseudoBlocks.Controles
 
 		private void pnl_layout_DragDrop(object sender, DragEventArgs e)
 		{
-			if (e.Data.GetData(typeof(Bloque)) is Bloque bloque)
+			if (e.Data.GetData(DataFormats.Serializable) is Bloque bloque)
 			{
 				if (bloque != this)
 				{
 					Point clientPoint = pnl_layout.PointToClient(new Point(e.X, e.Y));
 					bloque.Location = clientPoint;
 					AgregarBloque(bloque);
-				}
-			}
-			if (e.Data.GetData(typeof(BloquePanel)) is BloquePanel bloquePanel)
-			{
-				if (bloquePanel != this)
-				{
-					Point clientPoint = pnl_layout.PointToClient(new Point(e.X, e.Y));
-					bloquePanel.Location = clientPoint;
-					AgregarBloque(bloquePanel);
 				}
 			}
 		}

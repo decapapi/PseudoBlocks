@@ -53,7 +53,7 @@ namespace PseudoBlocks.Controles
 		{
 			if (AllowDragDrop && e.Button == MouseButtons.Left)
 			{
-				this.DoDragDrop(this, DragDropEffects.Move);
+				this.DoDragDrop(new DataObject(DataFormats.Serializable, this), DragDropEffects.Move);
 				if (this.Location.Y < 0)
 				{
 					this.Location = new Point(this.Location.X, 0);
