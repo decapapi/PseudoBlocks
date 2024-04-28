@@ -42,6 +42,7 @@
 			btn_seleccionar.UseVisualStyleBackColor = true;
 			btn_seleccionar.Click += EstablecerTecla;
 			btn_seleccionar.KeyDown += CapturarTecla;
+			btn_seleccionar.Leave += CancelarCapturar;
 			// 
 			// BloqueHotkey
 			// 

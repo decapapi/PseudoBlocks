@@ -12,7 +12,7 @@ namespace PseudoBlocks.Controles.Eventos
 {
 	public partial class BloqueHotkey : BloquePanel
 	{
-		public string Tecla { get; private set; } = null;
+		public string? Tecla { get; private set; } = null;
 		private bool esperandoTecla = false;
 
 		public BloqueHotkey()
@@ -31,18 +31,29 @@ namespace PseudoBlocks.Controles.Eventos
 			{
 				Tecla = e.KeyCode.ToString();
 				btn_seleccionar.Text = Tecla;
+				esperandoTecla = false;
 			}
 		}
 
 		private void EstablecerTecla(object sender, EventArgs e)
 		{
-			esperandoTecla = true;
 			Tecla = null;
-			while (Tecla == null)
+			esperandoTecla = true;
+			btn_seleccionar.Text = "Esperando tecla...";
+			while (esperandoTecla)
 			{
 				Application.DoEvents();
 			}
 			esperandoTecla = false;
+		}
+
+		private void CancelarCapturar(object sender, EventArgs e)
+		{
+			if (esperandoTecla && Tecla == null)
+			{
+				esperandoTecla = false;
+				btn_seleccionar.Text = "Seleccionar...";
+			}
 		}
 	}
 }
