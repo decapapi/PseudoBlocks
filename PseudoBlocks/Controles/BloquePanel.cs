@@ -61,15 +61,21 @@ namespace PseudoBlocks.Controles
 		{
 			if (e.Data.GetData(typeof(Bloque)) is Bloque bloque)
 			{
-				Point clientPoint = pnl_layout.PointToClient(new Point(e.X, e.Y));
-				bloque.Location = clientPoint;
-				AgregarBloque(bloque);
+				if (bloque != this)
+				{
+					Point clientPoint = pnl_layout.PointToClient(new Point(e.X, e.Y));
+					bloque.Location = clientPoint;
+					AgregarBloque(bloque);
+				}
 			}
 			if (e.Data.GetData(typeof(BloquePanel)) is BloquePanel bloquePanel)
 			{
-				Point clientPoint = pnl_layout.PointToClient(new Point(e.X, e.Y));
-				bloquePanel.Location = clientPoint;
-				AgregarBloque(bloquePanel);
+				if (bloquePanel != this)
+				{
+					Point clientPoint = pnl_layout.PointToClient(new Point(e.X, e.Y));
+					bloquePanel.Location = clientPoint;
+					AgregarBloque(bloquePanel);
+				}
 			}
 		}
 
