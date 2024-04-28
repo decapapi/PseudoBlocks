@@ -7,7 +7,13 @@
     <UseWindowsForms>true</UseWindowsForms>
     <ImplicitUsings>enable</ImplicitUsings>
     <ApplicationHighDpiMode>SystemAware</ApplicationHighDpiMode>
+    <ApplicationIcon>Resources\Adnix-Full.ico</ApplicationIcon>
+    <AnalysisLevel>latest</AnalysisLevel>
   </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="Resources\Adnix-Full.ico" />
+  </ItemGroup>
 
   <ItemGroup>
     <Compile Update="Controles\Archivos\BloqueAudio.cs">

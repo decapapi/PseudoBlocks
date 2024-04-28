@@ -45,9 +45,9 @@
 			pnl_layout.Padding = new Padding(4);
 			pnl_layout.Size = new Size(315, 8);
 			pnl_layout.TabIndex = 5;
-			pnl_layout.DragDrop += pnl_layout_DragDrop;
-			pnl_layout.DragEnter += pnl_layout_DragEnter;
-			pnl_layout.DragOver += pnl_layout_DragOver;
+			pnl_layout.DragDrop += DragDrop;
+			pnl_layout.DragEnter += DragEnter;
+			pnl_layout.DragOver += DragOver;
 			// 
 			// BloquePanel
 			// 
@@ -57,6 +57,7 @@
 			BackColor = SystemColors.GradientInactiveCaption;
 			Controls.Add(pnl_layout);
 			Cursor = Cursors.Hand;
+			DoubleBuffered = true;
 			MinimumSize = new Size(260, 55);
 			Name = "BloquePanel";
 			Size = new Size(325, 55);

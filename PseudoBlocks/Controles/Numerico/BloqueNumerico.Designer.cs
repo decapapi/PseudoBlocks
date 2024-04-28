@@ -48,6 +48,7 @@
 			AutoScaleDimensions = new SizeF(8F, 19F);
 			AutoScaleMode = AutoScaleMode.Font;
 			Controls.Add(nud_num);
+			DoubleBuffered = true;
 			Name = "BloqueNumerico";
 			Controls.SetChildIndex(nud_num, 0);
 			((System.ComponentModel.ISupportInitialize)nud_num).EndInit();

@@ -84,6 +84,7 @@
 			Controls.Add(panel1);
 			Controls.Add(controlName);
 			Cursor = Cursors.Hand;
+			DoubleBuffered = true;
 			Font = new Font("Lexend Deca Medium", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
 			Margin = new Padding(0);
 			Name = "Bloque";

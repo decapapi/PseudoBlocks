@@ -48,6 +48,7 @@
 			AutoScaleMode = AutoScaleMode.Font;
 			BackColor = Color.LightBlue;
 			Controls.Add(btn_seleccionar);
+			DoubleBuffered = true;
 			Name = "BloqueImagen";
 			Controls.SetChildIndex(btn_seleccionar, 0);
 			ResumeLayout(false);

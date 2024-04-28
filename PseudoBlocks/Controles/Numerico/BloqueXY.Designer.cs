@@ -62,6 +62,7 @@
 			AutoScaleMode = AutoScaleMode.Font;
 			Controls.Add(nud_X);
 			Controls.Add(nud_Y);
+			DoubleBuffered = true;
 			Name = "BloqueXY";
 			Controls.SetChildIndex(nud_Y, 0);
 			Controls.SetChildIndex(nud_X, 0);

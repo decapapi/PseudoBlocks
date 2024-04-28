@@ -14,7 +14,7 @@ namespace PseudoBlocks
 	{
 		public List<Control> Items { get; private set; } = new List<Control>();
 		private Point margin;
-		private bool libre;
+		private readonly bool libre;
 
 		public ListaItems() : this (new Point(5, 5)) { }
 

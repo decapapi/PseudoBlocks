@@ -50,6 +50,7 @@
 			AutoScaleMode = AutoScaleMode.Font;
 			BackColor = Color.LightCoral;
 			Controls.Add(btn_seleccionar);
+			DoubleBuffered = true;
 			Name = "BloqueHotkey";
 			Controls.SetChildIndex(btn_seleccionar, 0);
 			ResumeLayout(false);

@@ -50,6 +50,7 @@
 			BackColor = Color.LightSalmon;
 			Controls.Add(nud_num);
 			Cursor = Cursors.Hand;
+			DoubleBuffered = true;
 			Name = "BloqueRepetir";
 			Controls.SetChildIndex(nud_num, 0);
 			((System.ComponentModel.ISupportInitialize)nud_num).EndInit();

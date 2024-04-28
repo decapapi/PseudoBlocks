@@ -48,6 +48,7 @@
 			AutoScaleMode = AutoScaleMode.Font;
 			BackColor = Color.FromArgb(255, 192, 255);
 			Controls.Add(btn_seleccionar);
+			DoubleBuffered = true;
 			Name = "BloqueAudio";
 			Controls.SetChildIndex(btn_seleccionar, 0);
 			ResumeLayout(false);

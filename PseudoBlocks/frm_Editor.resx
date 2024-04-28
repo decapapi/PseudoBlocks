@@ -124,6 +124,49 @@
   <data name="top_menu.Font" type="System.Drawing.Font, System.Drawing">
     <value>Lexend Deca Medium, 9pt</value>
   </data>
+  <data name="archivoToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>65, 23</value>
+  </data>
+  <data name="archivoToolStripMenuItem.Text" xml:space="preserve">
+    <value>&amp;Archivo</value>
+  </data>
+  <data name="editarToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>58, 23</value>
+  </data>
+  <data name="editarToolStripMenuItem.Text" xml:space="preserve">
+    <value>&amp;Editar</value>
+  </data>
+  <data name="herramientasToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>103, 23</value>
+  </data>
+  <data name="herramientasToolStripMenuItem.Text" xml:space="preserve">
+    <value>&amp;Herramientas</value>
+  </data>
+  <data name="top_menu.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="top_menu.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1264, 27</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="top_menu.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="top_menu.Text" xml:space="preserve">
+    <value>menuStrip1</value>
+  </data>
+  <data name="&gt;&gt;top_menu.Name" xml:space="preserve">
+    <value>top_menu</value>
+  </data>
+  <data name="&gt;&gt;top_menu.Type" xml:space="preserve">
+    <value>System.Windows.Forms.MenuStrip, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;top_menu.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;top_menu.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
   <data name="abrirToolStripMenuItem.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
     <value>Magenta</value>
   </data>
@@ -190,6 +233,28 @@
   <data name="toolStripSeparator.Size" type="System.Drawing.Size, System.Drawing">
     <value>175, 6</value>
   </data>
+  <data name="toolStripMenuItem2.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADbSURBVEhL7ZUxCsIwGIVzAvFA3sJVDyK9gZMHcFGcHZyc
+        xE0dFDdHJ+dYG7JGnpD4qkkDNYJgCx+0f9//PiiBCillWym11lqblKAT3cKWb08Xk812SUCXlQhb3upP
+        jOiOk4AuK3kIYPUFPwGdXkEnW5jBdFML7EYFCF5lXgvsNoJKfkPw9VOUikYQJSrwnZIqXvf/TBCaM5wB
+        JcFwfngLhJZ5znAGsOCIm95oVQqElnnOcAY4AX7MPklomecMZ4AT4GIJPhdeFrfCgWcLzxnOgOX+/BTg
+        Ykk6tLkDP0SRNRvmiVAAAAAASUVORK5CYII=
+</value>
+  </data>
+  <data name="toolStripMenuItem2.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
+    <value>Magenta</value>
+  </data>
+  <data name="toolStripMenuItem2.ShortcutKeys" type="System.Windows.Forms.Keys, System.Windows.Forms">
+    <value>Ctrl+S</value>
+  </data>
+  <data name="toolStripMenuItem2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>178, 26</value>
+  </data>
+  <data name="toolStripMenuItem2.Text" xml:space="preserve">
+    <value>&amp;Guardar</value>
+  </data>
   <data name="guardarToolStripMenuItem.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
@@ -203,19 +268,10 @@
   <data name="guardarToolStripMenuItem.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
     <value>Magenta</value>
   </data>
-  <data name="guardarToolStripMenuItem.ShortcutKeys" type="System.Windows.Forms.Keys, System.Windows.Forms">
-    <value>Ctrl+S</value>
-  </data>
   <data name="guardarToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>178, 26</value>
   </data>
   <data name="guardarToolStripMenuItem.Text" xml:space="preserve">
-    <value>&amp;Guardar</value>
-  </data>
-  <data name="guardarcomoToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>178, 26</value>
-  </data>
-  <data name="guardarcomoToolStripMenuItem.Text" xml:space="preserve">
     <value>Guardar &amp;como</value>
   </data>
   <data name="toolStripSeparator2.Size" type="System.Drawing.Size, System.Drawing">
@@ -226,12 +282,6 @@
   </data>
   <data name="salirToolStripMenuItem.Text" xml:space="preserve">
     <value>&amp;Salir</value>
-  </data>
-  <data name="archivoToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>65, 23</value>
-  </data>
-  <data name="archivoToolStripMenuItem.Text" xml:space="preserve">
-    <value>&amp;Archivo</value>
   </data>
   <data name="deshacerToolStripMenuItem.ShortcutKeys" type="System.Windows.Forms.Keys, System.Windows.Forms">
     <value>Ctrl+Z</value>
@@ -327,69 +377,17 @@
   <data name="pegarToolStripMenuItem.Text" xml:space="preserve">
     <value>&amp;Pegar</value>
   </data>
-  <data name="toolStripSeparator4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>179, 6</value>
-  </data>
-  <data name="seleccionartodoToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>182, 26</value>
-  </data>
-  <data name="seleccionartodoToolStripMenuItem.Text" xml:space="preserve">
-    <value>&amp;Seleccionar todo</value>
-  </data>
-  <data name="editarToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>58, 23</value>
-  </data>
-  <data name="editarToolStripMenuItem.Text" xml:space="preserve">
-    <value>&amp;Editar</value>
-  </data>
   <data name="opcionesToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>133, 24</value>
+    <value>146, 24</value>
   </data>
   <data name="opcionesToolStripMenuItem.Text" xml:space="preserve">
     <value>&amp;Opciones</value>
-  </data>
-  <data name="herramientasToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>103, 23</value>
-  </data>
-  <data name="herramientasToolStripMenuItem.Text" xml:space="preserve">
-    <value>&amp;Herramientas</value>
   </data>
   <data name="acercadeToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>146, 24</value>
   </data>
   <data name="acercadeToolStripMenuItem.Text" xml:space="preserve">
     <value>&amp;Acerca de...</value>
-  </data>
-  <data name="ayudaToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>59, 23</value>
-  </data>
-  <data name="ayudaToolStripMenuItem.Text" xml:space="preserve">
-    <value>&amp;Ayuda</value>
-  </data>
-  <data name="top_menu.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <data name="top_menu.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1264, 27</value>
-  </data>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="top_menu.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
-  </data>
-  <data name="top_menu.Text" xml:space="preserve">
-    <value>menuStrip1</value>
-  </data>
-  <data name="&gt;&gt;top_menu.Name" xml:space="preserve">
-    <value>top_menu</value>
-  </data>
-  <data name="&gt;&gt;top_menu.Type" xml:space="preserve">
-    <value>System.Windows.Forms.MenuStrip, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;top_menu.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;top_menu.ZOrder" xml:space="preserve">
-    <value>2</value>
   </data>
   <data name="pnl_layout_principal.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Bottom, Left, Right</value>
@@ -423,10 +421,85 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;pnl_layout_principal.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>2</value>
   </data>
   <data name="pnl_eventos.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
+  </data>
+  <data name="&gt;&gt;lbl_eventos.Name" xml:space="preserve">
+    <value>lbl_eventos</value>
+  </data>
+  <data name="&gt;&gt;lbl_eventos.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbl_eventos.Parent" xml:space="preserve">
+    <value>pnl_eventos</value>
+  </data>
+  <data name="&gt;&gt;lbl_eventos.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;btn_event_onload.Name" xml:space="preserve">
+    <value>btn_event_onload</value>
+  </data>
+  <data name="&gt;&gt;btn_event_onload.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_event_onload.Parent" xml:space="preserve">
+    <value>pnl_eventos</value>
+  </data>
+  <data name="&gt;&gt;btn_event_onload.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;btn_event_onpress.Name" xml:space="preserve">
+    <value>btn_event_onpress</value>
+  </data>
+  <data name="&gt;&gt;btn_event_onpress.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_event_onpress.Parent" xml:space="preserve">
+    <value>pnl_eventos</value>
+  </data>
+  <data name="&gt;&gt;btn_event_onpress.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;btn_event_onclick.Name" xml:space="preserve">
+    <value>btn_event_onclick</value>
+  </data>
+  <data name="&gt;&gt;btn_event_onclick.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_event_onclick.Parent" xml:space="preserve">
+    <value>pnl_eventos</value>
+  </data>
+  <data name="&gt;&gt;btn_event_onclick.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="pnl_eventos.Location" type="System.Drawing.Point, System.Drawing">
+    <value>13, 695</value>
+  </data>
+  <data name="pnl_eventos.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 3, 3, 20</value>
+  </data>
+  <data name="pnl_eventos.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>8, 8, 8, 8</value>
+  </data>
+  <data name="pnl_eventos.Size" type="System.Drawing.Size, System.Drawing">
+    <value>300, 176</value>
+  </data>
+  <data name="pnl_eventos.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;pnl_eventos.Name" xml:space="preserve">
+    <value>pnl_eventos</value>
+  </data>
+  <data name="&gt;&gt;pnl_eventos.Type" xml:space="preserve">
+    <value>System.Windows.Forms.FlowLayoutPanel, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pnl_eventos.Parent" xml:space="preserve">
+    <value>pnl_components</value>
+  </data>
+  <data name="&gt;&gt;pnl_eventos.ZOrder" xml:space="preserve">
+    <value>4</value>
   </data>
   <data name="lbl_eventos.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -587,35 +660,56 @@
   <data name="&gt;&gt;btn_event_onclick.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
-  <data name="pnl_eventos.Location" type="System.Drawing.Point, System.Drawing">
-    <value>13, 695</value>
-  </data>
-  <data name="pnl_eventos.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 3, 3, 20</value>
-  </data>
-  <data name="pnl_eventos.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>8, 8, 8, 8</value>
-  </data>
-  <data name="pnl_eventos.Size" type="System.Drawing.Size, System.Drawing">
-    <value>300, 176</value>
-  </data>
-  <data name="pnl_eventos.TabIndex" type="System.Int32, mscorlib">
-    <value>7</value>
-  </data>
-  <data name="&gt;&gt;pnl_eventos.Name" xml:space="preserve">
-    <value>pnl_eventos</value>
-  </data>
-  <data name="&gt;&gt;pnl_eventos.Type" xml:space="preserve">
-    <value>System.Windows.Forms.FlowLayoutPanel, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;pnl_eventos.Parent" xml:space="preserve">
-    <value>pnl_components</value>
-  </data>
-  <data name="&gt;&gt;pnl_eventos.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
   <data name="pnl_sonido.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
+  </data>
+  <data name="&gt;&gt;lbl_sonido.Name" xml:space="preserve">
+    <value>lbl_sonido</value>
+  </data>
+  <data name="&gt;&gt;lbl_sonido.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbl_sonido.Parent" xml:space="preserve">
+    <value>pnl_sonido</value>
+  </data>
+  <data name="&gt;&gt;lbl_sonido.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;btn_sound_play.Name" xml:space="preserve">
+    <value>btn_sound_play</value>
+  </data>
+  <data name="&gt;&gt;btn_sound_play.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_sound_play.Parent" xml:space="preserve">
+    <value>pnl_sonido</value>
+  </data>
+  <data name="&gt;&gt;btn_sound_play.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="pnl_sonido.Location" type="System.Drawing.Point, System.Drawing">
+    <value>13, 423</value>
+  </data>
+  <data name="pnl_sonido.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>8, 8, 8, 8</value>
+  </data>
+  <data name="pnl_sonido.Size" type="System.Drawing.Size, System.Drawing">
+    <value>300, 84</value>
+  </data>
+  <data name="pnl_sonido.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;pnl_sonido.Name" xml:space="preserve">
+    <value>pnl_sonido</value>
+  </data>
+  <data name="&gt;&gt;pnl_sonido.Type" xml:space="preserve">
+    <value>System.Windows.Forms.FlowLayoutPanel, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pnl_sonido.Parent" xml:space="preserve">
+    <value>pnl_components</value>
+  </data>
+  <data name="&gt;&gt;pnl_sonido.ZOrder" xml:space="preserve">
+    <value>2</value>
   </data>
   <data name="lbl_sonido.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -692,32 +786,80 @@
   <data name="&gt;&gt;btn_sound_play.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="pnl_sonido.Location" type="System.Drawing.Point, System.Drawing">
-    <value>13, 423</value>
-  </data>
-  <data name="pnl_sonido.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>8, 8, 8, 8</value>
-  </data>
-  <data name="pnl_sonido.Size" type="System.Drawing.Size, System.Drawing">
-    <value>300, 84</value>
-  </data>
-  <data name="pnl_sonido.TabIndex" type="System.Int32, mscorlib">
-    <value>6</value>
-  </data>
-  <data name="&gt;&gt;pnl_sonido.Name" xml:space="preserve">
-    <value>pnl_sonido</value>
-  </data>
-  <data name="&gt;&gt;pnl_sonido.Type" xml:space="preserve">
-    <value>System.Windows.Forms.FlowLayoutPanel, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;pnl_sonido.Parent" xml:space="preserve">
-    <value>pnl_components</value>
-  </data>
-  <data name="&gt;&gt;pnl_sonido.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
   <data name="pnl_escenario.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
+  </data>
+  <data name="&gt;&gt;lbl_escenario.Name" xml:space="preserve">
+    <value>lbl_escenario</value>
+  </data>
+  <data name="&gt;&gt;lbl_escenario.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbl_escenario.Parent" xml:space="preserve">
+    <value>pnl_escenario</value>
+  </data>
+  <data name="&gt;&gt;lbl_escenario.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;btn_change_background.Name" xml:space="preserve">
+    <value>btn_change_background</value>
+  </data>
+  <data name="&gt;&gt;btn_change_background.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_change_background.Parent" xml:space="preserve">
+    <value>pnl_escenario</value>
+  </data>
+  <data name="&gt;&gt;btn_change_background.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;btn_change_character.Name" xml:space="preserve">
+    <value>btn_change_character</value>
+  </data>
+  <data name="&gt;&gt;btn_change_character.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_change_character.Parent" xml:space="preserve">
+    <value>pnl_escenario</value>
+  </data>
+  <data name="&gt;&gt;btn_change_character.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;btn_change_size.Name" xml:space="preserve">
+    <value>btn_change_size</value>
+  </data>
+  <data name="&gt;&gt;btn_change_size.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_change_size.Parent" xml:space="preserve">
+    <value>pnl_escenario</value>
+  </data>
+  <data name="&gt;&gt;btn_change_size.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="pnl_escenario.Location" type="System.Drawing.Point, System.Drawing">
+    <value>13, 241</value>
+  </data>
+  <data name="pnl_escenario.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>8, 8, 8, 8</value>
+  </data>
+  <data name="pnl_escenario.Size" type="System.Drawing.Size, System.Drawing">
+    <value>300, 176</value>
+  </data>
+  <data name="pnl_escenario.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;pnl_escenario.Name" xml:space="preserve">
+    <value>pnl_escenario</value>
+  </data>
+  <data name="&gt;&gt;pnl_escenario.Type" xml:space="preserve">
+    <value>System.Windows.Forms.FlowLayoutPanel, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pnl_escenario.Parent" xml:space="preserve">
+    <value>pnl_components</value>
+  </data>
+  <data name="&gt;&gt;pnl_escenario.ZOrder" xml:space="preserve">
+    <value>1</value>
   </data>
   <data name="lbl_escenario.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -878,32 +1020,80 @@
   <data name="&gt;&gt;btn_change_size.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
-  <data name="pnl_escenario.Location" type="System.Drawing.Point, System.Drawing">
-    <value>13, 241</value>
-  </data>
-  <data name="pnl_escenario.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>8, 8, 8, 8</value>
-  </data>
-  <data name="pnl_escenario.Size" type="System.Drawing.Size, System.Drawing">
-    <value>300, 176</value>
-  </data>
-  <data name="pnl_escenario.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
-  </data>
-  <data name="&gt;&gt;pnl_escenario.Name" xml:space="preserve">
-    <value>pnl_escenario</value>
-  </data>
-  <data name="&gt;&gt;pnl_escenario.Type" xml:space="preserve">
-    <value>System.Windows.Forms.FlowLayoutPanel, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;pnl_escenario.Parent" xml:space="preserve">
-    <value>pnl_components</value>
-  </data>
-  <data name="&gt;&gt;pnl_escenario.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
   <data name="pnl_logica.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
+  </data>
+  <data name="&gt;&gt;lbl_logica.Name" xml:space="preserve">
+    <value>lbl_logica</value>
+  </data>
+  <data name="&gt;&gt;lbl_logica.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbl_logica.Parent" xml:space="preserve">
+    <value>pnl_logica</value>
+  </data>
+  <data name="&gt;&gt;lbl_logica.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;btn_logic_wait.Name" xml:space="preserve">
+    <value>btn_logic_wait</value>
+  </data>
+  <data name="&gt;&gt;btn_logic_wait.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_logic_wait.Parent" xml:space="preserve">
+    <value>pnl_logica</value>
+  </data>
+  <data name="&gt;&gt;btn_logic_wait.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;btn_logic_repeat.Name" xml:space="preserve">
+    <value>btn_logic_repeat</value>
+  </data>
+  <data name="&gt;&gt;btn_logic_repeat.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_logic_repeat.Parent" xml:space="preserve">
+    <value>pnl_logica</value>
+  </data>
+  <data name="&gt;&gt;btn_logic_repeat.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;btn_logic_repeatAlways.Name" xml:space="preserve">
+    <value>btn_logic_repeatAlways</value>
+  </data>
+  <data name="&gt;&gt;btn_logic_repeatAlways.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_logic_repeatAlways.Parent" xml:space="preserve">
+    <value>pnl_logica</value>
+  </data>
+  <data name="&gt;&gt;btn_logic_repeatAlways.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="pnl_logica.Location" type="System.Drawing.Point, System.Drawing">
+    <value>13, 513</value>
+  </data>
+  <data name="pnl_logica.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>8, 8, 8, 8</value>
+  </data>
+  <data name="pnl_logica.Size" type="System.Drawing.Size, System.Drawing">
+    <value>300, 176</value>
+  </data>
+  <data name="pnl_logica.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;pnl_logica.Name" xml:space="preserve">
+    <value>pnl_logica</value>
+  </data>
+  <data name="&gt;&gt;pnl_logica.Type" xml:space="preserve">
+    <value>System.Windows.Forms.FlowLayoutPanel, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pnl_logica.Parent" xml:space="preserve">
+    <value>pnl_components</value>
+  </data>
+  <data name="&gt;&gt;pnl_logica.ZOrder" xml:space="preserve">
+    <value>3</value>
   </data>
   <data name="lbl_logica.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -1022,74 +1212,134 @@
   <data name="&gt;&gt;btn_logic_repeat.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
-  <data name="btn_logic_repeat_always.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+  <data name="btn_logic_repeatAlways.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
   </data>
-  <data name="btn_logic_repeat_always.Font" type="System.Drawing.Font, System.Drawing">
+  <data name="btn_logic_repeatAlways.Font" type="System.Drawing.Font, System.Drawing">
     <value>Lexend Deca Medium, 9pt</value>
   </data>
-  <data name="btn_logic_repeat_always.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+  <data name="btn_logic_repeatAlways.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="btn_logic_repeat_always.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="btn_logic_repeatAlways.Location" type="System.Drawing.Point, System.Drawing">
     <value>10, 125</value>
   </data>
-  <data name="btn_logic_repeat_always.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+  <data name="btn_logic_repeatAlways.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 3, 2, 3</value>
   </data>
-  <data name="btn_logic_repeat_always.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+  <data name="btn_logic_repeatAlways.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>10, 0, 0, 0</value>
   </data>
-  <data name="btn_logic_repeat_always.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="btn_logic_repeatAlways.Size" type="System.Drawing.Size, System.Drawing">
     <value>280, 40</value>
   </data>
-  <data name="btn_logic_repeat_always.TabIndex" type="System.Int32, mscorlib">
+  <data name="btn_logic_repeatAlways.TabIndex" type="System.Int32, mscorlib">
     <value>6</value>
   </data>
-  <data name="btn_logic_repeat_always.Text" xml:space="preserve">
+  <data name="btn_logic_repeatAlways.Text" xml:space="preserve">
     <value>Repetir siempre</value>
   </data>
-  <data name="btn_logic_repeat_always.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+  <data name="btn_logic_repeatAlways.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleLeft</value>
   </data>
-  <data name="&gt;&gt;btn_logic_repeat_always.Name" xml:space="preserve">
-    <value>btn_logic_repeat_always</value>
+  <data name="&gt;&gt;btn_logic_repeatAlways.Name" xml:space="preserve">
+    <value>btn_logic_repeatAlways</value>
   </data>
-  <data name="&gt;&gt;btn_logic_repeat_always.Type" xml:space="preserve">
+  <data name="&gt;&gt;btn_logic_repeatAlways.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;btn_logic_repeat_always.Parent" xml:space="preserve">
+  <data name="&gt;&gt;btn_logic_repeatAlways.Parent" xml:space="preserve">
     <value>pnl_logica</value>
   </data>
-  <data name="&gt;&gt;btn_logic_repeat_always.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="pnl_logica.Location" type="System.Drawing.Point, System.Drawing">
-    <value>13, 513</value>
-  </data>
-  <data name="pnl_logica.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>8, 8, 8, 8</value>
-  </data>
-  <data name="pnl_logica.Size" type="System.Drawing.Size, System.Drawing">
-    <value>300, 176</value>
-  </data>
-  <data name="pnl_logica.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
-  </data>
-  <data name="&gt;&gt;pnl_logica.Name" xml:space="preserve">
-    <value>pnl_logica</value>
-  </data>
-  <data name="&gt;&gt;pnl_logica.Type" xml:space="preserve">
-    <value>System.Windows.Forms.FlowLayoutPanel, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;pnl_logica.Parent" xml:space="preserve">
-    <value>pnl_components</value>
-  </data>
-  <data name="&gt;&gt;pnl_logica.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;btn_logic_repeatAlways.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
   <data name="pnl_movimiento.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
+  </data>
+  <data name="&gt;&gt;lbl_movimiento.Name" xml:space="preserve">
+    <value>lbl_movimiento</value>
+  </data>
+  <data name="&gt;&gt;lbl_movimiento.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbl_movimiento.Parent" xml:space="preserve">
+    <value>pnl_movimiento</value>
+  </data>
+  <data name="&gt;&gt;lbl_movimiento.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;btn_move_right.Name" xml:space="preserve">
+    <value>btn_move_right</value>
+  </data>
+  <data name="&gt;&gt;btn_move_right.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_move_right.Parent" xml:space="preserve">
+    <value>pnl_movimiento</value>
+  </data>
+  <data name="&gt;&gt;btn_move_right.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;btn_move_left.Name" xml:space="preserve">
+    <value>btn_move_left</value>
+  </data>
+  <data name="&gt;&gt;btn_move_left.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_move_left.Parent" xml:space="preserve">
+    <value>pnl_movimiento</value>
+  </data>
+  <data name="&gt;&gt;btn_move_left.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;btn_move_up.Name" xml:space="preserve">
+    <value>btn_move_up</value>
+  </data>
+  <data name="&gt;&gt;btn_move_up.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_move_up.Parent" xml:space="preserve">
+    <value>pnl_movimiento</value>
+  </data>
+  <data name="&gt;&gt;btn_move_up.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;btn_move_down.Name" xml:space="preserve">
+    <value>btn_move_down</value>
+  </data>
+  <data name="&gt;&gt;btn_move_down.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_move_down.Parent" xml:space="preserve">
+    <value>pnl_movimiento</value>
+  </data>
+  <data name="&gt;&gt;btn_move_down.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="pnl_movimiento.Location" type="System.Drawing.Point, System.Drawing">
+    <value>13, 13</value>
+  </data>
+  <data name="pnl_movimiento.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>8, 8, 8, 8</value>
+  </data>
+  <data name="pnl_movimiento.Size" type="System.Drawing.Size, System.Drawing">
+    <value>300, 222</value>
+  </data>
+  <data name="pnl_movimiento.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;pnl_movimiento.Name" xml:space="preserve">
+    <value>pnl_movimiento</value>
+  </data>
+  <data name="&gt;&gt;pnl_movimiento.Type" xml:space="preserve">
+    <value>System.Windows.Forms.FlowLayoutPanel, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pnl_movimiento.Parent" xml:space="preserve">
+    <value>pnl_components</value>
+  </data>
+  <data name="&gt;&gt;pnl_movimiento.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
   <data name="lbl_movimiento.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -1292,30 +1542,6 @@
   <data name="&gt;&gt;btn_move_down.ZOrder" xml:space="preserve">
     <value>4</value>
   </data>
-  <data name="pnl_movimiento.Location" type="System.Drawing.Point, System.Drawing">
-    <value>13, 13</value>
-  </data>
-  <data name="pnl_movimiento.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>8, 8, 8, 8</value>
-  </data>
-  <data name="pnl_movimiento.Size" type="System.Drawing.Size, System.Drawing">
-    <value>300, 222</value>
-  </data>
-  <data name="pnl_movimiento.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;pnl_movimiento.Name" xml:space="preserve">
-    <value>pnl_movimiento</value>
-  </data>
-  <data name="&gt;&gt;pnl_movimiento.Type" xml:space="preserve">
-    <value>System.Windows.Forms.FlowLayoutPanel, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;pnl_movimiento.Parent" xml:space="preserve">
-    <value>pnl_components</value>
-  </data>
-  <data name="&gt;&gt;pnl_movimiento.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
   <data name="pnl_components.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Bottom, Right</value>
   </data>
@@ -1347,10 +1573,91 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;pnl_components.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>3</value>
   </data>
   <data name="flowLayoutPanel2.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Bottom, Right</value>
+  </data>
+  <data name="&gt;&gt;btn_movimiento.Name" xml:space="preserve">
+    <value>btn_movimiento</value>
+  </data>
+  <data name="&gt;&gt;btn_movimiento.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_movimiento.Parent" xml:space="preserve">
+    <value>flowLayoutPanel2</value>
+  </data>
+  <data name="&gt;&gt;btn_movimiento.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;btn_escenario.Name" xml:space="preserve">
+    <value>btn_escenario</value>
+  </data>
+  <data name="&gt;&gt;btn_escenario.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_escenario.Parent" xml:space="preserve">
+    <value>flowLayoutPanel2</value>
+  </data>
+  <data name="&gt;&gt;btn_escenario.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;btn_sonido.Name" xml:space="preserve">
+    <value>btn_sonido</value>
+  </data>
+  <data name="&gt;&gt;btn_sonido.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_sonido.Parent" xml:space="preserve">
+    <value>flowLayoutPanel2</value>
+  </data>
+  <data name="&gt;&gt;btn_sonido.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;btn_logica.Name" xml:space="preserve">
+    <value>btn_logica</value>
+  </data>
+  <data name="&gt;&gt;btn_logica.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_logica.Parent" xml:space="preserve">
+    <value>flowLayoutPanel2</value>
+  </data>
+  <data name="&gt;&gt;btn_logica.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;btn_eventos.Name" xml:space="preserve">
+    <value>btn_eventos</value>
+  </data>
+  <data name="&gt;&gt;btn_eventos.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_eventos.Parent" xml:space="preserve">
+    <value>flowLayoutPanel2</value>
+  </data>
+  <data name="&gt;&gt;btn_eventos.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="flowLayoutPanel2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1142, 45</value>
+  </data>
+  <data name="flowLayoutPanel2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>110, 654</value>
+  </data>
+  <data name="flowLayoutPanel2.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;flowLayoutPanel2.Name" xml:space="preserve">
+    <value>flowLayoutPanel2</value>
+  </data>
+  <data name="&gt;&gt;flowLayoutPanel2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.FlowLayoutPanel, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;flowLayoutPanel2.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;flowLayoutPanel2.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
   <data name="btn_movimiento.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Center</value>
@@ -1592,56 +1899,11 @@
   <data name="&gt;&gt;btn_eventos.ZOrder" xml:space="preserve">
     <value>4</value>
   </data>
-  <data name="flowLayoutPanel2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1142, 45</value>
-  </data>
-  <data name="flowLayoutPanel2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>110, 654</value>
-  </data>
-  <data name="flowLayoutPanel2.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
-  </data>
-  <data name="&gt;&gt;flowLayoutPanel2.Name" xml:space="preserve">
-    <value>flowLayoutPanel2</value>
-  </data>
-  <data name="&gt;&gt;flowLayoutPanel2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.FlowLayoutPanel, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;flowLayoutPanel2.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;flowLayoutPanel2.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <metadata name="bloque_menu.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>299, 17</value>
-  </metadata>
-  <data name="bloque_menu.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Lexend Deca Medium, 9pt</value>
-  </data>
-  <data name="eliminarToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>127, 24</value>
-  </data>
-  <data name="eliminarToolStripMenuItem.Text" xml:space="preserve">
-    <value>Eliminar</value>
-  </data>
-  <data name="bloque_menu.Size" type="System.Drawing.Size, System.Drawing">
-    <value>128, 28</value>
-  </data>
-  <data name="bloque_menu.Text" xml:space="preserve">
-    <value>Ordenar</value>
-  </data>
-  <data name="&gt;&gt;bloque_menu.Name" xml:space="preserve">
-    <value>bloque_menu</value>
-  </data>
-  <data name="&gt;&gt;bloque_menu.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ContextMenuStrip, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
   <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>25</value>
+    <value>44</value>
   </metadata>
   <data name="$this.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>None</value>
@@ -1651,6 +1913,77 @@
   </data>
   <data name="$this.Font" type="System.Drawing.Font, System.Drawing">
     <value>Lexend Deca Medium, 9pt</value>
+  </data>
+  <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        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
+</value>
+  </data>
+  <data name="$this.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>900, 500</value>
   </data>
   <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
     <value>CenterScreen</value>
@@ -1694,16 +2027,16 @@
   <data name="&gt;&gt;toolStripSeparator.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripSeparator, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="&gt;&gt;toolStripMenuItem2.Name" xml:space="preserve">
+    <value>toolStripMenuItem2</value>
+  </data>
+  <data name="&gt;&gt;toolStripMenuItem2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="&gt;&gt;guardarToolStripMenuItem.Name" xml:space="preserve">
     <value>guardarToolStripMenuItem</value>
   </data>
   <data name="&gt;&gt;guardarToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;guardarcomoToolStripMenuItem.Name" xml:space="preserve">
-    <value>guardarcomoToolStripMenuItem</value>
-  </data>
-  <data name="&gt;&gt;guardarcomoToolStripMenuItem.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;toolStripSeparator2.Name" xml:space="preserve">
@@ -1760,18 +2093,6 @@
   <data name="&gt;&gt;pegarToolStripMenuItem.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;toolStripSeparator4.Name" xml:space="preserve">
-    <value>toolStripSeparator4</value>
-  </data>
-  <data name="&gt;&gt;toolStripSeparator4.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripSeparator, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;seleccionartodoToolStripMenuItem.Name" xml:space="preserve">
-    <value>seleccionartodoToolStripMenuItem</value>
-  </data>
-  <data name="&gt;&gt;seleccionartodoToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
   <data name="&gt;&gt;herramientasToolStripMenuItem.Name" xml:space="preserve">
     <value>herramientasToolStripMenuItem</value>
   </data>
@@ -1784,22 +2105,10 @@
   <data name="&gt;&gt;opcionesToolStripMenuItem.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;ayudaToolStripMenuItem.Name" xml:space="preserve">
-    <value>ayudaToolStripMenuItem</value>
-  </data>
-  <data name="&gt;&gt;ayudaToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
   <data name="&gt;&gt;acercadeToolStripMenuItem.Name" xml:space="preserve">
     <value>acercadeToolStripMenuItem</value>
   </data>
   <data name="&gt;&gt;acercadeToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;eliminarToolStripMenuItem.Name" xml:space="preserve">
-    <value>eliminarToolStripMenuItem</value>
-  </data>
-  <data name="&gt;&gt;eliminarToolStripMenuItem.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">

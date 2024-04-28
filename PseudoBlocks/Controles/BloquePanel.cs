@@ -7,12 +7,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using PseudoBlocks.Controles.Logica;
 
 namespace PseudoBlocks.Controles
 {
 	public partial class BloquePanel : Bloque
 	{
-		private ListaItems listaItems = new ListaItems(false);
+		private readonly ListaItems listaItems = new ListaItems(false);
 
 		public BloquePanel()
 		{
@@ -44,7 +45,7 @@ namespace PseudoBlocks.Controles
 			Actualizar();
 		}
 
-		private void pnl_layout_DragEnter(object sender, DragEventArgs e)
+		private void DragEnter(object sender, DragEventArgs e)
 		{
 			if (e.Data.GetData(DataFormats.Serializable) is Bloque)
 			{
@@ -56,7 +57,7 @@ namespace PseudoBlocks.Controles
 			}
 		}
 
-		private void pnl_layout_DragDrop(object sender, DragEventArgs e)
+		private void DragDrop(object sender, DragEventArgs e)
 		{
 			if (e.Data.GetData(DataFormats.Serializable) is Bloque bloque)
 			{
@@ -69,12 +70,12 @@ namespace PseudoBlocks.Controles
 			}
 		}
 
-		private void pnl_layout_DragOver(object sender, DragEventArgs e)
+		private void DragOver(object sender, DragEventArgs e)
 		{
 			e.Effect = DragDropEffects.Move;
 		}
 
-		private void Actualizar()
+		public void Actualizar()
 		{
 			listaItems.OrdenarControles();
 			if (Parent is Panel panel)
@@ -82,6 +83,10 @@ namespace PseudoBlocks.Controles
 				if (panel.Parent is BloquePanel bloquePanel)
 				{
 					bloquePanel.Actualizar();
+				}
+				if (panel.Parent is BloqueRepetir bloqueRepetir)
+				{
+					bloqueRepetir.Actualizar();
 				}
 			}
 		}

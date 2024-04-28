@@ -15,7 +15,7 @@ namespace PseudoBlocks
 {
 	public partial class frm_Editor : Form
 	{
-		private ListaItems listaItems = new ListaItems(new Point(10, 10));
+		private readonly ListaItems listaItems = new ListaItems(new Point(10, 10));
 
 		public frm_Editor()
 		{
@@ -26,61 +26,54 @@ namespace PseudoBlocks
 		{
 			if (sender is Control control)
 			{
-				string controlName = control.Name;
-				string controlType = controlName.Substring(controlName.IndexOf('_') + 1);
-				if (controlType.StartsWith("move"))
+				string controlType = control.Name.Substring(control.Name.IndexOf('_') + 1);
+				string[] controlInfo = controlType.Split('_');
+				switch (controlInfo[0])
 				{
-					AgregarControl(new Bloque(controlType, control.Text, Color.MediumAquamarine));
-				}
-				if (controlType.StartsWith("change"))
-				{
-					if (controlType.EndsWith("background"))
-					{
-						AgregarControl(new BloqueImagen(controlType, control.Text, Color.LightBlue));
-					}
-					if (controlType.EndsWith("character"))
-					{
-						AgregarControl(new BloqueImagen(controlType, control.Text, Color.LightBlue));
-					}
-
-					if (controlType.EndsWith("size"))
-					{
-						AgregarControl(new BloqueXY(controlType, control.Text, Color.LightBlue));
-					}
-				}
-				if (controlType.StartsWith("sound"))
-				{
-					AgregarControl(new BloqueAudio(controlType, control.Text, Color.FromArgb(255, 192, 255)));
-				}
-				if (controlType.StartsWith("logic"))
-				{
-					if (controlType.EndsWith("wait"))
-					{
-						AgregarControl(new BloqueNumerico(controlType, control.Text, Color.LightSalmon));
-					}
-					if (controlType.EndsWith("repeat"))
-					{
-						AgregarControl(new BloqueRepetir(controlType, control.Text, Color.LightSalmon));
-					}
-					if (controlType.EndsWith("repeat_always"))
-					{
-						AgregarControl(new BloquePanel(controlType, control.Text, Color.LightSalmon));
-					}
-				}
-				if (controlType.StartsWith("event"))
-				{
-					if (controlType.EndsWith("onload"))
-					{
-						AgregarControl(new BloquePanel(controlType, control.Text, Color.LightCoral));
-					}
-					if (controlType.EndsWith("onpress"))
-					{
-						AgregarControl(new BloqueHotkey(controlType, control.Text, Color.LightCoral));
-					}
-					if (controlType.EndsWith("onclick"))
-					{
-						AgregarControl(new BloquePanel(controlType, control.Text, Color.LightCoral));
-					}
+					case "move": // Movimiento
+						AgregarControl(new Bloque(controlType, control.Text, Color.MediumAquamarine));
+						break;
+					case "change": // Escenario
+						switch (controlInfo[1])
+						{
+							case "background":
+							case "character":
+								AgregarControl(new BloqueImagen(controlType, control.Text, Color.LightBlue));
+								break;
+							case "size":
+								AgregarControl(new BloqueXY(controlType, control.Text, Color.LightBlue));
+								break;
+						}
+						break;
+					case "sound": // Sonido
+						AgregarControl(new BloqueAudio(controlType, control.Text, Color.FromArgb(255, 192, 255)));
+						break;
+					case "logic": // Lógica
+						switch (controlInfo[1])
+						{
+							case "wait":
+								AgregarControl(new BloqueNumerico(controlType, control.Text, Color.LightSalmon));
+								break;
+							case "repeat":
+								AgregarControl(new BloqueRepetir(controlType, control.Text, Color.LightSalmon));
+								break;
+							case "repeatAlways":
+								AgregarControl(new BloquePanel(controlType, control.Text, Color.LightSalmon));
+								break;
+						}
+						break;
+					case "event": // Eventos
+						switch (controlInfo[1])
+						{
+							case "onload":
+							case "onclick":
+								AgregarControl(new BloquePanel(controlType, control.Text, Color.LightCoral));
+								break;
+							case "onpress":
+								AgregarControl(new BloqueHotkey(controlType, control.Text, Color.LightCoral));
+								break;
+						}
+						break;
 				}
 			}
 		}
@@ -89,17 +82,16 @@ namespace PseudoBlocks
 		{
 			listaItems.Agregar(control);
 			pnl_layout_principal.Controls.Add(control);
-			control.ContextMenuStrip.ItemClicked += (sender, e) => EliminarComponente(control);
+			control.ContextMenuStrip.ItemClicked += (sender, e) => EliminarControl(control);
 			control.BringToFront();
 		}
 
-		public void EliminarComponente(Control control)
+		private void EliminarControl(Control control)
 		{
 			pnl_layout_principal.Controls.Remove(control);
 			listaItems.Eliminar(control);
 		}
 
-		// Cuando se presiona un botón de categoría, mostrar los controles de esa categoría
 		private void CambiarCategoria(object sender, EventArgs e)
 		{
 			if (sender is Button btn)
@@ -107,27 +99,26 @@ namespace PseudoBlocks
 				switch (btn.Name.Substring(btn.Name.IndexOf('_') + 1))
 				{
 					case "movimiento":
-						btn_movimiento.BackColor = Color.LightGray;
+						//btn_movimiento.BackColor = Color.LightGray;
 						pnl_components.ScrollControlIntoView(pnl_movimiento);
 						break;
 					case "escenario":
-						btn_escenario.BackColor = Color.LightGray;
+						//btn_escenario.BackColor = Color.LightGray;
 						pnl_components.ScrollControlIntoView(pnl_escenario);
 						break;
 					case "sonido":
-						btn_sonido.BackColor = Color.LightGray;
+						//btn_sonido.BackColor = Color.LightGray;
 						pnl_components.ScrollControlIntoView(pnl_sonido);
 						break;
 					case "logica":
-						btn_logica.BackColor = Color.LightGray;
+						//btn_logica.BackColor = Color.LightGray;
 						pnl_components.ScrollControlIntoView(pnl_logica);
 						break;
 					case "eventos":
-						btn_eventos.BackColor = Color.LightGray;
+						//btn_eventos.BackColor = Color.LightGray;
 						pnl_components.ScrollControlIntoView(pnl_eventos);
 						break;
 				}
-				pnl_components.Refresh();
 			}
 		}
 	}

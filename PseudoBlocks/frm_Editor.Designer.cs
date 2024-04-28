@@ -28,7 +28,6 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
-			components = new System.ComponentModel.Container();
 			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frm_Editor));
 			top_menu = new MenuStrip();
 			archivoToolStripMenuItem = new ToolStripMenuItem();
@@ -37,8 +36,8 @@
 			nuevoToolStripMenuItem = new ToolStripMenuItem();
 			toolStripMenuItem1 = new ToolStripMenuItem();
 			toolStripSeparator = new ToolStripSeparator();
+			toolStripMenuItem2 = new ToolStripMenuItem();
 			guardarToolStripMenuItem = new ToolStripMenuItem();
-			guardarcomoToolStripMenuItem = new ToolStripMenuItem();
 			toolStripSeparator2 = new ToolStripSeparator();
 			salirToolStripMenuItem = new ToolStripMenuItem();
 			editarToolStripMenuItem = new ToolStripMenuItem();
@@ -48,11 +47,8 @@
 			cortarToolStripMenuItem = new ToolStripMenuItem();
 			copiarToolStripMenuItem = new ToolStripMenuItem();
 			pegarToolStripMenuItem = new ToolStripMenuItem();
-			toolStripSeparator4 = new ToolStripSeparator();
-			seleccionartodoToolStripMenuItem = new ToolStripMenuItem();
 			herramientasToolStripMenuItem = new ToolStripMenuItem();
 			opcionesToolStripMenuItem = new ToolStripMenuItem();
-			ayudaToolStripMenuItem = new ToolStripMenuItem();
 			acercadeToolStripMenuItem = new ToolStripMenuItem();
 			pnl_layout_principal = new Panel();
 			pnl_eventos = new FlowLayoutPanel();
@@ -72,7 +68,7 @@
 			lbl_logica = new Label();
 			btn_logic_wait = new Button();
 			btn_logic_repeat = new Button();
-			btn_logic_repeat_always = new Button();
+			btn_logic_repeatAlways = new Button();
 			pnl_movimiento = new FlowLayoutPanel();
 			lbl_movimiento = new Label();
 			btn_move_right = new Button();
@@ -86,8 +82,6 @@
 			btn_sonido = new Button();
 			btn_logica = new Button();
 			btn_eventos = new Button();
-			bloque_menu = new ContextMenuStrip(components);
-			eliminarToolStripMenuItem = new ToolStripMenuItem();
 			top_menu.SuspendLayout();
 			pnl_eventos.SuspendLayout();
 			pnl_sonido.SuspendLayout();
@@ -96,7 +90,6 @@
 			pnl_movimiento.SuspendLayout();
 			pnl_components.SuspendLayout();
 			flowLayoutPanel2.SuspendLayout();
-			bloque_menu.SuspendLayout();
 			SuspendLayout();
 			// 
 			// top_menu
@@ -104,12 +97,12 @@
 			top_menu.BackColor = SystemColors.Window;
 			resources.ApplyResources(top_menu, "top_menu");
 			top_menu.ImageScalingSize = new Size(20, 20);
-			top_menu.Items.AddRange(new ToolStripItem[] { archivoToolStripMenuItem, editarToolStripMenuItem, herramientasToolStripMenuItem, ayudaToolStripMenuItem });
+			top_menu.Items.AddRange(new ToolStripItem[] { archivoToolStripMenuItem, editarToolStripMenuItem, herramientasToolStripMenuItem });
 			top_menu.Name = "top_menu";
 			// 
 			// archivoToolStripMenuItem
 			// 
-			archivoToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { abrirToolStripMenuItem, toolStripSeparator5, nuevoToolStripMenuItem, toolStripMenuItem1, toolStripSeparator, guardarToolStripMenuItem, guardarcomoToolStripMenuItem, toolStripSeparator2, salirToolStripMenuItem });
+			archivoToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { abrirToolStripMenuItem, toolStripSeparator5, nuevoToolStripMenuItem, toolStripMenuItem1, toolStripSeparator, toolStripMenuItem2, guardarToolStripMenuItem, toolStripSeparator2, salirToolStripMenuItem });
 			archivoToolStripMenuItem.Name = "archivoToolStripMenuItem";
 			resources.ApplyResources(archivoToolStripMenuItem, "archivoToolStripMenuItem");
 			// 
@@ -138,15 +131,15 @@
 			toolStripSeparator.Name = "toolStripSeparator";
 			resources.ApplyResources(toolStripSeparator, "toolStripSeparator");
 			// 
+			// toolStripMenuItem2
+			// 
+			resources.ApplyResources(toolStripMenuItem2, "toolStripMenuItem2");
+			toolStripMenuItem2.Name = "toolStripMenuItem2";
+			// 
 			// guardarToolStripMenuItem
 			// 
 			resources.ApplyResources(guardarToolStripMenuItem, "guardarToolStripMenuItem");
 			guardarToolStripMenuItem.Name = "guardarToolStripMenuItem";
-			// 
-			// guardarcomoToolStripMenuItem
-			// 
-			guardarcomoToolStripMenuItem.Name = "guardarcomoToolStripMenuItem";
-			resources.ApplyResources(guardarcomoToolStripMenuItem, "guardarcomoToolStripMenuItem");
 			// 
 			// toolStripSeparator2
 			// 
@@ -160,7 +153,7 @@
 			// 
 			// editarToolStripMenuItem
 			// 
-			editarToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { deshacerToolStripMenuItem, rehacerToolStripMenuItem, toolStripSeparator3, cortarToolStripMenuItem, copiarToolStripMenuItem, pegarToolStripMenuItem, toolStripSeparator4, seleccionartodoToolStripMenuItem });
+			editarToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { deshacerToolStripMenuItem, rehacerToolStripMenuItem, toolStripSeparator3, cortarToolStripMenuItem, copiarToolStripMenuItem, pegarToolStripMenuItem });
 			editarToolStripMenuItem.Name = "editarToolStripMenuItem";
 			resources.ApplyResources(editarToolStripMenuItem, "editarToolStripMenuItem");
 			// 
@@ -194,19 +187,9 @@
 			resources.ApplyResources(pegarToolStripMenuItem, "pegarToolStripMenuItem");
 			pegarToolStripMenuItem.Name = "pegarToolStripMenuItem";
 			// 
-			// toolStripSeparator4
-			// 
-			toolStripSeparator4.Name = "toolStripSeparator4";
-			resources.ApplyResources(toolStripSeparator4, "toolStripSeparator4");
-			// 
-			// seleccionartodoToolStripMenuItem
-			// 
-			seleccionartodoToolStripMenuItem.Name = "seleccionartodoToolStripMenuItem";
-			resources.ApplyResources(seleccionartodoToolStripMenuItem, "seleccionartodoToolStripMenuItem");
-			// 
 			// herramientasToolStripMenuItem
 			// 
-			herramientasToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { opcionesToolStripMenuItem });
+			herramientasToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { opcionesToolStripMenuItem, acercadeToolStripMenuItem });
 			herramientasToolStripMenuItem.Name = "herramientasToolStripMenuItem";
 			resources.ApplyResources(herramientasToolStripMenuItem, "herramientasToolStripMenuItem");
 			// 
@@ -214,12 +197,6 @@
 			// 
 			opcionesToolStripMenuItem.Name = "opcionesToolStripMenuItem";
 			resources.ApplyResources(opcionesToolStripMenuItem, "opcionesToolStripMenuItem");
-			// 
-			// ayudaToolStripMenuItem
-			// 
-			ayudaToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { acercadeToolStripMenuItem });
-			ayudaToolStripMenuItem.Name = "ayudaToolStripMenuItem";
-			resources.ApplyResources(ayudaToolStripMenuItem, "ayudaToolStripMenuItem");
 			// 
 			// acercadeToolStripMenuItem
 			// 
@@ -367,7 +344,7 @@
 			pnl_logica.Controls.Add(lbl_logica);
 			pnl_logica.Controls.Add(btn_logic_wait);
 			pnl_logica.Controls.Add(btn_logic_repeat);
-			pnl_logica.Controls.Add(btn_logic_repeat_always);
+			pnl_logica.Controls.Add(btn_logic_repeatAlways);
 			pnl_logica.Name = "pnl_logica";
 			// 
 			// lbl_logica
@@ -399,17 +376,17 @@
 			btn_logic_repeat.UseVisualStyleBackColor = false;
 			btn_logic_repeat.Click += AgregarComponente;
 			// 
-			// btn_logic_repeat_always
+			// btn_logic_repeatAlways
 			// 
-			btn_logic_repeat_always.BackColor = Color.LightSalmon;
-			btn_logic_repeat_always.Cursor = Cursors.Hand;
-			btn_logic_repeat_always.FlatAppearance.BorderSize = 0;
-			resources.ApplyResources(btn_logic_repeat_always, "btn_logic_repeat_always");
-			btn_logic_repeat_always.Name = "btn_logic_repeat_always";
-			btn_logic_repeat_always.Tag = "";
-			btn_logic_repeat_always.UseMnemonic = false;
-			btn_logic_repeat_always.UseVisualStyleBackColor = false;
-			btn_logic_repeat_always.Click += AgregarComponente;
+			btn_logic_repeatAlways.BackColor = Color.LightSalmon;
+			btn_logic_repeatAlways.Cursor = Cursors.Hand;
+			btn_logic_repeatAlways.FlatAppearance.BorderSize = 0;
+			resources.ApplyResources(btn_logic_repeatAlways, "btn_logic_repeatAlways");
+			btn_logic_repeatAlways.Name = "btn_logic_repeatAlways";
+			btn_logic_repeatAlways.Tag = "";
+			btn_logic_repeatAlways.UseMnemonic = false;
+			btn_logic_repeatAlways.UseVisualStyleBackColor = false;
+			btn_logic_repeatAlways.Click += AgregarComponente;
 			// 
 			// pnl_movimiento
 			// 
@@ -505,8 +482,8 @@
 			btn_movimiento.Cursor = Cursors.Hand;
 			btn_movimiento.FlatAppearance.BorderSize = 0;
 			btn_movimiento.FlatAppearance.CheckedBackColor = SystemColors.Window;
-			btn_movimiento.FlatAppearance.MouseDownBackColor = SystemColors.Window;
-			btn_movimiento.FlatAppearance.MouseOverBackColor = SystemColors.Window;
+			btn_movimiento.FlatAppearance.MouseDownBackColor = SystemColors.ButtonShadow;
+			btn_movimiento.FlatAppearance.MouseOverBackColor = SystemColors.ScrollBar;
 			btn_movimiento.Image = Properties.Resources.circle_1;
 			btn_movimiento.Name = "btn_movimiento";
 			btn_movimiento.Tag = "";
@@ -521,8 +498,8 @@
 			btn_escenario.Cursor = Cursors.Hand;
 			btn_escenario.FlatAppearance.BorderSize = 0;
 			btn_escenario.FlatAppearance.CheckedBackColor = SystemColors.Window;
-			btn_escenario.FlatAppearance.MouseDownBackColor = SystemColors.Window;
-			btn_escenario.FlatAppearance.MouseOverBackColor = SystemColors.Window;
+			btn_escenario.FlatAppearance.MouseDownBackColor = SystemColors.ButtonShadow;
+			btn_escenario.FlatAppearance.MouseOverBackColor = SystemColors.ScrollBar;
 			btn_escenario.Image = Properties.Resources.circle_2;
 			btn_escenario.Name = "btn_escenario";
 			btn_escenario.Tag = "";
@@ -537,8 +514,8 @@
 			btn_sonido.Cursor = Cursors.Hand;
 			btn_sonido.FlatAppearance.BorderSize = 0;
 			btn_sonido.FlatAppearance.CheckedBackColor = SystemColors.Window;
-			btn_sonido.FlatAppearance.MouseDownBackColor = SystemColors.Window;
-			btn_sonido.FlatAppearance.MouseOverBackColor = SystemColors.Window;
+			btn_sonido.FlatAppearance.MouseDownBackColor = SystemColors.ButtonShadow;
+			btn_sonido.FlatAppearance.MouseOverBackColor = SystemColors.ScrollBar;
 			btn_sonido.Image = Properties.Resources.circle_3;
 			btn_sonido.Name = "btn_sonido";
 			btn_sonido.Tag = "";
@@ -553,8 +530,8 @@
 			btn_logica.Cursor = Cursors.Hand;
 			btn_logica.FlatAppearance.BorderSize = 0;
 			btn_logica.FlatAppearance.CheckedBackColor = SystemColors.Window;
-			btn_logica.FlatAppearance.MouseDownBackColor = SystemColors.Window;
-			btn_logica.FlatAppearance.MouseOverBackColor = SystemColors.Window;
+			btn_logica.FlatAppearance.MouseDownBackColor = SystemColors.ButtonShadow;
+			btn_logica.FlatAppearance.MouseOverBackColor = SystemColors.ScrollBar;
 			btn_logica.Image = Properties.Resources.circle_4;
 			btn_logica.Name = "btn_logica";
 			btn_logica.Tag = "";
@@ -569,26 +546,14 @@
 			btn_eventos.Cursor = Cursors.Hand;
 			btn_eventos.FlatAppearance.BorderSize = 0;
 			btn_eventos.FlatAppearance.CheckedBackColor = SystemColors.Window;
-			btn_eventos.FlatAppearance.MouseDownBackColor = SystemColors.Window;
-			btn_eventos.FlatAppearance.MouseOverBackColor = SystemColors.Window;
+			btn_eventos.FlatAppearance.MouseDownBackColor = SystemColors.ButtonShadow;
+			btn_eventos.FlatAppearance.MouseOverBackColor = SystemColors.ScrollBar;
 			btn_eventos.Image = Properties.Resources.circle_5;
 			btn_eventos.Name = "btn_eventos";
 			btn_eventos.Tag = "";
 			btn_eventos.UseMnemonic = false;
 			btn_eventos.UseVisualStyleBackColor = false;
 			btn_eventos.Click += CambiarCategoria;
-			// 
-			// bloque_menu
-			// 
-			resources.ApplyResources(bloque_menu, "bloque_menu");
-			bloque_menu.ImageScalingSize = new Size(20, 20);
-			bloque_menu.Items.AddRange(new ToolStripItem[] { eliminarToolStripMenuItem });
-			bloque_menu.Name = "menu_control";
-			// 
-			// eliminarToolStripMenuItem
-			// 
-			eliminarToolStripMenuItem.Name = "eliminarToolStripMenuItem";
-			resources.ApplyResources(eliminarToolStripMenuItem, "eliminarToolStripMenuItem");
 			// 
 			// frm_Editor
 			// 
@@ -598,6 +563,7 @@
 			Controls.Add(top_menu);
 			Controls.Add(pnl_layout_principal);
 			Controls.Add(pnl_components);
+			DoubleBuffered = true;
 			MainMenuStrip = top_menu;
 			Name = "frm_Editor";
 			top_menu.ResumeLayout(false);
@@ -615,7 +581,6 @@
 			pnl_components.ResumeLayout(false);
 			pnl_components.PerformLayout();
 			flowLayoutPanel2.ResumeLayout(false);
-			bloque_menu.ResumeLayout(false);
 			ResumeLayout(false);
 			PerformLayout();
 		}
@@ -627,7 +592,6 @@
 		private ToolStripMenuItem abrirToolStripMenuItem;
 		private ToolStripSeparator toolStripSeparator;
 		private ToolStripMenuItem guardarToolStripMenuItem;
-		private ToolStripMenuItem guardarcomoToolStripMenuItem;
 		private ToolStripSeparator toolStripSeparator2;
 		private ToolStripMenuItem salirToolStripMenuItem;
 		private ToolStripMenuItem editarToolStripMenuItem;
@@ -637,12 +601,8 @@
 		private ToolStripMenuItem cortarToolStripMenuItem;
 		private ToolStripMenuItem copiarToolStripMenuItem;
 		private ToolStripMenuItem pegarToolStripMenuItem;
-		private ToolStripSeparator toolStripSeparator4;
-		private ToolStripMenuItem seleccionartodoToolStripMenuItem;
 		private ToolStripMenuItem herramientasToolStripMenuItem;
 		private ToolStripMenuItem opcionesToolStripMenuItem;
-		private ToolStripMenuItem ayudaToolStripMenuItem;
-		private ToolStripMenuItem acercadeToolStripMenuItem;
 		private ToolStripMenuItem toolStripMenuItem1;
 		private ToolStripSeparator toolStripSeparator5;
 		private Panel pnl_layout_principal;
@@ -675,9 +635,9 @@
 		private Button btn_eventos;
 		private Label lbl_escenario;
 		private Label lbl_movimiento;
-		protected ContextMenuStrip bloque_menu;
-		private ToolStripMenuItem eliminarToolStripMenuItem;
 		private Button btn_change_size;
-		private Button btn_logic_repeat_always;
+		private Button btn_logic_repeatAlways;
+		private ToolStripMenuItem toolStripMenuItem2;
+		private ToolStripMenuItem acercadeToolStripMenuItem;
 	}
 }
