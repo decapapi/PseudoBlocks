@@ -1,6 +1,4 @@
-﻿using PseudoBlocks.Controles;
-using PseudoBlocks.Controles.Numerico;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.ComponentModel;
@@ -9,6 +7,7 @@ using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using PseudoBlocks.Controles;
 
 namespace PseudoBlocks
 {
@@ -109,7 +108,7 @@ namespace PseudoBlocks
 				return control;
 		}
 
-		public void OrdenarControles(object? sender, EventArgs e)
+		public void OrdenarControles()
 		{
 			if (!libre && this.Bloques.Count > 0)
 			{
@@ -125,11 +124,6 @@ namespace PseudoBlocks
 					localizacion.Y += this.Bloques[i].Height;
 				}
 			}
-		}
-
-		public void OrdenarControles()
-		{
-			this.OrdenarControles(null, null);
 		}
 
 		public Point PrimeraPosicion()

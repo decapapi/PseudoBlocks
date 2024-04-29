@@ -15,8 +15,6 @@ namespace PseudoBlocks
 {
 	public partial class frm_Editor : Form
 	{
-		private readonly ListaItems listaItems = new ListaItems(new Point(10, 10));
-
 		public frm_Editor()
 		{
 			InitializeComponent();
@@ -80,8 +78,10 @@ namespace PseudoBlocks
 
 		private void AgregarControl(Bloque control)
 		{
-			listaItems.Agregar(control);
 			pnl_layout_principal.Controls.Add(control);
+			Random rdm = new Random();
+			control.Location = new Point(rdm.Next(10, pnl_layout_principal.Width - control.Width),
+				rdm.Next(rdm.Next(10, 20)));
 			control.ContextMenuStrip.ItemClicked += (sender, e) => EliminarControl(control);
 			control.BringToFront();
 		}
@@ -89,7 +89,6 @@ namespace PseudoBlocks
 		private void EliminarControl(Bloque control)
 		{
 			pnl_layout_principal.Controls.Remove(control);
-			listaItems.Eliminar(control);
 		}
 
 		private void CambiarCategoria(object sender, EventArgs e)
@@ -115,6 +114,11 @@ namespace PseudoBlocks
 						break;
 				}
 			}
+		}
+
+		private void Cerrar(object sender, EventArgs e)
+		{
+			this.Close();
 		}
 	}
 }
