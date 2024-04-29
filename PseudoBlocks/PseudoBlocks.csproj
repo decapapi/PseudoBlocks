@@ -16,15 +16,9 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Compile Update="Controles\Archivos\BloqueAudio.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Update="Controles\Bloque.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Update="Controles\Logica\BloqueRepetir.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
+    <Compile Update="Controles\Archivos\BloqueAudio.cs" />
+    <Compile Update="Controles\Bloque.cs" />
+    <Compile Update="Controles\Logica\BloqueRepetir.cs" />
     <Compile Update="Properties\Resources.Designer.cs">
       <DesignTime>True</DesignTime>
       <AutoGen>True</AutoGen>

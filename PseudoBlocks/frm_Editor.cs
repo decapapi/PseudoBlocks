@@ -78,7 +78,7 @@ namespace PseudoBlocks
 			}
 		}
 
-		private void AgregarControl(Control control)
+		private void AgregarControl(Bloque control)
 		{
 			listaItems.Agregar(control);
 			pnl_layout_principal.Controls.Add(control);
@@ -86,7 +86,7 @@ namespace PseudoBlocks
 			control.BringToFront();
 		}
 
-		private void EliminarControl(Control control)
+		private void EliminarControl(Bloque control)
 		{
 			pnl_layout_principal.Controls.Remove(control);
 			listaItems.Eliminar(control);
@@ -99,23 +99,18 @@ namespace PseudoBlocks
 				switch (btn.Name.Substring(btn.Name.IndexOf('_') + 1))
 				{
 					case "movimiento":
-						//btn_movimiento.BackColor = Color.LightGray;
 						pnl_components.ScrollControlIntoView(pnl_movimiento);
 						break;
 					case "escenario":
-						//btn_escenario.BackColor = Color.LightGray;
 						pnl_components.ScrollControlIntoView(pnl_escenario);
 						break;
 					case "sonido":
-						//btn_sonido.BackColor = Color.LightGray;
 						pnl_components.ScrollControlIntoView(pnl_sonido);
 						break;
 					case "logica":
-						//btn_logica.BackColor = Color.LightGray;
 						pnl_components.ScrollControlIntoView(pnl_logica);
 						break;
 					case "eventos":
-						//btn_eventos.BackColor = Color.LightGray;
 						pnl_components.ScrollControlIntoView(pnl_eventos);
 						break;
 				}

@@ -1,4 +1,6 @@
-﻿using System;
+﻿using PseudoBlocks.Controles;
+using PseudoBlocks.Controles.Numerico;
+using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.ComponentModel;
@@ -12,7 +14,7 @@ namespace PseudoBlocks
 {
 	class ListaItems
 	{
-		public List<Control> Items { get; private set; } = new List<Control>();
+		public List<Bloque> Bloques { get; private set; } = new List<Bloque>();
 		private Point margin;
 		private readonly bool libre;
 
@@ -26,60 +28,60 @@ namespace PseudoBlocks
 			this.libre = libre;
 		}
 
-		public void Mover(Control item, int movimiento)
+		public void Mover(Bloque item, int movimiento)
 		{
-			if (this.Items.IndexOf(item) != -1)
+			if (this.Bloques.IndexOf(item) != -1)
 			{
-				int oldIndex = this.Items.IndexOf(item);
+				int oldIndex = this.Bloques.IndexOf(item);
 				int newIndex = oldIndex + movimiento;
-				if (newIndex > -1 && newIndex < this.Items.Count)
+				if (newIndex > -1 && newIndex < this.Bloques.Count)
 				{
-					this.Items.RemoveAt(oldIndex);
-					this.Items.Insert(newIndex, item);
+					this.Bloques.RemoveAt(oldIndex);
+					this.Bloques.Insert(newIndex, item);
 				}
 			}
 		}
 
-		public void Agregar(Control item)
+		public void Agregar(Bloque item)
 		{
 			item.Location = libre ? margin : this.UltimaPosicion();
 			item.BringToFront();
-			this.Items.Add(item);
+			this.Bloques.Add(item);
 			OrdenarControles();
 		}
 
-		public void Eliminar(Control item)
+		public void Eliminar(Bloque item)
 		{
 			item.Dispose();
-			this.Items.Remove(item);
+			this.Bloques.Remove(item);
 			this.OrdenarControles();
 		}
 
 		public void Eliminar(int index)
 		{
-			this.Items.RemoveAt(index);
+			this.Bloques.RemoveAt(index);
 		}
 
-		public void Subir(Control item)
+		public void Subir(Bloque item)
 		{
 			this.Mover(item, -1);
 		}
 
-		public void Bajar(Control item)
+		public void Bajar(Bloque item)
 		{
 			this.Mover(item, 1);
 		}
 
-		public bool Existe(Control c)
+		public bool Existe(Bloque item)
 		{
-			return this.Items.Contains(c);
+			return this.Bloques.Contains(item);
 		}
 
 		public Control Primero()
 		{
-			if (this.Items.Count > 0)
+			if (this.Bloques.Count > 0)
 			{
-				return this.Items.First();
+				return this.Bloques.First();
 			}
 			else
 			{
@@ -89,9 +91,9 @@ namespace PseudoBlocks
 
 		public Control Ultimo()
 		{
-			if (this.Items.Count > 0)
+			if (this.Bloques.Count > 0)
 			{
-				return this.Items.Last();
+				return this.Bloques.Last();
 			}
 			else
 			{
@@ -99,28 +101,28 @@ namespace PseudoBlocks
 			}
 		}
 
-		public Control Anterior(Control control)
+		public Control Anterior(Bloque control)
 		{
-			if (this.Items.IndexOf(control) > 0)
-				return this.Items[this.Items.IndexOf(control) - 1];
+			if (this.Bloques.IndexOf(control) > 0)
+				return this.Bloques[this.Bloques.IndexOf(control) - 1];
 			else
 				return control;
 		}
 
 		public void OrdenarControles(object? sender, EventArgs e)
 		{
-			if (!libre && this.Items.Count > 0)
+			if (!libre && this.Bloques.Count > 0)
 			{
 				// Ordenar controles por posición Y
-				this.Items.Sort(delegate (Control c1, Control c2) {
-					return c1.Location.Y.CompareTo(c2.Location.Y);
+				this.Bloques.Sort(delegate (Bloque b1, Bloque b2) {
+					return b1.Location.Y.CompareTo(b2.Location.Y);
 				});
 
 				Point localizacion = margin;
-				for (int i = 0; i < this.Items.Count; i++)
+				for (int i = 0; i < this.Bloques.Count; i++)
 				{
-					this.Items[i].Location = localizacion;
-					localizacion.Y += this.Items[i].Height;
+					this.Bloques[i].Location = localizacion;
+					localizacion.Y += this.Bloques[i].Height;
 				}
 			}
 		}
@@ -132,7 +134,7 @@ namespace PseudoBlocks
 
 		public Point PrimeraPosicion()
 		{
-			if (this.Items.Count == 0)
+			if (this.Bloques.Count == 0)
 			{
 				return new Point(0, 0);
 			}
@@ -150,7 +152,7 @@ namespace PseudoBlocks
 
 		public Point UltimaPosicion()
 		{
-			if (this.Items.Count == 0)
+			if (this.Bloques.Count == 0)
 			{
 				return new Point(0, 0);
 			}
@@ -168,18 +170,18 @@ namespace PseudoBlocks
 
 		public bool Contiene(Control control)
 		{
-			return this.Items.Contains(control);
+			return this.Bloques.Contains(control);
 		}
 
 		public void Limpiar()
 		{
-			this.Items.Clear();
+			this.Bloques.Clear();
 		}
 
 		~ListaItems()
 		{
-			this.Items.ForEach(control => control.Dispose());
-			this.Items.Clear();
+			this.Bloques.ForEach(control => control.Dispose());
+			this.Bloques.Clear();
 		}
 	}
 }
