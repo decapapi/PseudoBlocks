@@ -35,5 +35,10 @@ namespace PseudoBlocks.Controles.Archivos
 				btn_seleccionar.Text = fd.SafeFileName;
 			}
 		}
+
+		public override DatosBloqueAudio GetDatos()
+		{
+			return new DatosBloqueAudio(Tipo, controlName.Text, BackColor.ToArgb(), Location, Audio);
+		}
 	}
 }

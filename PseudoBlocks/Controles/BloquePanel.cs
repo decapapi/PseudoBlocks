@@ -13,7 +13,7 @@ namespace PseudoBlocks.Controles
 {
 	public partial class BloquePanel : Bloque
 	{
-		private readonly ListaItems listaItems = new ListaItems(false);
+		protected readonly ListaItems listaItems = new ListaItems(false);
 
 		public BloquePanel()
 		{
@@ -89,6 +89,16 @@ namespace PseudoBlocks.Controles
 					bloqueRepetir.Actualizar();
 				}
 			}
+		}
+
+		public override DatosBloquePanel GetDatos()
+		{
+			List<DatosBloque> bloques = new List<DatosBloque>();
+			foreach (Bloque bloque in listaItems.Bloques)
+			{
+				bloques.Add(bloque.GetDatos());
+			}
+			return new DatosBloquePanel(Tipo, controlName.Text, BackColor.ToArgb(), Location, bloques);
 		}
 	}
 }

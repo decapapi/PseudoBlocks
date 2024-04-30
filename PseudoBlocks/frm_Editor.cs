@@ -19,16 +19,6 @@ namespace PseudoBlocks
 		public frm_Editor()
 		{
 			InitializeComponent();
-			List<DatosBloque> datos = new List<DatosBloque>
-			{
-				new DatosBloque("move_up", "Mover hacia arriba", Color.MediumAquamarine),
-				new DatosBloque("move_down", "Mover hacia abajo", Color.MediumAquamarine),
-				new DatosBloqueRepetir("move_left", "Mover hacia la izquierda", Color.MediumAquamarine, 5),
-				new DatosBloqueNumerico("move_right", "Mover hacia la derecha", Color.MediumAquamarine, 9),
-				new DatosBloqueHotkey("event_onclick", "Al hacer clic", Color.LightCoral, Keys.Enter)
-			};
-			string json = JsonSerializer.Serialize(datos);
-			File.WriteAllText("datos.json", json);
 		}
 
 		public void AgregarComponente(object sender, EventArgs e)
@@ -87,12 +77,15 @@ namespace PseudoBlocks
 			}
 		}
 
-		private void AgregarControl(Bloque control)
+		private void AgregarControl(Bloque control, bool randomPos = true)
 		{
 			pnl_layout_principal.Controls.Add(control);
 			Random rdm = new Random();
-			control.Location = new Point(rdm.Next(10, pnl_layout_principal.Width - control.Width),
-				rdm.Next(rdm.Next(10, 20)));
+			if (randomPos)
+			{
+				control.Location = new Point(rdm.Next(10, 
+					pnl_layout_principal.Width - control.Width), rdm.Next(rdm.Next(10, 20)));
+			}
 			control.ContextMenuStrip.ItemClicked += (sender, e) => EliminarControl(control);
 			control.BringToFront();
 		}
@@ -130,6 +123,30 @@ namespace PseudoBlocks
 		private void Cerrar(object sender, EventArgs e)
 		{
 			this.Close();
+		}
+
+
+		private void AbrirProyecto(object sender, EventArgs e)
+		{
+			List<Control> controles = ProjectManager.LoadProject();
+			if (controles.Count > 0)
+			{
+				pnl_layout_principal.Controls.Clear();
+				foreach (Bloque control in controles)
+				{
+					AgregarControl(control, false);
+				}
+			}
+        }
+
+		private void GuardarProyecto(object sender, EventArgs e)
+		{
+			List<DatosBloque> datos = new List<DatosBloque>();
+			foreach (Bloque control in pnl_layout_principal.Controls)
+			{
+				datos.Add(control.GetDatos());
+			}
+			ProjectManager.SaveProject(datos);
 		}
 	}
 }

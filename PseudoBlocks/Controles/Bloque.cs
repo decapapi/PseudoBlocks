@@ -64,5 +64,10 @@ namespace PseudoBlocks.Controles
 				}
 			}
 		}
+		
+		public virtual DatosBloque GetDatos()
+		{
+			return new DatosBloque(Tipo, controlName.Text, BackColor.ToArgb(), Location);
+		}
 	}
 }

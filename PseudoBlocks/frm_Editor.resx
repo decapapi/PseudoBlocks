@@ -132,34 +132,13 @@
     <value>Ctrl+E</value>
   </data>
   <data name="tsm_item_archivo_exportar.Size" type="System.Drawing.Size, System.Drawing">
-    <value>213, 28</value>
+    <value>224, 28</value>
   </data>
   <data name="tsm_item_archivo_exportar.Text" xml:space="preserve">
     <value>&amp;Exportar</value>
   </data>
   <data name="toolStripSeparator5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>210, 6</value>
-  </data>
-  <data name="tsm_item_archivo_nuevo.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAACcSURBVEhL7dUxDoQgEIVhzkbNYWzptuEShMKOs9Ds7k1W
-        C2g1oxhtRnirnUzyR2MYvlJxnJTShBZj7PN6eWghhDA556ry3mMIHaZFKWV1xph65AgMv5HNWrucUUph
-        CAp83l8MQQF6h5B/AIpBunztPihAzy2t9fKNysArX7sPCnBdBrg2uAFsDSjWgGIPA650CiA/fa5T4K5W
-        QIgZ15ziURxSP0UAAAAASUVORK5CYII=
-</value>
-  </data>
-  <data name="tsm_item_archivo_nuevo.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
-    <value>Magenta</value>
-  </data>
-  <data name="tsm_item_archivo_nuevo.ShortcutKeys" type="System.Windows.Forms.Keys, System.Windows.Forms">
-    <value>Ctrl+N</value>
-  </data>
-  <data name="tsm_item_archivo_nuevo.Size" type="System.Drawing.Size, System.Drawing">
-    <value>213, 28</value>
-  </data>
-  <data name="tsm_item_archivo_nuevo.Text" xml:space="preserve">
-    <value>&amp;Nuevo</value>
+    <value>221, 6</value>
   </data>
   <data name="tsm_item_archivo_abrir.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -182,13 +161,13 @@
     <value>Ctrl+O</value>
   </data>
   <data name="tsm_item_archivo_abrir.Size" type="System.Drawing.Size, System.Drawing">
-    <value>213, 28</value>
+    <value>224, 28</value>
   </data>
   <data name="tsm_item_archivo_abrir.Text" xml:space="preserve">
     <value>&amp;Abrir</value>
   </data>
   <data name="toolStripSeparator.Size" type="System.Drawing.Size, System.Drawing">
-    <value>210, 6</value>
+    <value>221, 6</value>
   </data>
   <data name="tsm_item_archivo_guardar.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -207,7 +186,7 @@
     <value>Ctrl+S</value>
   </data>
   <data name="tsm_item_archivo_guardar.Size" type="System.Drawing.Size, System.Drawing">
-    <value>213, 28</value>
+    <value>224, 28</value>
   </data>
   <data name="tsm_item_archivo_guardar.Text" xml:space="preserve">
     <value>&amp;Guardar</value>
@@ -226,7 +205,7 @@
     <value>Magenta</value>
   </data>
   <data name="tsm_item_archivo_guardar_como.Size" type="System.Drawing.Size, System.Drawing">
-    <value>213, 28</value>
+    <value>224, 28</value>
   </data>
   <data name="tsm_item_archivo_guardar_como.Text" xml:space="preserve">
     <value>Guardar &amp;como</value>
@@ -241,7 +220,7 @@
     <value>Ctrl+Z</value>
   </data>
   <data name="tsm_item_editar_deshacer.Size" type="System.Drawing.Size, System.Drawing">
-    <value>224, 28</value>
+    <value>218, 28</value>
   </data>
   <data name="tsm_item_editar_deshacer.Text" xml:space="preserve">
     <value>&amp;Deshacer</value>
@@ -250,7 +229,7 @@
     <value>Ctrl+Y</value>
   </data>
   <data name="tsm_item_editar_rehacer.Size" type="System.Drawing.Size, System.Drawing">
-    <value>224, 28</value>
+    <value>218, 28</value>
   </data>
   <data name="tsm_item_editar_rehacer.Text" xml:space="preserve">
     <value>&amp;Rehacer</value>
@@ -262,25 +241,25 @@
     <value>&amp;Editar</value>
   </data>
   <data name="opcionesToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>224, 28</value>
+    <value>180, 28</value>
   </data>
   <data name="opcionesToolStripMenuItem.Text" xml:space="preserve">
     <value>&amp;Opciones</value>
   </data>
   <data name="toolStripSeparator1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>221, 6</value>
+    <value>177, 6</value>
   </data>
   <data name="acercadeToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>224, 28</value>
+    <value>180, 28</value>
   </data>
   <data name="acercadeToolStripMenuItem.Text" xml:space="preserve">
     <value>&amp;Acerca de...</value>
   </data>
   <data name="toolStripSeparator2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>221, 6</value>
+    <value>177, 6</value>
   </data>
   <data name="salirToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>224, 28</value>
+    <value>180, 28</value>
   </data>
   <data name="salirToolStripMenuItem.Text" xml:space="preserve">
     <value>&amp;Salir</value>
@@ -1647,12 +1626,6 @@
   </data>
   <data name="&gt;&gt;toolStripSeparator5.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripSeparator, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tsm_item_archivo_nuevo.Name" xml:space="preserve">
-    <value>tsm_item_archivo_nuevo</value>
-  </data>
-  <data name="&gt;&gt;tsm_item_archivo_nuevo.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;tsm_item_archivo_abrir.Name" xml:space="preserve">
     <value>tsm_item_archivo_abrir</value>

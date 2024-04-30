@@ -56,5 +56,10 @@ namespace PseudoBlocks.Controles.Eventos
 				btn_seleccionar.Text = "Seleccionar...";
 			}
 		}
+
+		public new DatosBloqueHotkey GetDatos()
+		{
+			return new DatosBloqueHotkey(Tipo, controlName.Text, BackColor.ToArgb(), Location, Tecla);
+		}
 	}
 }

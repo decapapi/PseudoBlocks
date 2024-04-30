@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.VisualBasic.Devices;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -24,6 +25,13 @@ namespace PseudoBlocks.Controles.Archivos
 			InitializeComponent();
 		}
 
+		public BloqueImagen(string tipo, string texto, Color color, string imagen) : base(tipo, texto, color)
+		{
+			InitializeComponent();
+			this.Imagen = imagen;
+		}
+
+
 		private void SeleccionarArchivo(object sender, EventArgs e)
 		{
 			OpenFileDialog fd = new OpenFileDialog();
@@ -34,6 +42,11 @@ namespace PseudoBlocks.Controles.Archivos
 				this.Imagen = fd.FileName;
 				btn_seleccionar.Text = fd.SafeFileName;
 			}
+		}
+
+		public override DatosBloqueImagen GetDatos()
+		{
+			return new DatosBloqueImagen(Tipo, controlName.Text, BackColor.ToArgb(), Location, Imagen);
 		}
 	}
 }

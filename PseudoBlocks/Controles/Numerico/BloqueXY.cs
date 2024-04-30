@@ -36,5 +36,10 @@ namespace PseudoBlocks.Controles.Numerico
 		{
 			return new Point(GetX(), GetY());
 		}
+
+		public override DatosBloqueXY GetDatos()
+		{
+			return new DatosBloqueXY(Tipo, controlName.Text, BackColor.ToArgb(), GetLocation(), GetX(), GetY());
+		}
 	}
 }

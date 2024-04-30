@@ -8,23 +8,30 @@ namespace PseudoBlocks
 {
 	public class DatosBloque
 	{
-		public string Tipo { get; private set; }
-		public string Texto { get; private set; }
-		public Color Color { get; private set; }
+		public string Tipo { get; set; }
+		public string Texto { get; set; }
+		public int Color { get; set; }
+		public Point Localizacion { get; set; }
 
-		public DatosBloque(string tipo, string texto, Color color)
+		private DatosBloque() { }
+
+		public DatosBloque(string tipo, string texto, int color, Point localizacion)
 		{
 			this.Tipo = tipo;
 			this.Texto = texto;
 			this.Color = color;
+			this.Localizacion = localizacion;
 		}
 	}
 
 	public class DatosBloquePanel : DatosBloque
 	{
-		public List<DatosBloque> Bloques { get; private set; }
+		public List<DatosBloque> Bloques { get; set; }
 
-		public DatosBloqueAudio(string tipo, string texto, Color color, List<DatosBloque> bloques) : base(tipo, texto, color)
+		private DatosBloquePanel() : base(String.Empty, String.Empty, 0, new Point(0 ,0)) { }
+
+		public DatosBloquePanel(string tipo, string texto, int color, Point localizacion, List<DatosBloque> bloques) 
+			: base(tipo, texto, color, localizacion)
 		{
 			this.Bloques = bloques;
 		}
@@ -32,9 +39,12 @@ namespace PseudoBlocks
 
 	public class DatosBloqueAudio : DatosBloque
 	{
-		public string Audio { get; private set; }
+		public string Audio { get; set; }
 
-		public DatosBloqueAudio(string tipo, string texto, Color color, string audio) : base(tipo, texto, color)
+		private DatosBloqueAudio() : base(String.Empty, String.Empty, 0, new Point(0, 0)) { }
+
+		public DatosBloqueAudio(string tipo, string texto, int color, Point localizacion, string audio) 
+			: base(tipo, texto, color, localizacion)
 		{
 			this.Audio = audio;
 		}
@@ -42,9 +52,12 @@ namespace PseudoBlocks
 
 	public class DatosBloqueImagen : DatosBloque
 	{
-		public string Imagen { get; private set; }
+		public string Imagen { get; set; }
 
-		public DatosBloqueImagen(string tipo, string texto, Color color, string imagen) : base(tipo, texto, color)
+		private DatosBloqueImagen() : base(String.Empty, String.Empty, 0, new Point(0, 0)) { }
+
+		public DatosBloqueImagen(string tipo, string texto, int color, Point localizacion, string imagen) 
+			: base(tipo, texto, color, localizacion)
 		{
 			this.Imagen = imagen;
 		}
@@ -52,9 +65,12 @@ namespace PseudoBlocks
 
 	public class DatosBloqueHotkey : DatosBloque
 	{
-		public Keys Tecla { get; private set; }
+		public Keys Tecla { get; set; }
 
-		public DatosBloqueHotkey(string tipo, string texto, Color color, Keys tecla) : base(tipo, texto, color)
+		private DatosBloqueHotkey() : base(String.Empty, String.Empty, 0, new Point(0, 0)) { }
+
+		public DatosBloqueHotkey(string tipo, string texto, int color, Point localizacion, Keys tecla) 
+			: base(tipo, texto, color, localizacion)
 		{
 			this.Tecla = tecla;
 		}
@@ -62,9 +78,12 @@ namespace PseudoBlocks
 
 	public class DatosBloqueRepetir : DatosBloquePanel
 	{
-		public int Repeticiones { get; private set; }
+		public int Repeticiones { get; set; }
 
-		public DatosBloqueRepetir(string tipo, string texto, Color color, List<DatosBloque> bloques, int repeticiones) : base(tipo, texto, color, bloques)
+		private DatosBloqueRepetir() : base(String.Empty, String.Empty, 0, new Point(0, 0), new List<DatosBloque>()) { }
+
+		public DatosBloqueRepetir(string tipo, string texto, int color, Point localizacion, List<DatosBloque> bloques, int repeticiones) 
+			: base(tipo, texto, color, localizacion, bloques)
 		{
 			this.Repeticiones = repeticiones;
 		}
@@ -72,9 +91,12 @@ namespace PseudoBlocks
 
 	public class DatosBloqueNumerico : DatosBloque
 	{
-		public int Valor { get; private set; }
+		public int Valor { get; set; }
 
-		public DatosBloqueNumerico(string tipo, string texto, Color color, int valor) : base(tipo, texto, color)
+		private DatosBloqueNumerico() : base(String.Empty, String.Empty, 0, new Point(0, 0)) { }
+
+		public DatosBloqueNumerico(string tipo, string texto, int color, Point localizacion, int valor) 
+			: base(tipo, texto, color, localizacion)
 		{
 			this.Valor = valor;
 		}
@@ -82,10 +104,13 @@ namespace PseudoBlocks
 
 	public class DatosBloqueXY : DatosBloque
 	{
-		public int X { get; private set; }
-		public int Y { get; private set; }
+		public int X { get; set; }
+		public int Y { get; set; }
 
-		public DatosBloqueXY(string tipo, string texto, Color color, int x, int y) : base(tipo, texto, color)
+		private DatosBloqueXY() : base(String.Empty, String.Empty, 0, new Point(0, 0)) { }
+
+		public DatosBloqueXY(string tipo, string texto, int color, Point localizacion, int x, int y) 
+			: base(tipo, texto, color, localizacion)
 		{
 			this.X = x;
 			this.Y = y;

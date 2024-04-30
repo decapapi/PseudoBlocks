@@ -26,5 +26,10 @@ namespace PseudoBlocks.Controles.Numerico
 		{
 			return (int)nud_num.Value;
 		}
+
+		public override DatosBloqueNumerico GetDatos()
+		{
+			return new DatosBloqueNumerico(Tipo, controlName.Text, BackColor.ToArgb(), Location, GetValue());
+		}
 	}
 }

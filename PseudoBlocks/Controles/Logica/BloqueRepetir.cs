@@ -26,5 +26,15 @@ namespace PseudoBlocks.Controles.Logica
 		{
 			return (int)nud_num.Value;
 		}
+
+		public override DatosBloqueRepetir GetDatos()
+		{
+			List<DatosBloque> bloques = new List<DatosBloque>();
+			foreach (Bloque bloque in listaItems.Bloques)
+			{
+				bloques.Add(bloque.GetDatos());
+			}
+			return new DatosBloqueRepetir(Tipo, controlName.Text, BackColor.ToArgb(), Location, bloques, GetNumero());
+		}
 	}
 }

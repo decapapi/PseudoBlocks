@@ -33,7 +33,6 @@
 			archivoToolStripMenuItem = new ToolStripMenuItem();
 			tsm_item_archivo_exportar = new ToolStripMenuItem();
 			toolStripSeparator5 = new ToolStripSeparator();
-			tsm_item_archivo_nuevo = new ToolStripMenuItem();
 			tsm_item_archivo_abrir = new ToolStripMenuItem();
 			toolStripSeparator = new ToolStripSeparator();
 			tsm_item_archivo_guardar = new ToolStripMenuItem();
@@ -99,7 +98,7 @@
 			// 
 			// archivoToolStripMenuItem
 			// 
-			archivoToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { tsm_item_archivo_exportar, toolStripSeparator5, tsm_item_archivo_nuevo, tsm_item_archivo_abrir, toolStripSeparator, tsm_item_archivo_guardar, tsm_item_archivo_guardar_como });
+			archivoToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { tsm_item_archivo_exportar, toolStripSeparator5, tsm_item_archivo_abrir, toolStripSeparator, tsm_item_archivo_guardar, tsm_item_archivo_guardar_como });
 			archivoToolStripMenuItem.Name = "archivoToolStripMenuItem";
 			resources.ApplyResources(archivoToolStripMenuItem, "archivoToolStripMenuItem");
 			// 
@@ -113,15 +112,11 @@
 			toolStripSeparator5.Name = "toolStripSeparator5";
 			resources.ApplyResources(toolStripSeparator5, "toolStripSeparator5");
 			// 
-			// tsm_item_archivo_nuevo
-			// 
-			resources.ApplyResources(tsm_item_archivo_nuevo, "tsm_item_archivo_nuevo");
-			tsm_item_archivo_nuevo.Name = "tsm_item_archivo_nuevo";
-			// 
 			// tsm_item_archivo_abrir
 			// 
 			resources.ApplyResources(tsm_item_archivo_abrir, "tsm_item_archivo_abrir");
 			tsm_item_archivo_abrir.Name = "tsm_item_archivo_abrir";
+			tsm_item_archivo_abrir.Click += AbrirProyecto;
 			// 
 			// toolStripSeparator
 			// 
@@ -137,6 +132,7 @@
 			// 
 			resources.ApplyResources(tsm_item_archivo_guardar_como, "tsm_item_archivo_guardar_como");
 			tsm_item_archivo_guardar_como.Name = "tsm_item_archivo_guardar_como";
+			tsm_item_archivo_guardar_como.Click += GuardarProyecto;
 			// 
 			// editarToolStripMenuItem
 			// 
@@ -571,7 +567,6 @@
 		#endregion
 		private MenuStrip top_menu;
 		private ToolStripMenuItem archivoToolStripMenuItem;
-		private ToolStripMenuItem tsm_item_archivo_nuevo;
 		private ToolStripMenuItem tsm_item_archivo_exportar;
 		private ToolStripSeparator toolStripSeparator;
 		private ToolStripMenuItem tsm_item_archivo_guardar_como;

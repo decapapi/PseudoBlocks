@@ -11,7 +11,7 @@ using PseudoBlocks.Controles;
 
 namespace PseudoBlocks
 {
-	class ListaItems
+	public class ListaItems
 	{
 		public List<Bloque> Bloques { get; private set; } = new List<Bloque>();
 		private Point margin;
