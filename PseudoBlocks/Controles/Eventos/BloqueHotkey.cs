@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Security.Policy;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -12,7 +13,7 @@ namespace PseudoBlocks.Controles.Eventos
 {
 	public partial class BloqueHotkey : BloquePanel
 	{
-		public string? Tecla { get; private set; } = null;
+		public Keys Tecla { get; private set; } = Keys.None;
 		private bool esperandoTecla = false;
 
 		public BloqueHotkey()
@@ -29,15 +30,15 @@ namespace PseudoBlocks.Controles.Eventos
 		{
 			if (esperandoTecla)
 			{
-				Tecla = e.KeyCode.ToString();
-				btn_seleccionar.Text = Tecla;
+				Tecla = e.KeyCode;
+				btn_seleccionar.Text = Tecla.ToString();
 				esperandoTecla = false;
 			}
 		}
 
 		private void EstablecerTecla(object sender, EventArgs e)
 		{
-			Tecla = null;
+			Tecla = Keys.None;
 			esperandoTecla = true;
 			btn_seleccionar.Text = "Esperando tecla...";
 			while (esperandoTecla)
@@ -49,7 +50,7 @@ namespace PseudoBlocks.Controles.Eventos
 
 		private void CancelarCapturar(object sender, EventArgs e)
 		{
-			if (esperandoTecla && Tecla == null)
+			if (esperandoTecla && Tecla == Keys.None)
 			{
 				esperandoTecla = false;
 				btn_seleccionar.Text = "Seleccionar...";

@@ -10,6 +10,7 @@ using PseudoBlocks.Controles.Archivos;
 using PseudoBlocks.Controles.Numerico;
 using PseudoBlocks.Controles.Logica;
 using PseudoBlocks.Controles.Eventos;
+using System.Text.Json;
 
 namespace PseudoBlocks
 {
@@ -18,6 +19,16 @@ namespace PseudoBlocks
 		public frm_Editor()
 		{
 			InitializeComponent();
+			List<DatosBloque> datos = new List<DatosBloque>
+			{
+				new DatosBloque("move_up", "Mover hacia arriba", Color.MediumAquamarine),
+				new DatosBloque("move_down", "Mover hacia abajo", Color.MediumAquamarine),
+				new DatosBloqueRepetir("move_left", "Mover hacia la izquierda", Color.MediumAquamarine, 5),
+				new DatosBloqueNumerico("move_right", "Mover hacia la derecha", Color.MediumAquamarine, 9),
+				new DatosBloqueHotkey("event_onclick", "Al hacer clic", Color.LightCoral, Keys.Enter)
+			};
+			string json = JsonSerializer.Serialize(datos);
+			File.WriteAllText("datos.json", json);
 		}
 
 		public void AgregarComponente(object sender, EventArgs e)
