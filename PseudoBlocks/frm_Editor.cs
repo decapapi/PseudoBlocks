@@ -29,7 +29,14 @@ namespace PseudoBlocks
 				switch (controlInfo[0])
 				{
 					case "move": // Movimiento
-						AgregarControl(new Bloque(controlType, control.Text, Color.MediumAquamarine));
+						if (controlInfo[1] == "to")
+						{
+							AgregarControl(new BloqueXY(controlType, control.Text, Color.MediumAquamarine));
+						}
+						else
+						{
+							AgregarControl(new Bloque(controlType, control.Text, Color.MediumAquamarine));
+						}
 						break;
 					case "change": // Escenario
 						switch (controlInfo[1])
