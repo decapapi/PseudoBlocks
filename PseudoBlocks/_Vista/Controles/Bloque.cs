@@ -7,8 +7,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using PseudoBlocks.Controlador;
 
-namespace PseudoBlocks.Controles
+namespace PseudoBlocks.Vista.Controles
 {
 	public partial class Bloque : UserControl
 	{

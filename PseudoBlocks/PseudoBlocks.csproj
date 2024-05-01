@@ -2,19 +2,21 @@
 
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
-    <TargetFramework>net8.0-windows</TargetFramework>
+    <TargetFramework>net8.0-windows7.0</TargetFramework>
     <Nullable>enable</Nullable>
     <UseWindowsForms>true</UseWindowsForms>
     <ImplicitUsings>enable</ImplicitUsings>
     <ApplicationHighDpiMode>SystemAware</ApplicationHighDpiMode>
     <ApplicationIcon>Resources\Adnix-Full.ico</ApplicationIcon>
     <AnalysisLevel>latest</AnalysisLevel>
+    <RepositoryUrl>https://github.com/decapapi/PseudoBlocks</RepositoryUrl>
+    <RepositoryType>PseudoBlocks</RepositoryType>
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Update="Controles\Archivos\BloqueAudio.cs" />
-    <Compile Update="Controles\Bloque.cs" />
-    <Compile Update="Controles\Logica\BloqueRepetir.cs" />
+    <Compile Update="_Vista\Controles\Archivos\BloqueAudio.cs" />
+    <Compile Update="_Vista\Controles\Bloque.cs" />
+    <Compile Update="_Vista\Controles\Logica\BloqueRepetir.cs" />
     <Compile Update="Properties\Resources.Designer.cs">
       <DesignTime>True</DesignTime>
       <AutoGen>True</AutoGen>

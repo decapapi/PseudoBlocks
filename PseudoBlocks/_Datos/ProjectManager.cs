@@ -4,13 +4,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Xml.Serialization;
-using PseudoBlocks.Controles;
-using PseudoBlocks.Controles.Archivos;
-using PseudoBlocks.Controles.Eventos;
-using PseudoBlocks.Controles.Logica;
-using PseudoBlocks.Controles.Numerico;
+using PseudoBlocks.Vista.Controles;
+using PseudoBlocks.Vista.Controles.Archivos;
+using PseudoBlocks.Vista.Controles.Eventos;
+using PseudoBlocks.Vista.Controles.Logica;
+using PseudoBlocks.Vista.Controles.Numerico;
+using PseudoBlocks.Controlador;
 
-namespace PseudoBlocks
+namespace PseudoBlocks.Datos
 {
 	class ProjectManager
 	{

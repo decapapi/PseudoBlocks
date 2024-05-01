@@ -1,4 +1,4 @@
-﻿namespace PseudoBlocks.Controles
+﻿namespace PseudoBlocks.Vista.Controles
 {
 	partial class Bloque
 	{

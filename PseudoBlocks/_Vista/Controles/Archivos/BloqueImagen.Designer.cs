@@ -1,6 +1,6 @@
-﻿namespace PseudoBlocks.Controles.Eventos
+﻿namespace PseudoBlocks.Vista.Controles.Archivos
 {
-	partial class BloqueHotkey
+	partial class BloqueImagen
 	{
 		/// <summary> 
 		/// Variable del diseñador necesaria.
@@ -33,26 +33,23 @@
 			// 
 			// btn_seleccionar
 			// 
-			btn_seleccionar.Location = new Point(190, 3);
+			btn_seleccionar.Location = new Point(171, 6);
 			btn_seleccionar.Margin = new Padding(4);
 			btn_seleccionar.Name = "btn_seleccionar";
 			btn_seleccionar.Size = new Size(130, 30);
-			btn_seleccionar.TabIndex = 7;
+			btn_seleccionar.TabIndex = 5;
 			btn_seleccionar.Text = "Seleccionar...";
 			btn_seleccionar.UseVisualStyleBackColor = true;
-			btn_seleccionar.Click += EstablecerTecla;
-			btn_seleccionar.KeyDown += CapturarTecla;
-			btn_seleccionar.Leave += CancelarCapturar;
+			btn_seleccionar.Click += SeleccionarArchivo;
 			// 
-			// BloqueHotkey
+			// BloqueImagen
 			// 
 			AutoScaleDimensions = new SizeF(8F, 19F);
 			AutoScaleMode = AutoScaleMode.Font;
-			BackColor = Color.LightCoral;
+			BackColor = Color.LightBlue;
 			Controls.Add(btn_seleccionar);
-			MinimumSize = new Size(325, 55);
-			Name = "BloqueHotkey";
-			Controls.SetChildIndex(controlName, 0);
+			DoubleBuffered = true;
+			Name = "BloqueImagen";
 			Controls.SetChildIndex(btn_seleccionar, 0);
 			ResumeLayout(false);
 			PerformLayout();

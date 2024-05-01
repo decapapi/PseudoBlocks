@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace PseudoBlocks
+namespace PseudoBlocks.Controlador
 {
 	public class DatosBloque
 	{

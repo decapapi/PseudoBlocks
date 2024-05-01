@@ -1,4 +1,4 @@
-﻿namespace PseudoBlocks.Controles.Numerico
+﻿namespace PseudoBlocks.Vista.Controles.Numerico
 {
 	partial class BloqueXY
 	{
@@ -62,8 +62,8 @@
 			AutoScaleMode = AutoScaleMode.Font;
 			Controls.Add(nud_X);
 			Controls.Add(nud_Y);
-			DoubleBuffered = true;
 			Name = "BloqueXY";
+			Controls.SetChildIndex(controlName, 0);
 			Controls.SetChildIndex(nud_Y, 0);
 			Controls.SetChildIndex(nud_X, 0);
 			((System.ComponentModel.ISupportInitialize)nud_Y).EndInit();

@@ -1,4 +1,4 @@
-﻿namespace PseudoBlocks
+﻿namespace PseudoBlocks.Vista
 {
 	partial class frm_Editor
 	{

@@ -8,8 +8,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using PseudoBlocks.Controlador;
 
-namespace PseudoBlocks.Controles.Archivos
+namespace PseudoBlocks.Vista.Controles.Archivos
 {
 	public partial class BloqueImagen : Bloque
 	{

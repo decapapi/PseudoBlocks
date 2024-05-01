@@ -1,3 +1,5 @@
+using PseudoBlocks.Vista;
+
 namespace PseudoBlocks
 {
 	internal static class Program

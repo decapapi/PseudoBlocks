@@ -7,9 +7,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using PseudoBlocks.Controles.Logica;
+using PseudoBlocks.Controlador;
+using PseudoBlocks.Vista.Controles.Logica;
 
-namespace PseudoBlocks.Controles
+namespace PseudoBlocks.Vista.Controles
 {
 	public partial class BloquePanel : Bloque
 	{

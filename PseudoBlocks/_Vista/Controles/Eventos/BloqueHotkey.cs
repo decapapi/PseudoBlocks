@@ -8,8 +8,9 @@ using System.Security.Policy;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using PseudoBlocks.Controlador;
 
-namespace PseudoBlocks.Controles.Eventos
+namespace PseudoBlocks.Vista.Controles.Eventos
 {
 	public partial class BloqueHotkey : BloquePanel
 	{

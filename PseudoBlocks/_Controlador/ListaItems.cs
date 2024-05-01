@@ -7,9 +7,9 @@ using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using PseudoBlocks.Controles;
+using PseudoBlocks.Vista.Controles;
 
-namespace PseudoBlocks
+namespace PseudoBlocks.Controlador
 {
 	public class ListaItems
 	{

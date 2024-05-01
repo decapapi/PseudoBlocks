@@ -1,6 +1,6 @@
-﻿namespace PseudoBlocks.Controles.Numerico
+﻿namespace PseudoBlocks.Vista.Controles.Eventos
 {
-	partial class BloqueNumerico
+	partial class BloqueHotkey
 	{
 		/// <summary> 
 		/// Variable del diseñador necesaria.
@@ -28,36 +28,37 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
-			nud_num = new NumericUpDown();
-			((System.ComponentModel.ISupportInitialize)nud_num).BeginInit();
+			btn_seleccionar = new Button();
 			SuspendLayout();
 			// 
-			// nud_num
+			// btn_seleccionar
 			// 
-			nud_num.Font = new Font("Lexend Deca Medium", 10F);
-			nud_num.Location = new Point(196, 9);
-			nud_num.Margin = new Padding(4);
-			nud_num.Maximum = new decimal(new int[] { 9999999, 0, 0, 0 });
-			nud_num.Name = "nud_num";
-			nud_num.Size = new Size(100, 24);
-			nud_num.TabIndex = 5;
-			nud_num.TextAlign = HorizontalAlignment.Center;
+			btn_seleccionar.Location = new Point(190, 3);
+			btn_seleccionar.Margin = new Padding(4);
+			btn_seleccionar.Name = "btn_seleccionar";
+			btn_seleccionar.Size = new Size(130, 30);
+			btn_seleccionar.TabIndex = 7;
+			btn_seleccionar.Text = "Seleccionar...";
+			btn_seleccionar.UseVisualStyleBackColor = true;
+			btn_seleccionar.Click += EstablecerTecla;
+			btn_seleccionar.KeyDown += CapturarTecla;
+			btn_seleccionar.Leave += CancelarCapturar;
 			// 
-			// BloqueNumerico
+			// BloqueHotkey
 			// 
 			AutoScaleDimensions = new SizeF(8F, 19F);
 			AutoScaleMode = AutoScaleMode.Font;
-			Controls.Add(nud_num);
-			DoubleBuffered = true;
-			Name = "BloqueNumerico";
-			Controls.SetChildIndex(nud_num, 0);
-			((System.ComponentModel.ISupportInitialize)nud_num).EndInit();
+			BackColor = Color.LightCoral;
+			Controls.Add(btn_seleccionar);
+			Name = "BloqueHotkey";
+			Controls.SetChildIndex(controlName, 0);
+			Controls.SetChildIndex(btn_seleccionar, 0);
 			ResumeLayout(false);
 			PerformLayout();
 		}
 
 		#endregion
 
-		private NumericUpDown nud_num;
+		private Button btn_seleccionar;
 	}
 }

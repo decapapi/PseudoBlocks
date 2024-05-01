@@ -7,8 +7,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using PseudoBlocks.Controlador;
 
-namespace PseudoBlocks.Controles.Numerico
+namespace PseudoBlocks.Vista.Controles.Numerico
 {
 	public partial class BloqueNumerico : Bloque
 	{

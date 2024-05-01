@@ -1,6 +1,6 @@
-﻿namespace PseudoBlocks.Controles.Archivos
+﻿namespace PseudoBlocks.Vista.Controles.Numerico
 {
-	partial class BloqueAudio
+	partial class BloqueNumerico
 	{
 		/// <summary> 
 		/// Variable del diseñador necesaria.
@@ -28,35 +28,36 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
-			btn_seleccionar = new Button();
+			nud_num = new NumericUpDown();
+			((System.ComponentModel.ISupportInitialize)nud_num).BeginInit();
 			SuspendLayout();
 			// 
-			// btn_seleccionar
+			// nud_num
 			// 
-			btn_seleccionar.Location = new Point(171, 6);
-			btn_seleccionar.Margin = new Padding(4);
-			btn_seleccionar.Name = "btn_seleccionar";
-			btn_seleccionar.Size = new Size(130, 30);
-			btn_seleccionar.TabIndex = 5;
-			btn_seleccionar.Text = "Seleccionar...";
-			btn_seleccionar.UseVisualStyleBackColor = true;
-			btn_seleccionar.Click += SeleccionarArchivo;
+			nud_num.Font = new Font("Lexend Deca Medium", 10F);
+			nud_num.Location = new Point(196, 9);
+			nud_num.Margin = new Padding(4);
+			nud_num.Maximum = new decimal(new int[] { 9999999, 0, 0, 0 });
+			nud_num.Name = "nud_num";
+			nud_num.Size = new Size(100, 24);
+			nud_num.TabIndex = 5;
+			nud_num.TextAlign = HorizontalAlignment.Center;
 			// 
-			// BloqueAudio
+			// BloqueNumerico
 			// 
 			AutoScaleDimensions = new SizeF(8F, 19F);
 			AutoScaleMode = AutoScaleMode.Font;
-			BackColor = Color.FromArgb(255, 192, 255);
-			Controls.Add(btn_seleccionar);
-			DoubleBuffered = true;
-			Name = "BloqueAudio";
-			Controls.SetChildIndex(btn_seleccionar, 0);
+			Controls.Add(nud_num);
+			Name = "BloqueNumerico";
+			Controls.SetChildIndex(controlName, 0);
+			Controls.SetChildIndex(nud_num, 0);
+			((System.ComponentModel.ISupportInitialize)nud_num).EndInit();
 			ResumeLayout(false);
 			PerformLayout();
 		}
 
 		#endregion
 
-		private Button btn_seleccionar;
+		private NumericUpDown nud_num;
 	}
 }

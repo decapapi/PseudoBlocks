@@ -5,13 +5,15 @@ using System.Drawing;
 using System.Reflection;
 using System.Reflection.Emit;
 using System.Windows.Forms;
-using PseudoBlocks.Controles;
-using PseudoBlocks.Controles.Archivos;
-using PseudoBlocks.Controles.Numerico;
-using PseudoBlocks.Controles.Logica;
-using PseudoBlocks.Controles.Eventos;
+using PseudoBlocks.Vista.Controles;
+using PseudoBlocks.Vista.Controles.Archivos;
+using PseudoBlocks.Vista.Controles.Numerico;
+using PseudoBlocks.Vista.Controles.Logica;
+using PseudoBlocks.Vista.Controles.Eventos;
+using PseudoBlocks.Controlador;
+using PseudoBlocks.Datos;
 
-namespace PseudoBlocks
+namespace PseudoBlocks.Vista
 {
 	public partial class frm_Editor : Form
 	{

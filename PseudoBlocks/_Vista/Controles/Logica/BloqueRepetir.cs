@@ -7,8 +7,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using PseudoBlocks.Controlador;
 
-namespace PseudoBlocks.Controles.Logica
+namespace PseudoBlocks.Vista.Controles.Logica
 {
 	public partial class BloqueRepetir : BloquePanel
 	{

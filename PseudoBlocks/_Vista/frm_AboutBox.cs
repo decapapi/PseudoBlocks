@@ -7,7 +7,7 @@ using System.Reflection;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace PseudoBlocks
+namespace PseudoBlocks.Vista
 {
 	partial class frm_AboutBox : Form
 	{
@@ -18,7 +18,6 @@ namespace PseudoBlocks
 			this.labelProductName.Text = AssemblyProduct;
 			this.labelVersion.Text = String.Format("Versión {0}", AssemblyVersion);
 			this.labelCopyright.Text = AssemblyCopyright;
-			this.labelCompanyName.Text = AssemblyCompany;
 			this.textBoxDescription.Text = AssemblyDescription;
 		}
 
