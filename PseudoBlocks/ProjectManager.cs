@@ -119,13 +119,11 @@ namespace PseudoBlocks
 				case "move_down":
 					bloque = new Bloque(elemento.Tipo, elemento.Texto, Color.FromArgb(elemento.Color));
 					break;
-				case "move_to":
-					bloque = new BloqueXY(elemento.Tipo, elemento.Texto, Color.FromArgb(elemento.Color), ((DatosBloqueXY)elemento).X, ((DatosBloqueXY)elemento).Y);
-					break;
 				case "change_background":
 				case "change_character":
 					bloque = new BloqueImagen(elemento.Tipo, elemento.Texto, Color.FromArgb(elemento.Color), ((DatosBloqueImagen)elemento).Imagen);
 					break;
+				case "move_to":
 				case "change_size":
 					bloque = new BloqueXY(elemento.Tipo, elemento.Texto, Color.FromArgb(elemento.Color), ((DatosBloqueXY)elemento).X, ((DatosBloqueXY)elemento).Y);
 					break;
