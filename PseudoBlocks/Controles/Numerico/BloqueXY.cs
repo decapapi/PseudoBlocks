@@ -22,6 +22,13 @@ namespace PseudoBlocks.Controles.Numerico
 			InitializeComponent();
 		}
 
+		public BloqueXY(string tipo, string texto, Color color, int x, int y) : base(tipo, texto, color)
+		{
+			InitializeComponent();
+			nud_X.Value = x;
+			nud_Y.Value = y;
+		}
+
 		public int GetX()
 		{
 			return (int)nud_X.Value;
@@ -39,7 +46,7 @@ namespace PseudoBlocks.Controles.Numerico
 
 		public override DatosBloqueXY GetDatos()
 		{
-			return new DatosBloqueXY(Tipo, controlName.Text, BackColor.ToArgb(), GetLocation(), GetX(), GetY());
+			return new DatosBloqueXY(Tipo, controlName.Text, BackColor.ToArgb(), Location, GetX(), GetY());
 		}
 	}
 }

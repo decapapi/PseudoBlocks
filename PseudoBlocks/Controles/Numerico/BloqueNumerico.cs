@@ -22,6 +22,12 @@ namespace PseudoBlocks.Controles.Numerico
 			InitializeComponent();
 		}
 
+		public BloqueNumerico(string tipo, string texto, Color color, int numero) : base(tipo, texto, color)
+		{
+			InitializeComponent();
+			nud_num.Value = numero;
+		}
+
 		public int GetValue()
 		{
 			return (int)nud_num.Value;

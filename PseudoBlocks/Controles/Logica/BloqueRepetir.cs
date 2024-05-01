@@ -22,6 +22,12 @@ namespace PseudoBlocks.Controles.Logica
 			InitializeComponent();
 		}
 
+		public BloqueRepetir(string tipo, string texto, Color color, int repeticiones) : base(tipo, texto, color)
+		{
+			InitializeComponent();
+			nud_num.Value = repeticiones;
+		}
+
 		public int GetNumero()
 		{
 			return (int)nud_num.Value;

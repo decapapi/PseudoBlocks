@@ -63,14 +63,14 @@ namespace PseudoBlocks
 		}
 	}
 
-	public class DatosBloqueHotkey : DatosBloque
+	public class DatosBloqueHotkey : DatosBloquePanel
 	{
 		public Keys Tecla { get; set; }
 
-		private DatosBloqueHotkey() : base(String.Empty, String.Empty, 0, new Point(0, 0)) { }
+		private DatosBloqueHotkey() : base(String.Empty, String.Empty, 0, new Point(0, 0), new List<DatosBloque>()) { }
 
-		public DatosBloqueHotkey(string tipo, string texto, int color, Point localizacion, Keys tecla) 
-			: base(tipo, texto, color, localizacion)
+		public DatosBloqueHotkey(string tipo, string texto, int color, Point localizacion, Keys tecla, List<DatosBloque> bloques) 
+			: base(tipo, texto, color, localizacion, bloques)
 		{
 			this.Tecla = tecla;
 		}

@@ -128,7 +128,7 @@ namespace PseudoBlocks
 
 		private void AbrirProyecto(object sender, EventArgs e)
 		{
-			List<Control> controles = ProjectManager.LoadProject();
+			List<Control> controles = ProjectManager.CargarProyecto();
 			if (controles.Count > 0)
 			{
 				pnl_layout_principal.Controls.Clear();
@@ -146,7 +146,7 @@ namespace PseudoBlocks
 			{
 				datos.Add(control.GetDatos());
 			}
-			ProjectManager.SaveProject(datos);
+			ProjectManager.GuardarProyecto(datos);
 		}
 	}
 }

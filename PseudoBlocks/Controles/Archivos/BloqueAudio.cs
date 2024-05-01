@@ -24,6 +24,13 @@ namespace PseudoBlocks.Controles.Archivos
 			InitializeComponent();
 		}
 
+		public BloqueAudio(string tipo, string texto, Color color, string audio) : base(tipo, texto, color)
+		{
+			InitializeComponent();
+			this.Audio = audio;
+			btn_seleccionar.Text = audio.Substring(audio.LastIndexOf('\\')+1);
+		}
+
 		private void SeleccionarArchivo(object sender, EventArgs e)
 		{
 			OpenFileDialog fd = new OpenFileDialog();
