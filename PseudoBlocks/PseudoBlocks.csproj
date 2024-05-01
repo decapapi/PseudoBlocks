@@ -12,10 +12,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Content Include="Resources\Adnix-Full.ico" />
-  </ItemGroup>
-
-  <ItemGroup>
     <Compile Update="Controles\Archivos\BloqueAudio.cs" />
     <Compile Update="Controles\Bloque.cs" />
     <Compile Update="Controles\Logica\BloqueRepetir.cs" />

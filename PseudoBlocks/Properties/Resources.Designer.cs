@@ -63,6 +63,36 @@ namespace PseudoBlocks.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Adnix_Animation {
+            get {
+                object obj = ResourceManager.GetObject("Adnix_Animation", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Adnix_Full {
+            get {
+                object obj = ResourceManager.GetObject("Adnix_Full", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Icon similar a (Icono).
+        /// </summary>
+        internal static System.Drawing.Icon Adnix_Full_Icon {
+            get {
+                object obj = ResourceManager.GetObject("Adnix_Full_Icon", resourceCulture);
+                return ((System.Drawing.Icon)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap circle_1 {
             get {
                 object obj = ResourceManager.GetObject("circle_1", resourceCulture);

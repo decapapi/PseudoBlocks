@@ -37,9 +37,6 @@
 			toolStripSeparator = new ToolStripSeparator();
 			tsm_item_archivo_guardar = new ToolStripMenuItem();
 			tsm_item_archivo_guardar_como = new ToolStripMenuItem();
-			editarToolStripMenuItem = new ToolStripMenuItem();
-			tsm_item_editar_deshacer = new ToolStripMenuItem();
-			tsm_item_editar_rehacer = new ToolStripMenuItem();
 			herramientasToolStripMenuItem = new ToolStripMenuItem();
 			opcionesToolStripMenuItem = new ToolStripMenuItem();
 			toolStripSeparator1 = new ToolStripSeparator();
@@ -94,7 +91,7 @@
 			top_menu.BackColor = SystemColors.Window;
 			resources.ApplyResources(top_menu, "top_menu");
 			top_menu.ImageScalingSize = new Size(20, 20);
-			top_menu.Items.AddRange(new ToolStripItem[] { archivoToolStripMenuItem, editarToolStripMenuItem, herramientasToolStripMenuItem });
+			top_menu.Items.AddRange(new ToolStripItem[] { archivoToolStripMenuItem, herramientasToolStripMenuItem });
 			top_menu.Name = "top_menu";
 			// 
 			// archivoToolStripMenuItem
@@ -136,22 +133,6 @@
 			tsm_item_archivo_guardar_como.Name = "tsm_item_archivo_guardar_como";
 			tsm_item_archivo_guardar_como.Click += GuardarProyecto;
 			// 
-			// editarToolStripMenuItem
-			// 
-			editarToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { tsm_item_editar_deshacer, tsm_item_editar_rehacer });
-			editarToolStripMenuItem.Name = "editarToolStripMenuItem";
-			resources.ApplyResources(editarToolStripMenuItem, "editarToolStripMenuItem");
-			// 
-			// tsm_item_editar_deshacer
-			// 
-			tsm_item_editar_deshacer.Name = "tsm_item_editar_deshacer";
-			resources.ApplyResources(tsm_item_editar_deshacer, "tsm_item_editar_deshacer");
-			// 
-			// tsm_item_editar_rehacer
-			// 
-			tsm_item_editar_rehacer.Name = "tsm_item_editar_rehacer";
-			resources.ApplyResources(tsm_item_editar_rehacer, "tsm_item_editar_rehacer");
-			// 
 			// herramientasToolStripMenuItem
 			// 
 			herramientasToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { opcionesToolStripMenuItem, toolStripSeparator1, acercadeToolStripMenuItem, toolStripSeparator2, salirToolStripMenuItem });
@@ -172,6 +153,7 @@
 			// 
 			acercadeToolStripMenuItem.Name = "acercadeToolStripMenuItem";
 			resources.ApplyResources(acercadeToolStripMenuItem, "acercadeToolStripMenuItem");
+			acercadeToolStripMenuItem.Click += MostrarAboutBox;
 			// 
 			// toolStripSeparator2
 			// 
@@ -555,8 +537,8 @@
 			resources.ApplyResources(this, "$this");
 			Controls.Add(flowLayoutPanel2);
 			Controls.Add(top_menu);
-			Controls.Add(pnl_layout_principal);
 			Controls.Add(pnl_components);
+			Controls.Add(pnl_layout_principal);
 			DoubleBuffered = true;
 			MainMenuStrip = top_menu;
 			Name = "frm_Editor";
@@ -585,9 +567,6 @@
 		private ToolStripMenuItem tsm_item_archivo_exportar;
 		private ToolStripSeparator toolStripSeparator;
 		private ToolStripMenuItem tsm_item_archivo_guardar_como;
-		private ToolStripMenuItem editarToolStripMenuItem;
-		private ToolStripMenuItem tsm_item_editar_deshacer;
-		private ToolStripMenuItem tsm_item_editar_rehacer;
 		private ToolStripMenuItem herramientasToolStripMenuItem;
 		private ToolStripMenuItem opcionesToolStripMenuItem;
 		private ToolStripMenuItem tsm_item_archivo_abrir;

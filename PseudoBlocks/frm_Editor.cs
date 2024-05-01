@@ -89,7 +89,7 @@ namespace PseudoBlocks
 			Random rdm = new Random();
 			if (randomPos)
 			{
-				control.Location = new Point(rdm.Next(10, 
+				control.Location = new Point(rdm.Next(10,
 					pnl_layout_principal.Width - control.Width), rdm.Next(rdm.Next(10, 20)));
 			}
 			control.ContextMenuStrip.ItemClicked += (sender, e) => EliminarControl(control);
@@ -176,6 +176,11 @@ namespace PseudoBlocks
 		private void Cerrar(object sender, EventArgs e)
 		{
 			this.Close();
+		}
+
+		private void MostrarAboutBox(object sender, EventArgs e)
+		{
+			new frm_AboutBox().ShowDialog();
 		}
 	}
 }
