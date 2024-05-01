@@ -127,6 +127,7 @@
 			// 
 			resources.ApplyResources(tsm_item_archivo_guardar, "tsm_item_archivo_guardar");
 			tsm_item_archivo_guardar.Name = "tsm_item_archivo_guardar";
+			tsm_item_archivo_guardar.Click += Guardar;
 			// 
 			// tsm_item_archivo_guardar_como
 			// 

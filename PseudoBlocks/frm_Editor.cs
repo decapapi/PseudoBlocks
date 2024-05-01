@@ -10,7 +10,6 @@ using PseudoBlocks.Controles.Archivos;
 using PseudoBlocks.Controles.Numerico;
 using PseudoBlocks.Controles.Logica;
 using PseudoBlocks.Controles.Eventos;
-using System.Text.Json;
 
 namespace PseudoBlocks
 {
@@ -88,11 +87,13 @@ namespace PseudoBlocks
 			}
 			control.ContextMenuStrip.ItemClicked += (sender, e) => EliminarControl(control);
 			control.BringToFront();
+			ActualizarTitulo(true);
 		}
 
 		private void EliminarControl(Bloque control)
 		{
 			pnl_layout_principal.Controls.Remove(control);
+			ActualizarTitulo(true);
 		}
 
 		private void CambiarCategoria(object sender, EventArgs e)
@@ -120,24 +121,32 @@ namespace PseudoBlocks
 			}
 		}
 
-		private void Cerrar(object sender, EventArgs e)
-		{
-			this.Close();
-		}
-
-
 		private void AbrirProyecto(object sender, EventArgs e)
 		{
 			List<Control> controles = ProjectManager.CargarProyecto();
 			if (controles.Count > 0)
 			{
+				ActualizarTitulo();
 				pnl_layout_principal.Controls.Clear();
 				foreach (Bloque control in controles)
 				{
 					AgregarControl(control, false);
 				}
 			}
-        }
+		}
+
+		private void Guardar(object sender, EventArgs e)
+		{
+			List<DatosBloque> datos = new List<DatosBloque>();
+			foreach (Bloque control in pnl_layout_principal.Controls)
+			{
+				datos.Add(control.GetDatos());
+			}
+			if (ProjectManager.GuardarProyecto(datos, !string.IsNullOrEmpty(ProjectManager.ProyectoActual)))
+			{
+				ActualizarTitulo();
+			}
+		}
 
 		private void GuardarProyecto(object sender, EventArgs e)
 		{
@@ -146,7 +155,20 @@ namespace PseudoBlocks
 			{
 				datos.Add(control.GetDatos());
 			}
-			ProjectManager.GuardarProyecto(datos);
+			if (ProjectManager.GuardarProyecto(datos))
+			{
+				ActualizarTitulo();
+			}
+		}
+
+		private void ActualizarTitulo(bool sinGuardar = false)
+		{
+			this.Text = "PseudoBlocks | " + (sinGuardar ? "*" : "") + ProjectManager.NombreProyecto;
+		}
+
+		private void Cerrar(object sender, EventArgs e)
+		{
+			this.Close();
 		}
 	}
 }

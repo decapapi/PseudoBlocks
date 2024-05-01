@@ -14,29 +14,60 @@ namespace PseudoBlocks
 {
 	class ProjectManager
 	{
-		public static bool GuardarProyecto(List<DatosBloque> datos)
+		public static string ProyectoActual { get; private set; } = string.Empty;
+		public static string NombreProyecto 
 		{
-			FileDialog fileDialog = new SaveFileDialog();
-			fileDialog.Filter = "PseudoBlocks Project|*.pbp";
-			if (fileDialog.ShowDialog() == DialogResult.OK)
+			get
 			{
-				try
+				if (ProyectoActual.Equals(string.Empty))
 				{
-					using (StreamWriter sw = new StreamWriter(fileDialog.FileName, false))
-					{
-						XmlSerializer xmlSerializer = new XmlSerializer(typeof(List<DatosBloque>),
-							new Type[] { typeof(DatosBloquePanel), typeof(DatosBloqueAudio),
-							typeof(DatosBloqueImagen), typeof(DatosBloqueHotkey), typeof(DatosBloqueRepetir),
-							typeof(DatosBloqueNumerico), typeof(DatosBloqueXY)});
-						xmlSerializer.Serialize(sw, datos);
-					}
-				} catch (Exception ex)
+					return "Nuevo Proyecto";
+				}
+				else
 				{
-					MessageBox.Show("Error al guardar el proyecto: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-					return false;
+					return ProyectoActual.Substring(ProyectoActual.LastIndexOf('\\') + 1);
 				}
 			}
-			return true;
+		}
+
+		public static bool GuardarProyecto(List<DatosBloque> datos, bool actual = false)
+		{
+			if (actual && !actual.Equals(string.Empty))
+			{
+				return GuardarProyecto(datos, ProyectoActual);
+			}
+			else
+			{
+				FileDialog fileDialog = new SaveFileDialog();
+				fileDialog.Filter = "PseudoBlocks Project|*.pbp";
+				if (fileDialog.ShowDialog() == DialogResult.OK)
+				{
+					ProyectoActual = fileDialog.FileName;
+					return GuardarProyecto(datos, fileDialog.FileName);
+				}
+			}
+			return false;
+		}
+
+		public static bool GuardarProyecto(List<DatosBloque> datos, string archivo)
+		{
+			try
+			{
+				using (StreamWriter sw = new StreamWriter(archivo, false))
+				{
+					XmlSerializer xmlSerializer = new XmlSerializer(typeof(List<DatosBloque>),
+						new Type[] { typeof(DatosBloquePanel), typeof(DatosBloqueAudio),
+							typeof(DatosBloqueImagen), typeof(DatosBloqueHotkey), typeof(DatosBloqueRepetir),
+							typeof(DatosBloqueNumerico), typeof(DatosBloqueXY)});
+					xmlSerializer.Serialize(sw, datos);
+				}
+				return true;
+			}
+			catch (Exception ex)
+			{
+				MessageBox.Show("Error al guardar el proyecto: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+			}
+			return false;
 		}
 
 		public static List<Control> CargarProyecto()
@@ -47,6 +78,7 @@ namespace PseudoBlocks
 			fileDialog.Filter = "PseudoBlocks Project|*.pbp";
 			if (fileDialog.ShowDialog() == DialogResult.OK)
 			{
+				ProyectoActual = fileDialog.FileName;
 				try
 				{
 					using (StreamReader sr = new StreamReader(fileDialog.FileName))
