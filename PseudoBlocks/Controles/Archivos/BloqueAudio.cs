@@ -28,7 +28,10 @@ namespace PseudoBlocks.Controles.Archivos
 		{
 			InitializeComponent();
 			this.Audio = audio;
-			btn_seleccionar.Text = audio.Substring(audio.LastIndexOf('\\')+1);
+			if (!string.IsNullOrEmpty(audio))
+			{
+				btn_seleccionar.Text = audio.Substring(audio.LastIndexOf('\\') + 1);
+			}
 		}
 
 		private void SeleccionarArchivo(object sender, EventArgs e)

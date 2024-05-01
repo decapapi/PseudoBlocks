@@ -30,6 +30,10 @@ namespace PseudoBlocks.Controles.Eventos
 		{
 			InitializeComponent();
 			Tecla = tecla;
+			if (this.Tecla != Keys.None)
+			{
+				btn_seleccionar.Text = this.Tecla.ToString();
+			}
 		}
 
 		private void CapturarTecla(object sender, KeyEventArgs e)

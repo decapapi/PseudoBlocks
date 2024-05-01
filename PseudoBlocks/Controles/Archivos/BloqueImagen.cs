@@ -29,9 +29,11 @@ namespace PseudoBlocks.Controles.Archivos
 		{
 			InitializeComponent();
 			this.Imagen = imagen;
-			btn_seleccionar.Text = imagen.Substring(imagen.LastIndexOf('\\') + 1);
+			if (!string.IsNullOrEmpty(imagen))
+			{
+				btn_seleccionar.Text = imagen.Substring(imagen.LastIndexOf('\\') + 1);
+			}
 		}
-
 
 		private void SeleccionarArchivo(object sender, EventArgs e)
 		{

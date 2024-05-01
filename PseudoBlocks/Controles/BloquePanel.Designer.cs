@@ -57,10 +57,11 @@
 			BackColor = SystemColors.GradientInactiveCaption;
 			Controls.Add(pnl_layout);
 			Cursor = Cursors.Hand;
-			DoubleBuffered = true;
-			MinimumSize = new Size(260, 55);
+			MaximumSize = new Size(0, 0);
+			MinimumSize = new Size(325, 55);
 			Name = "BloquePanel";
 			Size = new Size(325, 55);
+			Controls.SetChildIndex(controlName, 0);
 			Controls.SetChildIndex(pnl_layout, 0);
 			ResumeLayout(false);
 			PerformLayout();
