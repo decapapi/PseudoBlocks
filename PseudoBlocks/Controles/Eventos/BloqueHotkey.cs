@@ -26,6 +26,12 @@ namespace PseudoBlocks.Controles.Eventos
 			InitializeComponent();
 		}
 
+		public BloqueHotkey(string tipo, string texto, Color color, Keys tecla) : base(tipo, texto, color)
+		{
+			InitializeComponent();
+			Tecla = tecla;
+		}
+
 		private void CapturarTecla(object sender, KeyEventArgs e)
 		{
 			if (esperandoTecla)
@@ -57,9 +63,14 @@ namespace PseudoBlocks.Controles.Eventos
 			}
 		}
 
-		public new DatosBloqueHotkey GetDatos()
+		public override DatosBloqueHotkey GetDatos()
 		{
-			return new DatosBloqueHotkey(Tipo, controlName.Text, BackColor.ToArgb(), Location, Tecla);
+			List<DatosBloque> bloques = new List<DatosBloque>();
+			foreach (Bloque bloque in listaItems.Bloques)
+			{
+				bloques.Add(bloque.GetDatos());
+			}
+			return new DatosBloqueHotkey(Tipo, controlName.Text, BackColor.ToArgb(), Location, Tecla, bloques);
 		}
 	}
 }
