@@ -117,6 +117,7 @@ namespace PseudoBlocks
 				case "move_left":
 				case "move_up":
 				case "move_down":
+				case "logic_stopRepeating":
 					bloque = new Bloque(elemento.Tipo, elemento.Texto, Color.FromArgb(elemento.Color));
 					break;
 				case "change_background":
@@ -158,6 +159,8 @@ namespace PseudoBlocks
 					}
 					break;
 				case "event_onpress":
+				case "event_onhold":
+				case "event_onrelease":
 					bloque = new BloqueHotkey(elemento.Tipo, elemento.Texto, Color.FromArgb(elemento.Color), ((DatosBloqueHotkey)elemento).Tecla);
 					foreach (DatosBloque subElemento in ((DatosBloqueHotkey)elemento).Bloques)
 					{

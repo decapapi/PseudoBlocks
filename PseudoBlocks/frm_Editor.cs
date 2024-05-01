@@ -65,6 +65,9 @@ namespace PseudoBlocks
 							case "repeatAlways":
 								AgregarControl(new BloquePanel(controlType, control.Text, Color.LightSalmon));
 								break;
+							case "stopRepeating":
+								AgregarControl(new Bloque(controlType, control.Text, Color.LightSalmon));
+								break;
 						}
 						break;
 					case "event": // Eventos
@@ -75,6 +78,8 @@ namespace PseudoBlocks
 								AgregarControl(new BloquePanel(controlType, control.Text, Color.LightCoral));
 								break;
 							case "onpress":
+							case "onhold":
+							case "onrelease":
 								AgregarControl(new BloqueHotkey(controlType, control.Text, Color.LightCoral));
 								break;
 						}
