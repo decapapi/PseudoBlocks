@@ -45,9 +45,11 @@
 			pnl_layout.Padding = new Padding(4);
 			pnl_layout.Size = new Size(315, 8);
 			pnl_layout.TabIndex = 5;
-			pnl_layout.DragDrop += DragDrop;
-			pnl_layout.DragEnter += DragEnter;
-			pnl_layout.DragOver += DragOver;
+			pnl_layout.ControlAdded += Actualizar;
+			pnl_layout.ControlRemoved += Actualizar;
+			pnl_layout.DragDrop += PanelDragDrop;
+			pnl_layout.DragEnter += PanelDragEnter;
+			pnl_layout.DragOver += PanelDragOver;
 			// 
 			// BloquePanel
 			// 

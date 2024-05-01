@@ -8,7 +8,6 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using PseudoBlocks.Controlador;
-using PseudoBlocks.Vista.Controles.Logica;
 
 namespace PseudoBlocks.Vista.Controles
 {
@@ -46,7 +45,7 @@ namespace PseudoBlocks.Vista.Controles
 			Actualizar();
 		}
 
-		private void DragEnter(object sender, DragEventArgs e)
+		private void PanelDragEnter(object sender, DragEventArgs e)
 		{
 			if (e.Data.GetData(DataFormats.Serializable) is Bloque)
 			{
@@ -58,7 +57,7 @@ namespace PseudoBlocks.Vista.Controles
 			}
 		}
 
-		private void DragDrop(object sender, DragEventArgs e)
+		private void PanelDragDrop(object sender, DragEventArgs e)
 		{
 			if (e.Data.GetData(DataFormats.Serializable) is Bloque bloque)
 			{
@@ -71,10 +70,12 @@ namespace PseudoBlocks.Vista.Controles
 			}
 		}
 
-		private void DragOver(object sender, DragEventArgs e)
+		private void PanelDragOver(object sender, DragEventArgs e)
 		{
 			e.Effect = DragDropEffects.Move;
 		}
+
+		public void Actualizar(object sender, ControlEventArgs e) => Actualizar();
 
 		public void Actualizar()
 		{
@@ -84,10 +85,6 @@ namespace PseudoBlocks.Vista.Controles
 				if (panel.Parent is BloquePanel bloquePanel)
 				{
 					bloquePanel.Actualizar();
-				}
-				if (panel.Parent is BloqueRepetir bloqueRepetir)
-				{
-					bloqueRepetir.Actualizar();
 				}
 			}
 		}
