@@ -389,48 +389,6 @@
   <data name="&gt;&gt;btn_event_onload.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="btn_event_onhold.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
-  </data>
-  <data name="btn_event_onhold.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Lexend Deca Medium, 9pt</value>
-  </data>
-  <data name="btn_event_onhold.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="btn_event_onhold.Location" type="System.Drawing.Point, System.Drawing">
-    <value>10, 79</value>
-  </data>
-  <data name="btn_event_onhold.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 3, 2, 3</value>
-  </data>
-  <data name="btn_event_onhold.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>10, 0, 0, 0</value>
-  </data>
-  <data name="btn_event_onhold.Size" type="System.Drawing.Size, System.Drawing">
-    <value>280, 40</value>
-  </data>
-  <data name="btn_event_onhold.TabIndex" type="System.Int32, mscorlib">
-    <value>10</value>
-  </data>
-  <data name="btn_event_onhold.Text" xml:space="preserve">
-    <value>Al mantener</value>
-  </data>
-  <data name="btn_event_onhold.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleLeft</value>
-  </data>
-  <data name="&gt;&gt;btn_event_onhold.Name" xml:space="preserve">
-    <value>btn_event_onhold</value>
-  </data>
-  <data name="&gt;&gt;btn_event_onhold.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btn_event_onhold.Parent" xml:space="preserve">
-    <value>pnl_eventos</value>
-  </data>
-  <data name="&gt;&gt;btn_event_onhold.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
   <data name="btn_event_onpress.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
   </data>
@@ -441,7 +399,7 @@
     <value>NoControl</value>
   </data>
   <data name="btn_event_onpress.Location" type="System.Drawing.Point, System.Drawing">
-    <value>10, 125</value>
+    <value>10, 79</value>
   </data>
   <data name="btn_event_onpress.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 3, 2, 3</value>
@@ -471,49 +429,7 @@
     <value>pnl_eventos</value>
   </data>
   <data name="&gt;&gt;btn_event_onpress.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="btn_event_onrelease.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
-  </data>
-  <data name="btn_event_onrelease.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Lexend Deca Medium, 9pt</value>
-  </data>
-  <data name="btn_event_onrelease.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="btn_event_onrelease.Location" type="System.Drawing.Point, System.Drawing">
-    <value>10, 171</value>
-  </data>
-  <data name="btn_event_onrelease.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 3, 2, 3</value>
-  </data>
-  <data name="btn_event_onrelease.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>10, 0, 0, 0</value>
-  </data>
-  <data name="btn_event_onrelease.Size" type="System.Drawing.Size, System.Drawing">
-    <value>280, 40</value>
-  </data>
-  <data name="btn_event_onrelease.TabIndex" type="System.Int32, mscorlib">
-    <value>11</value>
-  </data>
-  <data name="btn_event_onrelease.Text" xml:space="preserve">
-    <value>Al soltar</value>
-  </data>
-  <data name="btn_event_onrelease.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleLeft</value>
-  </data>
-  <data name="&gt;&gt;btn_event_onrelease.Name" xml:space="preserve">
-    <value>btn_event_onrelease</value>
-  </data>
-  <data name="&gt;&gt;btn_event_onrelease.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btn_event_onrelease.Parent" xml:space="preserve">
-    <value>pnl_eventos</value>
-  </data>
-  <data name="&gt;&gt;btn_event_onrelease.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>2</value>
   </data>
   <data name="btn_event_onclick.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
@@ -525,7 +441,7 @@
     <value>NoControl</value>
   </data>
   <data name="btn_event_onclick.Location" type="System.Drawing.Point, System.Drawing">
-    <value>10, 217</value>
+    <value>10, 125</value>
   </data>
   <data name="btn_event_onclick.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 3, 2, 3</value>
@@ -555,7 +471,7 @@
     <value>pnl_eventos</value>
   </data>
   <data name="&gt;&gt;btn_event_onclick.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>3</value>
   </data>
   <data name="pnl_eventos.Location" type="System.Drawing.Point, System.Drawing">
     <value>13, 787</value>
@@ -567,7 +483,7 @@
     <value>8, 8, 8, 8</value>
   </data>
   <data name="pnl_eventos.Size" type="System.Drawing.Size, System.Drawing">
-    <value>300, 268</value>
+    <value>300, 176</value>
   </data>
   <data name="pnl_eventos.TabIndex" type="System.Int32, mscorlib">
     <value>7</value>

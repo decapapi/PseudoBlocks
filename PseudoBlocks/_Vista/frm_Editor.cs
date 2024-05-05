@@ -80,8 +80,6 @@ namespace PseudoBlocks.Vista
 								AgregarControl(new BloquePanel(controlType, control.Text, Color.LightCoral));
 								break;
 							case "onpress":
-							case "onhold":
-							case "onrelease":
 								AgregarControl(new BloqueHotkey(controlType, control.Text, Color.LightCoral));
 								break;
 						}

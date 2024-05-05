@@ -160,8 +160,6 @@ namespace PseudoBlocks.Datos
 					}
 					break;
 				case "event_onpress":
-				case "event_onhold":
-				case "event_onrelease":
 					bloque = new BloqueHotkey(elemento.Tipo, elemento.Texto, Color.FromArgb(elemento.Color), ((DatosBloqueHotkey)elemento).Tecla);
 					foreach (DatosBloque subElemento in ((DatosBloqueHotkey)elemento).Bloques)
 					{

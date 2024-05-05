@@ -47,9 +47,7 @@
 			pnl_eventos = new FlowLayoutPanel();
 			lbl_eventos = new Label();
 			btn_event_onload = new Button();
-			btn_event_onhold = new Button();
 			btn_event_onpress = new Button();
-			btn_event_onrelease = new Button();
 			btn_event_onclick = new Button();
 			pnl_sonido = new FlowLayoutPanel();
 			lbl_sonido = new Label();
@@ -182,9 +180,7 @@
 			pnl_eventos.BackColor = SystemColors.Window;
 			pnl_eventos.Controls.Add(lbl_eventos);
 			pnl_eventos.Controls.Add(btn_event_onload);
-			pnl_eventos.Controls.Add(btn_event_onhold);
 			pnl_eventos.Controls.Add(btn_event_onpress);
-			pnl_eventos.Controls.Add(btn_event_onrelease);
 			pnl_eventos.Controls.Add(btn_event_onclick);
 			pnl_eventos.Name = "pnl_eventos";
 			// 
@@ -205,18 +201,6 @@
 			btn_event_onload.UseVisualStyleBackColor = false;
 			btn_event_onload.Click += AgregarComponente;
 			// 
-			// btn_event_onhold
-			// 
-			btn_event_onhold.BackColor = Color.LightCoral;
-			btn_event_onhold.Cursor = Cursors.Hand;
-			btn_event_onhold.FlatAppearance.BorderSize = 0;
-			resources.ApplyResources(btn_event_onhold, "btn_event_onhold");
-			btn_event_onhold.Name = "btn_event_onhold";
-			btn_event_onhold.Tag = "";
-			btn_event_onhold.UseMnemonic = false;
-			btn_event_onhold.UseVisualStyleBackColor = false;
-			btn_event_onhold.Click += AgregarComponente;
-			// 
 			// btn_event_onpress
 			// 
 			btn_event_onpress.BackColor = Color.LightCoral;
@@ -228,18 +212,6 @@
 			btn_event_onpress.UseMnemonic = false;
 			btn_event_onpress.UseVisualStyleBackColor = false;
 			btn_event_onpress.Click += AgregarComponente;
-			// 
-			// btn_event_onrelease
-			// 
-			btn_event_onrelease.BackColor = Color.LightCoral;
-			btn_event_onrelease.Cursor = Cursors.Hand;
-			btn_event_onrelease.FlatAppearance.BorderSize = 0;
-			resources.ApplyResources(btn_event_onrelease, "btn_event_onrelease");
-			btn_event_onrelease.Name = "btn_event_onrelease";
-			btn_event_onrelease.Tag = "";
-			btn_event_onrelease.UseMnemonic = false;
-			btn_event_onrelease.UseVisualStyleBackColor = false;
-			btn_event_onrelease.Click += AgregarComponente;
 			// 
 			// btn_event_onclick
 			// 
@@ -651,8 +623,6 @@
 		private ToolStripSeparator toolStripSeparator2;
 		private ToolStripMenuItem salirToolStripMenuItem;
 		private Button btn_move_to;
-		private Button btn_event_onhold;
-		private Button btn_event_onrelease;
 		private Button btn_logic_stopRepeating;
 	}
 }
