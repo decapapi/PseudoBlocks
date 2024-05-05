@@ -37,7 +37,7 @@ namespace PseudoPlayer
 
 			teclasPulsadas.ForEach(tecla =>
 			{
-				switch (tecla)
+				switch (tecla.GetHashCode())
 				{
 					// <PULSAR>
 
