@@ -40,12 +40,15 @@
 			Font = new Font("Lexend Deca Medium", 9F);
 			FormBorderStyle = FormBorderStyle.FixedSingle;
 			Icon = (Icon)resources.GetObject("$this.Icon");
+			KeyPreview = true;
 			Margin = new Padding(3, 4, 3, 4);
 			MaximizeBox = false;
 			Name = "frm_Player";
 			StartPosition = FormStartPosition.CenterScreen;
 			Text = "PseudoPlayer";
 			FormClosing += frm_Player_FormClosing;
+			KeyDown += TeclaPresionada;
+			KeyUp += TeclaSoltada;
 			ResumeLayout(false);
 		}
 

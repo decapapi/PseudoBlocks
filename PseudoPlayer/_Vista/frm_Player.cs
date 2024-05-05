@@ -26,10 +26,14 @@ namespace PseudoPlayer
 			cj.Detener();
 		}
 
-		protected override bool ProcessCmdKey(ref Message msg, Keys keyData)
+		private void TeclaPresionada(object sender, KeyEventArgs e)
 		{
-			cj.ProcesarInput(ref msg, keyData);
-			return base.ProcessCmdKey(ref msg, keyData);
+			cj.TeclaPresionada(e.KeyCode);
+		}
+
+		private void TeclaSoltada(object sender, KeyEventArgs e)
+		{
+			cj.TeclaSoltada(e.KeyCode);
 		}
 	}
 }

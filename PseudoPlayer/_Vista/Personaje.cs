@@ -25,22 +25,22 @@ namespace PseudoPlayer._Vista
 
 		public void MoverDerecha()
 		{
-			MoverA(this.Location.X + 5, this.Location.Y);
+			MoverA(this.Location.X + 2, this.Location.Y);
 		}
 
 		public void MoverIzquierda()
 		{
-			MoverA(this.Location.X - 5, this.Location.Y);
+			MoverA(this.Location.X - 2, this.Location.Y);
 		}
 
 		public void MoverArriba()
 		{
-			MoverA(this.Location.X, this.Location.Y - 5);
+			MoverA(this.Location.X, this.Location.Y - 2);
 		}
 
 		public void MoverAbajo()
 		{
-			MoverA(this.Location.X, this.Location.Y + 5);
+			MoverA(this.Location.X, this.Location.Y + 2);
 		}
 
 		public void MoverA(int x, int y)

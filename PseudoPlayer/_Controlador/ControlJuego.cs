@@ -13,7 +13,7 @@ namespace PseudoPlayer
 		private frm_Player playerWindow;
 		private Personaje personaje;
 		private System.Threading.Timer tickJuego;
-		private Dictionary<Keys, bool> teclasPulsadas = new Dictionary<Keys, bool>();
+		private List<Keys> teclasPulsadas = new List<Keys>();
 
 		public ControlJuego(frm_Player playerWindow)
 		{
@@ -24,65 +24,43 @@ namespace PseudoPlayer
 
 		public void Iniciar()
 		{
-			tickJuego = new System.Threading.Timer(TickJuego, null, 0, 25);
-		}
+			tickJuego = new System.Threading.Timer(TickJuego, null, 0, 1);
 
-		public void Detener()
-		{
-			tickJuego.Dispose();
+			// <INICIO>
 		}
-
-		public void ProcesarInput(ref Message msg, Keys keyData)
-		{
-			if (msg.Msg == 0x100) // KeyDown
-			{
-				MessageBox.Show("Tecla presionada: " + keyData.ToString());
-			}
-			else if (msg.Msg == 0x101) // KeyUp
-			{
-				MessageBox.Show("Tecla soltada: " + keyData.ToString());
-			}
-		}
-
-		public void TeclaPresionada(Keys keyData)
-		{
-			if (!teclasPulsadas.ContainsKey(keyData))
-				teclasPulsadas.Add(keyData, true);
-			else
-				teclasPulsadas[keyData] = true;
-		}
-
-		public void TeclaSoltada(Keys keyData)
-		{
-			teclasPulsadas[keyData] = false;
-		}
-
 
 		private void Actualizar()
 		{
 			if (playerWindow == null || !playerWindow.IsHandleCreated) return;
 
-			// Lógica de procesamiento de teclas presionadas
+			// <ACTUALIZAR>
 
-			foreach (KeyValuePair<Keys, bool> pair in teclasPulsadas)
+			teclasPulsadas.ForEach(tecla =>
 			{
-				if (pair.Value)
+				switch (tecla)
 				{
-					if (pair.Key == Keys.W)
-						personaje.MoverArriba();
-					if (pair.Key == Keys.A)
-						personaje.MoverIzquierda();
-					if (pair.Key == Keys.S)
-						personaje.MoverAbajo();
-					if (pair.Key == Keys.D)
-						personaje.MoverDerecha();
+					// <PULSAR>
+
 				}
-				else
-				{
-					MessageBox.Show("Tecla soltada: " + pair.Key.ToString());
-					teclasPulsadas.Remove(pair.Key);
-				}
+			});
+		}
+
+		public void Detener()
+		{
+			tickJuego?.Dispose();
+		}
+
+		public void TeclaPresionada(Keys keyData)
+		{
+			if (!teclasPulsadas.Contains(keyData))
+			{
+				teclasPulsadas.Add(keyData);
 			}
+		}
+
+		public void TeclaSoltada(Keys keyData)
+		{
+			teclasPulsadas.Remove(keyData);
 		}
 
 		private void TickJuego(object state)
