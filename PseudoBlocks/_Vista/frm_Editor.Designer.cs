@@ -48,7 +48,6 @@
 			lbl_eventos = new Label();
 			btn_event_onload = new Button();
 			btn_event_onpress = new Button();
-			btn_event_onclick = new Button();
 			pnl_sonido = new FlowLayoutPanel();
 			lbl_sonido = new Label();
 			btn_sound_play = new Button();
@@ -103,8 +102,10 @@
 			// 
 			// tsm_item_archivo_exportar
 			// 
+			tsm_item_archivo_exportar.Image = Properties.Resources.exportar;
 			resources.ApplyResources(tsm_item_archivo_exportar, "tsm_item_archivo_exportar");
 			tsm_item_archivo_exportar.Name = "tsm_item_archivo_exportar";
+			tsm_item_archivo_exportar.Click += ExportarProyecto;
 			// 
 			// toolStripSeparator5
 			// 
@@ -181,7 +182,6 @@
 			pnl_eventos.Controls.Add(lbl_eventos);
 			pnl_eventos.Controls.Add(btn_event_onload);
 			pnl_eventos.Controls.Add(btn_event_onpress);
-			pnl_eventos.Controls.Add(btn_event_onclick);
 			pnl_eventos.Name = "pnl_eventos";
 			// 
 			// lbl_eventos
@@ -212,18 +212,6 @@
 			btn_event_onpress.UseMnemonic = false;
 			btn_event_onpress.UseVisualStyleBackColor = false;
 			btn_event_onpress.Click += AgregarComponente;
-			// 
-			// btn_event_onclick
-			// 
-			btn_event_onclick.BackColor = Color.LightCoral;
-			btn_event_onclick.Cursor = Cursors.Hand;
-			btn_event_onclick.FlatAppearance.BorderSize = 0;
-			resources.ApplyResources(btn_event_onclick, "btn_event_onclick");
-			btn_event_onclick.Name = "btn_event_onclick";
-			btn_event_onclick.Tag = "";
-			btn_event_onclick.UseMnemonic = false;
-			btn_event_onclick.UseVisualStyleBackColor = false;
-			btn_event_onclick.Click += AgregarComponente;
 			// 
 			// pnl_sonido
 			// 
@@ -590,7 +578,6 @@
 		private Label lbl_eventos;
 		private Button btn_event_onload;
 		private Button btn_event_onpress;
-		private Button btn_event_onclick;
 		private FlowLayoutPanel pnl_sonido;
 		private Label lbl_sonido;
 		private Button btn_sound_play;

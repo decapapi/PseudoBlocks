@@ -33,7 +33,7 @@
 			// 
 			// frm_Player
 			// 
-			AutoScaleDimensions = new SizeF(8F, 19F);
+			AutoScaleDimensions = new SizeF(10F, 24F);
 			AutoScaleMode = AutoScaleMode.Font;
 			ClientSize = new Size(484, 461);
 			DoubleBuffered = true;
@@ -46,9 +46,6 @@
 			Name = "frm_Player";
 			StartPosition = FormStartPosition.CenterScreen;
 			Text = "PseudoPlayer";
-			FormClosing += frm_Player_FormClosing;
-			KeyDown += TeclaPresionada;
-			KeyUp += TeclaSoltada;
 			ResumeLayout(false);
 		}
 

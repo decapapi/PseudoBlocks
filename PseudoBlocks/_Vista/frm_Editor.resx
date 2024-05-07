@@ -132,18 +132,18 @@
     <value>Ctrl+E</value>
   </data>
   <data name="tsm_item_archivo_exportar.Size" type="System.Drawing.Size, System.Drawing">
-    <value>213, 26</value>
+    <value>258, 28</value>
   </data>
   <data name="tsm_item_archivo_exportar.Text" xml:space="preserve">
     <value>&amp;Exportar</value>
   </data>
   <data name="toolStripSeparator5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>210, 6</value>
+    <value>255, 6</value>
   </data>
   <data name="tsm_item_archivo_abrir.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAHYSURBVEhLrZS9SgNBFIXzBOIj+AKCLyD4CIKtgr2NtqbR
+        YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAHYSURBVEhLrZS9SgNBFIXzBOIj+AKCLyD4CIKtgr2NtqbR
         Uqu1jFgoWGihiIVEixAM+FMYLMRAkEQFI5qQxJifcpxvnLtsdpOwyebCYZOde8+5c8/MxgZFs9mcaTQa
         rzztq/EFpO12u66heI5VRMjvch9qYulAJS6fjEir1Zq3KdGi0+ks0/lxJq9iC3sGVkSxZtPChyU8052n
         BXQMIcSRRHSBQ5Eg915WyYdiFxad1OgiQsy8Z+PnLtEgkEtNKE9I/KzUjZkUT6+dqPjhfRdWdjMuObuR
@@ -161,18 +161,18 @@
     <value>Ctrl+O</value>
   </data>
   <data name="tsm_item_archivo_abrir.Size" type="System.Drawing.Size, System.Drawing">
-    <value>213, 26</value>
+    <value>258, 28</value>
   </data>
   <data name="tsm_item_archivo_abrir.Text" xml:space="preserve">
     <value>&amp;Abrir</value>
   </data>
   <data name="toolStripSeparator.Size" type="System.Drawing.Size, System.Drawing">
-    <value>210, 6</value>
+    <value>255, 6</value>
   </data>
   <data name="tsm_item_archivo_guardar.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADbSURBVEhL7ZUxCsIwGIVzAvFA3sJVDyK9gZMHcFGcHZyc
+        YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAADbSURBVEhL7ZUxCsIwGIVzAvFA3sJVDyK9gZMHcFGcHZyc
         xE0dFDdHJ+dYG7JGnpD4qkkDNYJgCx+0f9//PiiBCillWym11lqblKAT3cKWb08Xk812SUCXlQhb3upP
         jOiOk4AuK3kIYPUFPwGdXkEnW5jBdFML7EYFCF5lXgvsNoJKfkPw9VOUikYQJSrwnZIqXvf/TBCaM5wB
         JcFwfngLhJZ5znAGsOCIm95oVQqElnnOcAY4AX7MPklomecMZ4AT4GIJPhdeFrfCgWcLzxnOgOX+/BTg
@@ -189,7 +189,7 @@
     <value>Ctrl+S</value>
   </data>
   <data name="tsm_item_archivo_guardar.Size" type="System.Drawing.Size, System.Drawing">
-    <value>213, 26</value>
+    <value>258, 28</value>
   </data>
   <data name="tsm_item_archivo_guardar.Text" xml:space="preserve">
     <value>&amp;Guardar</value>
@@ -197,7 +197,7 @@
   <data name="tsm_item_archivo_guardar_como.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADbSURBVEhL7ZUxCsIwGIVzAvFA3sJVDyK9gZMHcFGcHZyc
+        YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAADbSURBVEhL7ZUxCsIwGIVzAvFA3sJVDyK9gZMHcFGcHZyc
         xE0dFDdHJ+dYG7JGnpD4qkkDNYJgCx+0f9//PiiBCillWym11lqblKAT3cKWb08Xk812SUCXlQhb3upP
         jOiOk4AuK3kIYPUFPwGdXkEnW5jBdFML7EYFCF5lXgvsNoJKfkPw9VOUikYQJSrwnZIqXvf/TBCaM5wB
         JcFwfngLhJZ5znAGsOCIm95oVQqElnnOcAY4AX7MPklomecMZ4AT4GIJPhdeFrfCgWcLzxnOgOX+/BTg
@@ -211,43 +211,43 @@
     <value>Ctrl+G</value>
   </data>
   <data name="tsm_item_archivo_guardar_como.Size" type="System.Drawing.Size, System.Drawing">
-    <value>213, 26</value>
+    <value>258, 28</value>
   </data>
   <data name="tsm_item_archivo_guardar_como.Text" xml:space="preserve">
     <value>Guardar &amp;como</value>
   </data>
   <data name="archivoToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>65, 23</value>
+    <value>79, 28</value>
   </data>
   <data name="archivoToolStripMenuItem.Text" xml:space="preserve">
     <value>&amp;Archivo</value>
   </data>
   <data name="opcionesToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>146, 24</value>
+    <value>180, 28</value>
   </data>
   <data name="opcionesToolStripMenuItem.Text" xml:space="preserve">
     <value>&amp;Opciones</value>
   </data>
   <data name="toolStripSeparator1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>143, 6</value>
+    <value>177, 6</value>
   </data>
   <data name="acercadeToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>146, 24</value>
+    <value>180, 28</value>
   </data>
   <data name="acercadeToolStripMenuItem.Text" xml:space="preserve">
     <value>&amp;Acerca de...</value>
   </data>
   <data name="toolStripSeparator2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>143, 6</value>
+    <value>177, 6</value>
   </data>
   <data name="salirToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>146, 24</value>
+    <value>180, 28</value>
   </data>
   <data name="salirToolStripMenuItem.Text" xml:space="preserve">
     <value>&amp;Salir</value>
   </data>
   <data name="herramientasToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>103, 23</value>
+    <value>126, 28</value>
   </data>
   <data name="herramientasToolStripMenuItem.Text" xml:space="preserve">
     <value>&amp;Herramientas</value>
@@ -256,7 +256,7 @@
     <value>0, 0</value>
   </data>
   <data name="top_menu.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1264, 27</value>
+    <value>1264, 32</value>
   </data>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="top_menu.TabIndex" type="System.Int32, mscorlib">
@@ -327,7 +327,7 @@
     <value>11, 8</value>
   </data>
   <data name="lbl_eventos.Size" type="System.Drawing.Size, System.Drawing">
-    <value>65, 22</value>
+    <value>79, 27</value>
   </data>
   <data name="lbl_eventos.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -357,7 +357,7 @@
     <value>NoControl</value>
   </data>
   <data name="btn_event_onload.Location" type="System.Drawing.Point, System.Drawing">
-    <value>10, 33</value>
+    <value>10, 38</value>
   </data>
   <data name="btn_event_onload.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 3, 2, 3</value>
@@ -399,7 +399,7 @@
     <value>NoControl</value>
   </data>
   <data name="btn_event_onpress.Location" type="System.Drawing.Point, System.Drawing">
-    <value>10, 79</value>
+    <value>10, 84</value>
   </data>
   <data name="btn_event_onpress.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 3, 2, 3</value>
@@ -431,50 +431,8 @@
   <data name="&gt;&gt;btn_event_onpress.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
-  <data name="btn_event_onclick.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
-  </data>
-  <data name="btn_event_onclick.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Lexend Deca Medium, 9pt</value>
-  </data>
-  <data name="btn_event_onclick.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="btn_event_onclick.Location" type="System.Drawing.Point, System.Drawing">
-    <value>10, 125</value>
-  </data>
-  <data name="btn_event_onclick.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 3, 2, 3</value>
-  </data>
-  <data name="btn_event_onclick.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>10, 0, 0, 0</value>
-  </data>
-  <data name="btn_event_onclick.Size" type="System.Drawing.Size, System.Drawing">
-    <value>280, 40</value>
-  </data>
-  <data name="btn_event_onclick.TabIndex" type="System.Int32, mscorlib">
-    <value>9</value>
-  </data>
-  <data name="btn_event_onclick.Text" xml:space="preserve">
-    <value>Al hacer click</value>
-  </data>
-  <data name="btn_event_onclick.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleLeft</value>
-  </data>
-  <data name="&gt;&gt;btn_event_onclick.Name" xml:space="preserve">
-    <value>btn_event_onclick</value>
-  </data>
-  <data name="&gt;&gt;btn_event_onclick.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btn_event_onclick.Parent" xml:space="preserve">
-    <value>pnl_eventos</value>
-  </data>
-  <data name="&gt;&gt;btn_event_onclick.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
   <data name="pnl_eventos.Location" type="System.Drawing.Point, System.Drawing">
-    <value>13, 787</value>
+    <value>13, 807</value>
   </data>
   <data name="pnl_eventos.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 3, 3, 20</value>
@@ -483,7 +441,7 @@
     <value>8, 8, 8, 8</value>
   </data>
   <data name="pnl_eventos.Size" type="System.Drawing.Size, System.Drawing">
-    <value>300, 176</value>
+    <value>300, 135</value>
   </data>
   <data name="pnl_eventos.TabIndex" type="System.Int32, mscorlib">
     <value>7</value>
@@ -516,7 +474,7 @@
     <value>11, 8</value>
   </data>
   <data name="lbl_sonido.Size" type="System.Drawing.Size, System.Drawing">
-    <value>59, 22</value>
+    <value>71, 27</value>
   </data>
   <data name="lbl_sonido.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -546,7 +504,7 @@
     <value>NoControl</value>
   </data>
   <data name="btn_sound_play.Location" type="System.Drawing.Point, System.Drawing">
-    <value>10, 33</value>
+    <value>10, 38</value>
   </data>
   <data name="btn_sound_play.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 3, 2, 3</value>
@@ -579,13 +537,13 @@
     <value>1</value>
   </data>
   <data name="pnl_sonido.Location" type="System.Drawing.Point, System.Drawing">
-    <value>13, 469</value>
+    <value>13, 479</value>
   </data>
   <data name="pnl_sonido.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>8, 8, 8, 8</value>
   </data>
   <data name="pnl_sonido.Size" type="System.Drawing.Size, System.Drawing">
-    <value>300, 84</value>
+    <value>300, 89</value>
   </data>
   <data name="pnl_sonido.TabIndex" type="System.Int32, mscorlib">
     <value>6</value>
@@ -618,7 +576,7 @@
     <value>11, 8</value>
   </data>
   <data name="lbl_escenario.Size" type="System.Drawing.Size, System.Drawing">
-    <value>79, 22</value>
+    <value>94, 27</value>
   </data>
   <data name="lbl_escenario.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -648,7 +606,7 @@
     <value>NoControl</value>
   </data>
   <data name="btn_change_background.Location" type="System.Drawing.Point, System.Drawing">
-    <value>10, 33</value>
+    <value>10, 38</value>
   </data>
   <data name="btn_change_background.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 3, 2, 3</value>
@@ -690,7 +648,7 @@
     <value>NoControl</value>
   </data>
   <data name="btn_change_character.Location" type="System.Drawing.Point, System.Drawing">
-    <value>10, 79</value>
+    <value>10, 84</value>
   </data>
   <data name="btn_change_character.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 3, 2, 3</value>
@@ -732,7 +690,7 @@
     <value>NoControl</value>
   </data>
   <data name="btn_change_size.Location" type="System.Drawing.Point, System.Drawing">
-    <value>10, 125</value>
+    <value>10, 130</value>
   </data>
   <data name="btn_change_size.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 3, 2, 3</value>
@@ -765,13 +723,13 @@
     <value>3</value>
   </data>
   <data name="pnl_escenario.Location" type="System.Drawing.Point, System.Drawing">
-    <value>13, 287</value>
+    <value>13, 292</value>
   </data>
   <data name="pnl_escenario.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>8, 8, 8, 8</value>
   </data>
   <data name="pnl_escenario.Size" type="System.Drawing.Size, System.Drawing">
-    <value>300, 176</value>
+    <value>300, 181</value>
   </data>
   <data name="pnl_escenario.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
@@ -804,7 +762,7 @@
     <value>11, 8</value>
   </data>
   <data name="lbl_logica.Size" type="System.Drawing.Size, System.Drawing">
-    <value>57, 22</value>
+    <value>69, 27</value>
   </data>
   <data name="lbl_logica.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -834,7 +792,7 @@
     <value>NoControl</value>
   </data>
   <data name="btn_logic_wait.Location" type="System.Drawing.Point, System.Drawing">
-    <value>10, 33</value>
+    <value>10, 38</value>
   </data>
   <data name="btn_logic_wait.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 3, 2, 3</value>
@@ -876,7 +834,7 @@
     <value>NoControl</value>
   </data>
   <data name="btn_logic_repeat.Location" type="System.Drawing.Point, System.Drawing">
-    <value>10, 79</value>
+    <value>10, 84</value>
   </data>
   <data name="btn_logic_repeat.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 3, 2, 3</value>
@@ -918,7 +876,7 @@
     <value>NoControl</value>
   </data>
   <data name="btn_logic_repeatAlways.Location" type="System.Drawing.Point, System.Drawing">
-    <value>10, 125</value>
+    <value>10, 130</value>
   </data>
   <data name="btn_logic_repeatAlways.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 3, 2, 3</value>
@@ -960,7 +918,7 @@
     <value>NoControl</value>
   </data>
   <data name="btn_logic_stopRepeating.Location" type="System.Drawing.Point, System.Drawing">
-    <value>10, 171</value>
+    <value>10, 176</value>
   </data>
   <data name="btn_logic_stopRepeating.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 3, 2, 3</value>
@@ -993,13 +951,13 @@
     <value>4</value>
   </data>
   <data name="pnl_logica.Location" type="System.Drawing.Point, System.Drawing">
-    <value>13, 559</value>
+    <value>13, 574</value>
   </data>
   <data name="pnl_logica.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>8, 8, 8, 8</value>
   </data>
   <data name="pnl_logica.Size" type="System.Drawing.Size, System.Drawing">
-    <value>300, 222</value>
+    <value>300, 227</value>
   </data>
   <data name="pnl_logica.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
@@ -1032,7 +990,7 @@
     <value>11, 8</value>
   </data>
   <data name="lbl_movimiento.Size" type="System.Drawing.Size, System.Drawing">
-    <value>91, 22</value>
+    <value>112, 27</value>
   </data>
   <data name="lbl_movimiento.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -1062,7 +1020,7 @@
     <value>NoControl</value>
   </data>
   <data name="btn_move_up.Location" type="System.Drawing.Point, System.Drawing">
-    <value>10, 33</value>
+    <value>10, 38</value>
   </data>
   <data name="btn_move_up.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 3, 2, 3</value>
@@ -1104,7 +1062,7 @@
     <value>NoControl</value>
   </data>
   <data name="btn_move_down.Location" type="System.Drawing.Point, System.Drawing">
-    <value>10, 79</value>
+    <value>10, 84</value>
   </data>
   <data name="btn_move_down.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 3, 2, 3</value>
@@ -1146,7 +1104,7 @@
     <value>NoControl</value>
   </data>
   <data name="btn_move_left.Location" type="System.Drawing.Point, System.Drawing">
-    <value>10, 125</value>
+    <value>10, 130</value>
   </data>
   <data name="btn_move_left.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 3, 2, 3</value>
@@ -1188,7 +1146,7 @@
     <value>NoControl</value>
   </data>
   <data name="btn_move_right.Location" type="System.Drawing.Point, System.Drawing">
-    <value>10, 171</value>
+    <value>10, 176</value>
   </data>
   <data name="btn_move_right.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 3, 2, 3</value>
@@ -1230,7 +1188,7 @@
     <value>NoControl</value>
   </data>
   <data name="btn_move_to.Location" type="System.Drawing.Point, System.Drawing">
-    <value>10, 217</value>
+    <value>10, 222</value>
   </data>
   <data name="btn_move_to.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 3, 2, 3</value>
@@ -1269,7 +1227,7 @@
     <value>8, 8, 8, 8</value>
   </data>
   <data name="pnl_movimiento.Size" type="System.Drawing.Size, System.Drawing">
-    <value>300, 268</value>
+    <value>300, 273</value>
   </data>
   <data name="pnl_movimiento.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>

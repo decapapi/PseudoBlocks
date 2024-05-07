@@ -76,7 +76,6 @@ namespace PseudoBlocks.Vista
 						switch (controlInfo[1])
 						{
 							case "onload":
-							case "onclick":
 								AgregarControl(new BloquePanel(controlType, control.Text, Color.LightCoral));
 								break;
 							case "onpress":
@@ -170,6 +169,25 @@ namespace PseudoBlocks.Vista
 			if (ProjectManager.GuardarProyecto(datos))
 			{
 				ActualizarTitulo();
+			}
+		}
+
+		private void ExportarProyecto(object sender, EventArgs e)
+		{
+			List<DatosBloque> datos = new List<DatosBloque>();
+			foreach (Bloque control in pnl_layout_principal.Controls)
+			{
+				if (control is BloquePanel)
+					datos.Add(control.GetDatos());
+			}
+
+			if (ProjectManager.ExportarProyecto(datos))
+			{
+				MessageBox.Show("Proyecto exportado correctamente.", "Exportar proyecto", MessageBoxButtons.OK, MessageBoxIcon.Information);
+			}
+			else
+			{
+				MessageBox.Show("Error al exportar el proyecto.", "Exportar proyecto", MessageBoxButtons.OK, MessageBoxIcon.Error);
 			}
 		}
 

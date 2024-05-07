@@ -20,6 +20,9 @@ namespace PseudoPlayer
 			this.playerWindow = playerWindow;
 			this.personaje = new Personaje(playerWindow.Width / 2, playerWindow.Height / 2);
 			playerWindow.Controls.Add(personaje);
+			playerWindow.KeyDown += (sender, e) => TeclaPresionada(e.KeyCode);
+			playerWindow.KeyUp += (sender, e) => TeclaSoltada(e.KeyCode);
+			playerWindow.FormClosing += (sender, e) => Detener();
 		}
 
 		public void Iniciar()
@@ -27,6 +30,7 @@ namespace PseudoPlayer
 			tickJuego = new System.Threading.Timer(TickJuego, null, 0, 1);
 
 			// <INICIO>
+
 		}
 
 		private void Actualizar()
@@ -40,7 +44,7 @@ namespace PseudoPlayer
 				switch (tecla.GetHashCode())
 				{
 					// <PULSAR>
-
+					
 				}
 			});
 		}

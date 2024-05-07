@@ -10,6 +10,9 @@ using PseudoBlocks.Vista.Controles.Eventos;
 using PseudoBlocks.Vista.Controles.Logica;
 using PseudoBlocks.Vista.Controles.Numerico;
 using PseudoBlocks.Controlador;
+using System.IO.Compression;
+using System.Diagnostics;
+using PseudoBlocks._Datos;
 
 namespace PseudoBlocks.Datos
 {
@@ -50,7 +53,7 @@ namespace PseudoBlocks.Datos
 			return false;
 		}
 
-		public static bool GuardarProyecto(List<DatosBloque> datos, string archivo)
+		private static bool GuardarProyecto(List<DatosBloque> datos, string archivo)
 		{
 			try
 			{
@@ -148,7 +151,6 @@ namespace PseudoBlocks.Datos
 					break;
 				case "logic_repeatAlways":
 				case "event_onload":
-				case "event_onclick":
 					bloque = new BloquePanel(elemento.Tipo, elemento.Texto, Color.FromArgb(elemento.Color));
 					foreach (DatosBloque subElemento in ((DatosBloquePanel)elemento).Bloques)
 					{
@@ -174,6 +176,48 @@ namespace PseudoBlocks.Datos
 			if (bloque != null)
 				bloque.Location = elemento.Localizacion;
 			return bloque;
+		}
+
+		public static bool ExportarProyecto(List<DatosBloque> datos)
+		{
+			if (!File.Exists("PseudoPlayer.zip")) return false;
+
+			using (ZipArchive za = ZipFile.OpenRead("PseudoPlayer.zip"))
+			{
+				try { Directory.Delete("PseudoPlayer", true); } catch { }
+				za.ExtractToDirectory("PseudoPlayer");
+				za.Dispose();
+			}
+
+			string rutaProyecto = @".\PseudoPlayer\PseudoPlayer.csproj";
+
+			if (!File.Exists(rutaProyecto)) return false;
+
+			if (!CompiladorBloques.CompilarBloques(datos)) return false;
+
+			try
+			{
+				var proc = new Process
+				{
+					StartInfo = new ProcessStartInfo
+					{
+						FileName = @"C:\Windows\System32\cmd.exe",
+						Arguments = $"/c dotnet build {rutaProyecto} --property WarningLevel=1 > salida_compilacion.txt",
+						UseShellExecute = false,
+						CreateNoWindow = false,
+						WorkingDirectory = Application.StartupPath
+					}
+				};
+
+				proc.Start();
+				proc.WaitForExit();
+			} 
+			catch 
+			{ 
+				return false; 
+			}
+
+			return true;
 		}
 	}
 }

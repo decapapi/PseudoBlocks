@@ -20,20 +20,5 @@ namespace PseudoPlayer
 			cj = new ControlJuego(this);
 			cj.Iniciar();
 		}
-
-		private void frm_Player_FormClosing(object sender, FormClosingEventArgs e)
-		{
-			cj.Detener();
-		}
-
-		private void TeclaPresionada(object sender, KeyEventArgs e)
-		{
-			cj.TeclaPresionada(e.KeyCode);
-		}
-
-		private void TeclaSoltada(object sender, KeyEventArgs e)
-		{
-			cj.TeclaSoltada(e.KeyCode);
-		}
 	}
 }
