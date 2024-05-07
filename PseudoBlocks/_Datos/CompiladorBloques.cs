@@ -10,6 +10,8 @@ namespace PseudoBlocks._Datos
 {
 	class CompiladorBloques
 	{
+		static int contadorIds = 0;
+
 		public static bool CompilarBloques(List<DatosBloque> bloques)
 		{
 			string rutaControlador = @".\PseudoPlayer\_Controlador\ControlJuego.cs";
@@ -26,16 +28,25 @@ namespace PseudoBlocks._Datos
 
 
 			int indiceInicio = codigo.FindIndex(x => x.Contains("<INICIO>"));
-
-
-			codigo.Insert(indiceInicio + 1, "			// Inicio de código generado por PseudoBlocks");
+			int indiceActualizar = codigo.FindIndex(x => x.Contains("<ACTUALIZAR>"));
+			int indicePulsar = codigo.FindIndex(x => x.Contains("<PULSAR>"));
 
 			foreach (DatosBloque bloque in bloques)
 			{
-				codigo.Insert(indiceInicio + 2, "			" + ObtenerCodigo(bloque));
+				MessageBox.Show(bloque.Tipo);
+				if (bloque.Tipo == "event_onload")
+				{
+					codigo.Insert(++indiceInicio, "			" + ObtenerCodigo(bloque));
+				}
+				if (bloque.Tipo == "logic_repeatAlways")
+				{
+					codigo.Insert(++indiceInicio, "			" + ObtenerCodigo(bloque));
+				}
+				else if (bloque.Tipo == "event_onpress")
+                {
+					codigo.Insert(++indicePulsar, "			" + ObtenerCodigo(bloque));
+				}
 			}
-
-			codigo.Insert(indiceInicio + 3, "			// Fin de código generado por PseudoBlocks");
 
 			try
 			{
@@ -62,16 +73,21 @@ namespace PseudoBlocks._Datos
 				case "move_down":
 					codigo = "personaje.MoverAbajo();";
 					break;
-				case "logic_repeatAlways":
-					codigo = "while(true) {";
-					foreach (DatosBloque bloque in ((DatosBloquePanel)datosBloque).Bloques)
-					{
-						codigo += ObtenerCodigo(bloque);
-					}
-					codigo += "}";
+				case "move_to":
+					codigo = "personaje.MoverA(" + ((DatosBloqueXY)datosBloque).X + ", " + ((DatosBloqueXY)datosBloque).Y + ");";
+					break;
+				case "change_size":
+					codigo = "playerWindow.Size = new Size(" + ((DatosBloqueXY)datosBloque).X + ", " + ((DatosBloqueXY)datosBloque).Y + ");";
+					break;
+				case "logic_wait":
+					codigo = "Thread.Sleep(" + ((DatosBloqueNumerico)datosBloque).Valor + ");";
+					break;
+				case "logic_stopRepeating":
+					codigo = "break;";
 					break;
 				case "logic_repeat":
-					codigo = "for(int i = 0; i < " + ((DatosBloqueRepetir)datosBloque).Repeticiones + "; i++) {";
+					contadorIds++;
+					codigo = $"for(int i{contadorIds} = 0; i{contadorIds} < {((DatosBloqueRepetir)datosBloque).Repeticiones}; i{contadorIds}++) {{";
 					foreach (DatosBloque bloque in ((DatosBloqueRepetir)datosBloque).Bloques)
 					{
 						codigo += ObtenerCodigo(bloque);
@@ -83,6 +99,14 @@ namespace PseudoBlocks._Datos
 					{
 						codigo = ObtenerCodigo(bloque);
 					}
+					break;
+				case "event_onpress":
+					codigo = "case " + ((DatosBloqueHotkey)datosBloque).Tecla.GetHashCode() + ":";
+					foreach (DatosBloque bloque in ((DatosBloqueHotkey)datosBloque).Bloques)
+					{
+						codigo += ObtenerCodigo(bloque);
+					}
+					codigo += "break;";
 					break;
 			}
 			return codigo;
