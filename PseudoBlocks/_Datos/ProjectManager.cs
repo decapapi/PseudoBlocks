@@ -182,6 +182,8 @@ namespace PseudoBlocks.Datos
 		{
 			if (!File.Exists("PseudoPlayer.zip")) return false;
 
+			Process.GetProcessesByName("PseudoPlayer").ToList().ForEach(p => p.Kill());
+
 			using (ZipArchive za = ZipFile.OpenRead("PseudoPlayer.zip"))
 			{
 				try { Directory.Delete("PseudoPlayer", true); } catch { }
@@ -204,7 +206,7 @@ namespace PseudoBlocks.Datos
 						FileName = @"C:\Windows\System32\cmd.exe",
 						Arguments = $"/c dotnet build {rutaProyecto} --property WarningLevel=1 > salida_compilacion.txt",
 						UseShellExecute = false,
-						CreateNoWindow = false,
+						CreateNoWindow = true,
 						WorkingDirectory = Application.StartupPath
 					}
 				};
@@ -215,6 +217,11 @@ namespace PseudoBlocks.Datos
 			catch 
 			{ 
 				return false; 
+			}
+
+			if (File.Exists("salida_compilacion.txt"))
+			{
+				if (!File.ReadAllText("salida_compilacion.txt").Contains("0 Errores")) return false;
 			}
 
 			return true;

@@ -33,7 +33,6 @@ namespace PseudoBlocks._Datos
 
 			foreach (DatosBloque bloque in bloques)
 			{
-				MessageBox.Show(bloque.Tipo);
 				if (bloque.Tipo == "event_onload")
 				{
 					codigo.Insert(++indiceInicio, "			" + ObtenerCodigo(bloque));
