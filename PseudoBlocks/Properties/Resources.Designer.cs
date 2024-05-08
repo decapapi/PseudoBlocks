@@ -149,5 +149,15 @@ namespace PseudoBlocks.Properties {
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Byte[].
+        /// </summary>
+        internal static byte[] PseudoPlayer_zip {
+            get {
+                object obj = ResourceManager.GetObject("PseudoPlayer.zip", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
     }
 }

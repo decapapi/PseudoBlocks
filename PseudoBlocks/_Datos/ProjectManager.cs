@@ -180,16 +180,9 @@ namespace PseudoBlocks.Datos
 
 		public static bool ExportarProyecto(List<DatosBloque> datos)
 		{
-			if (!File.Exists("PseudoPlayer.zip")) return false;
-
 			Process.GetProcessesByName("PseudoPlayer").ToList().ForEach(p => p.Kill());
 
-			using (ZipArchive za = ZipFile.OpenRead("PseudoPlayer.zip"))
-			{
-				try { Directory.Delete("PseudoPlayer", true); } catch { }
-				za.ExtractToDirectory("PseudoPlayer");
-				za.Dispose();
-			}
+			if (!ExtraerProyecto()) return false;
 
 			string rutaProyecto = @".\PseudoPlayer\PseudoPlayer.csproj";
 
@@ -204,10 +197,11 @@ namespace PseudoBlocks.Datos
 					StartInfo = new ProcessStartInfo
 					{
 						FileName = @"C:\Windows\System32\cmd.exe",
-						Arguments = $"/c dotnet build {rutaProyecto} --property WarningLevel=1 > salida_compilacion.txt",
+						Arguments = $"/c dotnet build {rutaProyecto} --configuration Release --property WarningLevel=1 > salida_compilacion.txt",
 						UseShellExecute = false,
 						CreateNoWindow = true,
-						WorkingDirectory = Application.StartupPath
+						WorkingDirectory = Application.StartupPath,
+						RedirectStandardOutput = true,
 					}
 				};
 
@@ -224,7 +218,43 @@ namespace PseudoBlocks.Datos
 				if (!File.ReadAllText("salida_compilacion.txt").Contains("0 Errores")) return false;
 			}
 
+			LimpiarCompilacion();
+
 			return true;
+		}
+
+		public static bool ExtraerProyecto()
+		{
+			byte[] zipFileBytes = Properties.Resources.PseudoPlayer_zip;
+			
+			if (File.Exists("PseudoPlayer.zip"))
+			{
+				try { File.Delete("PseudoPlayer.zip"); } catch { }
+			}
+
+			File.WriteAllBytes("PseudoPlayer.zip", zipFileBytes);
+
+			if (!File.Exists("PseudoPlayer.zip")) return false;
+
+			try
+			{
+				using (ZipArchive za = ZipFile.OpenRead("PseudoPlayer.zip"))
+				{
+					za.ExtractToDirectory("PseudoPlayer");
+					za.Dispose();
+				}
+			}
+			catch { return false; }
+
+
+			return true;
+		}
+
+		public static void LimpiarCompilacion()
+		{
+			try { Directory.Delete("PseudoPlayer", true); } catch { }
+
+			try { File.Delete("PseudoPlayer.zip"); } catch { }
 		}
 	}
 }

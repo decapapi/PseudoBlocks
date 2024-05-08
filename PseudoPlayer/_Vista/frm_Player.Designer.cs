@@ -33,7 +33,7 @@
 			// 
 			// frm_Player
 			// 
-			AutoScaleDimensions = new SizeF(10F, 24F);
+			AutoScaleDimensions = new SizeF(8F, 19F);
 			AutoScaleMode = AutoScaleMode.Font;
 			ClientSize = new Size(484, 461);
 			DoubleBuffered = true;
