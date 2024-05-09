@@ -149,7 +149,6 @@ namespace PseudoBlocks.Datos
 						}
 					}
 					break;
-				case "logic_repeatAlways":
 				case "event_onload":
 					bloque = new BloquePanel(elemento.Tipo, elemento.Texto, Color.FromArgb(elemento.Color));
 					foreach (DatosBloque subElemento in ((DatosBloquePanel)elemento).Bloques)

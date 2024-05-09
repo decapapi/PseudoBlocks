@@ -12,7 +12,6 @@ namespace PseudoPlayer
 	{
 		private frm_Player playerWindow;
 		private Personaje personaje;
-		private System.Threading.Timer tickJuego;
 		private List<Keys> teclasPulsadas = new List<Keys>();
 
 		public ControlJuego(frm_Player playerWindow)
@@ -22,36 +21,13 @@ namespace PseudoPlayer
 			playerWindow.Controls.Add(personaje);
 			playerWindow.KeyDown += (sender, e) => TeclaPresionada(e.KeyCode);
 			playerWindow.KeyUp += (sender, e) => TeclaSoltada(e.KeyCode);
-			playerWindow.FormClosing += (sender, e) => Detener();
+			// playerWindow.FormClosing += Detener todos los bucles
 		}
 
 		public void Iniciar()
 		{
-			tickJuego = new System.Threading.Timer(TickJuego, null, 0, 1);
-
 			// <INICIO>
 
-		}
-
-		private void Actualizar()
-		{
-			if (playerWindow == null || !playerWindow.IsHandleCreated) return;
-
-			// <ACTUALIZAR>
-
-			teclasPulsadas.ForEach(tecla =>
-			{
-				switch (tecla.GetHashCode())
-				{
-					// <PULSAR>
-					
-				}
-			});
-		}
-
-		public void Detener()
-		{
-			tickJuego?.Dispose();
 		}
 
 		public void TeclaPresionada(Keys keyData)
@@ -67,26 +43,6 @@ namespace PseudoPlayer
 			teclasPulsadas.Remove(keyData);
 		}
 
-		private void TickJuego(object state)
-		{
-			if (playerWindow == null || !playerWindow.IsHandleCreated || playerWindow.IsDisposed) return;
-
-			try
-			{
-				playerWindow.Invoke((MethodInvoker)delegate {
-					Actualizar();
-				});
-			}
-			catch (ObjectDisposedException) // Si el formulario se cierra
-			{
-				this.Detener();
-			}
-			catch (Exception ex)
-			{
-				MessageBox.Show("Error inesperado!: " + ex.Message, "Error :(", MessageBoxButtons.OK, MessageBoxIcon.Error);
-				this.Detener();
-			}
-		}
 
 		[STAThread]
 		static void Main()

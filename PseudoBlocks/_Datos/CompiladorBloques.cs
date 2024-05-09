@@ -18,39 +18,31 @@ namespace PseudoBlocks._Datos
 
 			if (!File.Exists(rutaControlador)) return false;
 
-
 			List<string> codigo = new List<string>();
 
 			try
 			{
 				codigo = File.ReadAllLines(rutaControlador).ToList();
-			} catch { return false; }
-
+			}
+			catch { return false; }
 
 			int indiceInicio = codigo.FindIndex(x => x.Contains("<INICIO>"));
-			int indiceActualizar = codigo.FindIndex(x => x.Contains("<ACTUALIZAR>"));
-			int indicePulsar = codigo.FindIndex(x => x.Contains("<PULSAR>"));
 
 			foreach (DatosBloque bloque in bloques)
 			{
-				if (bloque.Tipo == "event_onload")
+				if (bloque.Tipo == "event_onload" || 
+					bloque.Tipo == "logic_repeatAlways" || 
+					bloque.Tipo == "event_onpress")
 				{
 					codigo.Insert(++indiceInicio, "			" + ObtenerCodigo(bloque));
-				}
-				if (bloque.Tipo == "logic_repeatAlways")
-				{
-					codigo.Insert(++indiceInicio, "			" + ObtenerCodigo(bloque));
-				}
-				else if (bloque.Tipo == "event_onpress")
-                {
-					codigo.Insert(++indicePulsar, "			" + ObtenerCodigo(bloque));
 				}
 			}
 
 			try
 			{
 				File.WriteAllLines(rutaControlador, codigo);
-			} catch { return false; }
+			}
+			catch { return false; }
 
 			return true;
 		}
@@ -100,12 +92,13 @@ namespace PseudoBlocks._Datos
 					}
 					break;
 				case "event_onpress":
-					codigo = "case " + ((DatosBloqueHotkey)datosBloque).Tecla.GetHashCode() + ":";
+					var tecla = ((DatosBloqueHotkey)datosBloque).Tecla;
+					codigo = "Task.Run(async () => { while (true) { if (teclasPulsadas.Contains(Keys." + tecla + ")) {";
 					foreach (DatosBloque bloque in ((DatosBloqueHotkey)datosBloque).Bloques)
 					{
 						codigo += ObtenerCodigo(bloque);
 					}
-					codigo += "break;";
+					codigo += "} await Task.Delay(10); }});";
 					break;
 			}
 			return codigo;
