@@ -64,9 +64,6 @@ namespace PseudoBlocks.Vista
 							case "repeat":
 								AgregarControl(new BloqueRepetir(controlType, control.Text, Color.LightSalmon));
 								break;
-							case "repeatAlways":
-								AgregarControl(new BloquePanel(controlType, control.Text, Color.LightSalmon));
-								break;
 							case "stopRepeating":
 								AgregarControl(new Bloque(controlType, control.Text, Color.LightSalmon));
 								break;

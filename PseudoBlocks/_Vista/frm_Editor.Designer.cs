@@ -60,7 +60,6 @@
 			lbl_logica = new Label();
 			btn_logic_wait = new Button();
 			btn_logic_repeat = new Button();
-			btn_logic_repeatAlways = new Button();
 			btn_logic_stopRepeating = new Button();
 			pnl_movimiento = new FlowLayoutPanel();
 			lbl_movimiento = new Label();
@@ -296,7 +295,6 @@
 			pnl_logica.Controls.Add(lbl_logica);
 			pnl_logica.Controls.Add(btn_logic_wait);
 			pnl_logica.Controls.Add(btn_logic_repeat);
-			pnl_logica.Controls.Add(btn_logic_repeatAlways);
 			pnl_logica.Controls.Add(btn_logic_stopRepeating);
 			pnl_logica.Name = "pnl_logica";
 			// 
@@ -328,18 +326,6 @@
 			btn_logic_repeat.UseMnemonic = false;
 			btn_logic_repeat.UseVisualStyleBackColor = false;
 			btn_logic_repeat.Click += AgregarComponente;
-			// 
-			// btn_logic_repeatAlways
-			// 
-			btn_logic_repeatAlways.BackColor = Color.LightSalmon;
-			btn_logic_repeatAlways.Cursor = Cursors.Hand;
-			btn_logic_repeatAlways.FlatAppearance.BorderSize = 0;
-			resources.ApplyResources(btn_logic_repeatAlways, "btn_logic_repeatAlways");
-			btn_logic_repeatAlways.Name = "btn_logic_repeatAlways";
-			btn_logic_repeatAlways.Tag = "";
-			btn_logic_repeatAlways.UseMnemonic = false;
-			btn_logic_repeatAlways.UseVisualStyleBackColor = false;
-			btn_logic_repeatAlways.Click += AgregarComponente;
 			// 
 			// btn_logic_stopRepeating
 			// 
@@ -603,7 +589,6 @@
 		private Label lbl_escenario;
 		private Label lbl_movimiento;
 		private Button btn_change_size;
-		private Button btn_logic_repeatAlways;
 		private ToolStripMenuItem tsm_item_archivo_guardar;
 		private ToolStripMenuItem acercadeToolStripMenuItem;
 		private ToolStripSeparator toolStripSeparator1;
