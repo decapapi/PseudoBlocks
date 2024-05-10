@@ -153,9 +153,9 @@ namespace PseudoBlocks.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Byte[].
         /// </summary>
-        internal static byte[] PseudoPlayer_zip {
+        internal static byte[] PseudoPlayer {
             get {
-                object obj = ResourceManager.GetObject("PseudoPlayer.zip", resourceCulture);
+                object obj = ResourceManager.GetObject("PseudoPlayer", resourceCulture);
                 return ((byte[])(obj));
             }
         }

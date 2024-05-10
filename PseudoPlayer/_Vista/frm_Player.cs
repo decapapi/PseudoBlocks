@@ -20,5 +20,16 @@ namespace PseudoPlayer
 			cj = new ControlJuego(this);
 			cj.Iniciar();
 		}
+
+		public void CambiarFondo(Image imagen)
+		{
+			this.BackgroundImage = imagen;
+		}
+
+		public void ReproducirSonido(string ruta)
+		{
+			System.Media.SoundPlayer sp = new System.Media.SoundPlayer(ruta);
+			sp.Play();
+		}
 	}
 }

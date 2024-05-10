@@ -35,6 +35,7 @@
 			// 
 			AutoScaleDimensions = new SizeF(8F, 19F);
 			AutoScaleMode = AutoScaleMode.Font;
+			BackgroundImageLayout = ImageLayout.Zoom;
 			ClientSize = new Size(484, 461);
 			DoubleBuffered = true;
 			Font = new Font("Lexend Deca Medium", 9F);

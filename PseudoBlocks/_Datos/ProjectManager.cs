@@ -189,6 +189,16 @@ namespace PseudoBlocks.Datos
 
 			if (!CompiladorBloques.CompilarBloques(datos)) return false;
 
+			if (!CompilarProyecto(rutaProyecto)) return false;
+
+			LimpiarCompilacion();
+
+			return true;
+		}
+
+		public static bool CompilarProyecto(string ruta)
+		{
+			bool compilado = false;
 			try
 			{
 				var proc = new Process
@@ -196,7 +206,7 @@ namespace PseudoBlocks.Datos
 					StartInfo = new ProcessStartInfo
 					{
 						FileName = @"C:\Windows\System32\cmd.exe",
-						Arguments = $"/c dotnet build {rutaProyecto} --configuration Release --property WarningLevel=1 > salida_compilacion.txt",
+						Arguments = $"/c dotnet build {ruta} --configuration Release --property WarningLevel=1 > salida_compilacion.txt",
 						UseShellExecute = false,
 						CreateNoWindow = true,
 						WorkingDirectory = Application.StartupPath,
@@ -206,25 +216,26 @@ namespace PseudoBlocks.Datos
 
 				proc.Start();
 				proc.WaitForExit();
-			} 
-			catch 
-			{ 
-				return false; 
+				compilado = true;
 			}
-
-			if (File.Exists("salida_compilacion.txt"))
+			catch { }
+			finally
 			{
-				if (!File.ReadAllText("salida_compilacion.txt").Contains("0 Errores")) return false;
+				if (File.Exists("salida_compilacion.txt"))
+				{
+					if (!File.ReadAllText("salida_compilacion.txt").Contains("0 Errores"))
+					{
+						compilado = false;
+					}
+				}
 			}
 
-			LimpiarCompilacion();
-
-			return true;
+			return compilado;
 		}
 
 		public static bool ExtraerProyecto()
 		{
-			byte[] zipFileBytes = Properties.Resources.PseudoPlayer_zip;
+			byte[] zipFileBytes = Properties.Resources.PseudoPlayer;
 			
 			if (File.Exists("PseudoPlayer.zip"))
 			{
