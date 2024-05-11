@@ -49,68 +49,68 @@ namespace PseudoBlocks._Datos
 
 		public static string ObtenerCodigo(DatosBloque datosBloque)
 		{
-			string codigo = string.Empty;
+			StringBuilder codigo = new StringBuilder();
 			switch (datosBloque.Tipo)
 			{
 				case "move_right":
-					codigo = "personaje.MoverDerecha();";
+					codigo.Append("personaje.MoverDerecha();");
 					break;
 				case "move_left":
-					codigo = "personaje.MoverIzquierda();";
+					codigo.Append("personaje.MoverIzquierda();");
 					break;
 				case "move_up":
-					codigo = "personaje.MoverArriba();";
+					codigo.Append("personaje.MoverArriba();");
 					break;
 				case "move_down":
-					codigo = "personaje.MoverAbajo();";
+					codigo.Append("personaje.MoverAbajo();");
 					break;
 				case "move_to":
-					codigo = "personaje.MoverA(" + ((DatosBloqueXY)datosBloque).X + ", " + ((DatosBloqueXY)datosBloque).Y + ");";
+					codigo.AppendFormat("personaje.MoverA({0}, {1});", ((DatosBloqueXY)datosBloque).X, ((DatosBloqueXY)datosBloque).Y);
 					break;
 				case "change_size":
-					codigo = "playerWindow.Size = new Size(" + ((DatosBloqueXY)datosBloque).X + ", " + ((DatosBloqueXY)datosBloque).Y + ");";
+					codigo.Append("playerWindow.Size = new Size(" + ((DatosBloqueXY)datosBloque).X + ", " + ((DatosBloqueXY)datosBloque).Y + ");");
 					break;
 				case "change_character":
-					codigo = "personaje.CambiarPersonaje(Image.FromFile(@\""+ ((DatosBloqueImagen)datosBloque).Imagen + "\"));";
+					codigo.Append("personaje.CambiarPersonaje(Image.FromFile(@\"" + ((DatosBloqueImagen)datosBloque).Imagen + "\"));");
 					break;
 				case "change_background":
-					codigo = "playerWindow.CambiarFondo(Image.FromFile(@\"" + ((DatosBloqueImagen)datosBloque).Imagen + "\"));";
+					codigo.Append("playerWindow.CambiarFondo(Image.FromFile(@\"" + ((DatosBloqueImagen)datosBloque).Imagen + "\"));");
 					break;
 				case "sound_play":
-					codigo = "Task.Run(async () => { playerWindow.ReproducirSonido(@\"" + ((DatosBloqueAudio)datosBloque).Audio + "\"); await Task.Delay(1); });";
+					codigo.Append("Task.Run(async () => { playerWindow.ReproducirSonido(@\"" + ((DatosBloqueAudio)datosBloque).Audio + "\"); await Task.Delay(1); });");
 					break;
 				case "logic_wait":
-					codigo = "Thread.Sleep(" + ((DatosBloqueNumerico)datosBloque).Valor + ");";
+					codigo.Append("Thread.Sleep(" + ((DatosBloqueNumerico)datosBloque).Valor + ");");
 					break;
 				case "logic_stopRepeating":
-					codigo = "break;";
+					codigo.Append("break;");
 					break;
 				case "logic_repeat":
 					contadorIds++;
-					codigo = $"for(int i{contadorIds} = 0; i{contadorIds} < {((DatosBloqueRepetir)datosBloque).Repeticiones}; i{contadorIds}++) {{";
+					codigo.Append($"for(int i{contadorIds} = 0; i{contadorIds} < {((DatosBloqueRepetir)datosBloque).Repeticiones}; i{contadorIds}++) {{");
 					foreach (DatosBloque bloque in ((DatosBloqueRepetir)datosBloque).Bloques)
 					{
-						codigo += ObtenerCodigo(bloque);
+						codigo.Append(ObtenerCodigo(bloque));
 					}
-					codigo += "}";
+					codigo.Append("}");
 					break;
 				case "event_onload":
 					foreach (DatosBloque bloque in ((DatosBloquePanel)datosBloque).Bloques)
 					{
-						codigo += ObtenerCodigo(bloque);
+						codigo.Append(ObtenerCodigo(bloque));
 					}
 					break;
 				case "event_onpress":
 					var tecla = ((DatosBloqueHotkey)datosBloque).Tecla;
-					codigo = "Task.Run(async () => { while (true) { if (teclasPulsadas.Contains(Keys." + tecla + ")) {";
+					codigo.Append("Task.Run(async () => { while (true) { if (teclasPulsadas.Contains(Keys." + tecla + ")) {");
 					foreach (DatosBloque bloque in ((DatosBloqueHotkey)datosBloque).Bloques)
 					{
-						codigo += ObtenerCodigo(bloque);
+						codigo.Append(ObtenerCodigo(bloque));
 					}
-					codigo += "} await Task.Delay(10); }});";
+					codigo.Append("} await Task.Delay(10); }});");
 					break;
 			}
-			return codigo;
+			return codigo.ToString();
 		}
 	}
 }
