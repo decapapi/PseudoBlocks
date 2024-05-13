@@ -38,7 +38,7 @@ namespace PseudoBlocks.Vista.Controles.Archivos
 		private void SeleccionarArchivo(object sender, EventArgs e)
 		{
 			OpenFileDialog fd = new OpenFileDialog();
-			fd.Filter = "Archivos de audio|*.wav;";
+			fd.Filter = "Archivos de audio|*.mp3;*.wav;*.ogg;";
 			fd.Title = "Seleccionar archivo de audio";
 			if (fd.ShowDialog() == DialogResult.OK)
 			{

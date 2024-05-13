@@ -5,6 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using NAudio.Wave;
 
 namespace PseudoPlayer
 {
@@ -21,7 +22,6 @@ namespace PseudoPlayer
 			playerWindow.Controls.Add(personaje);
 			playerWindow.KeyDown += (sender, e) => TeclaPresionada(e.KeyCode);
 			playerWindow.KeyUp += (sender, e) => TeclaSoltada(e.KeyCode);
-			// playerWindow.FormClosing += Detener todos los bucles
 		}
 
 		public void Iniciar()

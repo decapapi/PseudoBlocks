@@ -77,7 +77,10 @@ namespace PseudoBlocks._Datos
 					codigo.Append("playerWindow.CambiarFondo(Image.FromFile(@\"" + ((DatosBloqueImagen)datosBloque).Imagen + "\"));");
 					break;
 				case "sound_play":
-					codigo.Append("Task.Run(() => { playerWindow.ReproducirSonido(@\"" + ((DatosBloqueAudio)datosBloque).Audio + "\"); });");
+					codigo.Append("Task.Run(() => { using (var audioFile = new AudioFileReader(@\"" + ((DatosBloqueAudio)datosBloque).Audio + "\")) using (var outputDevice = new WaveOutEvent()) { outputDevice.Init(audioFile); outputDevice.Play(); while (outputDevice.PlaybackState == PlaybackState.Playing) { Task.Delay(100).Wait(); } } });");
+					break;
+				case "sound_playLoop":
+					codigo.Append("Task.Run(() => { using (var audioFile = new AudioFileReader(@\"" + ((DatosBloqueAudio)datosBloque).Audio + "\")) using (var outputDevice = new WaveOutEvent()) { outputDevice.Init(audioFile); outputDevice.Play(); while (true) { Task.Delay(100).Wait(); } } });");
 					break;
 				case "logic_wait":
 					codigo.Append("Task.Delay(" + ((DatosBloqueNumerico)datosBloque).Valor + ").Wait();");

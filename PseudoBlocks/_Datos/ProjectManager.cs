@@ -133,6 +133,7 @@ namespace PseudoBlocks.Datos
 					bloque = new BloqueXY(elemento.Tipo, elemento.Texto, Color.FromArgb(elemento.Color), ((DatosBloqueXY)elemento).X, ((DatosBloqueXY)elemento).Y);
 					break;
 				case "sound_play":
+				case "sound_playLoop":
 					bloque = new BloqueAudio(elemento.Tipo, elemento.Texto, Color.FromArgb(elemento.Color), ((DatosBloqueAudio)elemento).Audio);
 					break;
 				case "logic_wait":

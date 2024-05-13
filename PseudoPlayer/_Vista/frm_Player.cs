@@ -25,11 +25,5 @@ namespace PseudoPlayer
 		{
 			this.BackgroundImage = imagen;
 		}
-
-		public void ReproducirSonido(string ruta)
-		{
-			System.Media.SoundPlayer sp = new System.Media.SoundPlayer(ruta);
-			sp.Play();
-		}
 	}
 }

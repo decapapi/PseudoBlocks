@@ -51,6 +51,7 @@
 			pnl_sonido = new FlowLayoutPanel();
 			lbl_sonido = new Label();
 			btn_sound_play = new Button();
+			btn_sound_playLoop = new Button();
 			pnl_escenario = new FlowLayoutPanel();
 			lbl_escenario = new Label();
 			btn_change_background = new Button();
@@ -218,6 +219,7 @@
 			pnl_sonido.BackColor = SystemColors.Window;
 			pnl_sonido.Controls.Add(lbl_sonido);
 			pnl_sonido.Controls.Add(btn_sound_play);
+			pnl_sonido.Controls.Add(btn_sound_playLoop);
 			pnl_sonido.Name = "pnl_sonido";
 			// 
 			// lbl_sonido
@@ -236,6 +238,18 @@
 			btn_sound_play.UseMnemonic = false;
 			btn_sound_play.UseVisualStyleBackColor = false;
 			btn_sound_play.Click += AgregarComponente;
+			// 
+			// btn_sound_playLoop
+			// 
+			btn_sound_playLoop.BackColor = Color.FromArgb(255, 192, 255);
+			btn_sound_playLoop.Cursor = Cursors.Hand;
+			btn_sound_playLoop.FlatAppearance.BorderSize = 0;
+			resources.ApplyResources(btn_sound_playLoop, "btn_sound_playLoop");
+			btn_sound_playLoop.Name = "btn_sound_playLoop";
+			btn_sound_playLoop.Tag = "";
+			btn_sound_playLoop.UseMnemonic = false;
+			btn_sound_playLoop.UseVisualStyleBackColor = false;
+			btn_sound_playLoop.Click += AgregarComponente;
 			// 
 			// pnl_escenario
 			// 
@@ -596,5 +610,6 @@
 		private ToolStripMenuItem salirToolStripMenuItem;
 		private Button btn_move_to;
 		private Button btn_logic_stopRepeating;
+		private Button btn_sound_playLoop;
 	}
 }
