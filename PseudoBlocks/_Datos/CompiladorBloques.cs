@@ -77,10 +77,10 @@ namespace PseudoBlocks._Datos
 					codigo.Append("playerWindow.CambiarFondo(Image.FromFile(@\"" + ((DatosBloqueImagen)datosBloque).Imagen + "\"));");
 					break;
 				case "sound_play":
-					codigo.Append("Task.Run(async () => { playerWindow.ReproducirSonido(@\"" + ((DatosBloqueAudio)datosBloque).Audio + "\"); await Task.Delay(1); });");
+					codigo.Append("Task.Run(() => { playerWindow.ReproducirSonido(@\"" + ((DatosBloqueAudio)datosBloque).Audio + "\"); });");
 					break;
 				case "logic_wait":
-					codigo.Append("Thread.Sleep(" + ((DatosBloqueNumerico)datosBloque).Valor + ");");
+					codigo.Append("Task.Delay(" + ((DatosBloqueNumerico)datosBloque).Valor + ").Wait();");
 					break;
 				case "logic_stopRepeating":
 					codigo.Append("break;");
@@ -102,12 +102,12 @@ namespace PseudoBlocks._Datos
 					break;
 				case "event_onpress":
 					var tecla = ((DatosBloqueHotkey)datosBloque).Tecla;
-					codigo.Append("Task.Run(async () => { while (true) { if (teclasPulsadas.Contains(Keys." + tecla + ")) {");
+					codigo.Append("Task.Run(() => { while (true) { if (teclasPulsadas.Contains(Keys." + tecla + ")) {");
 					foreach (DatosBloque bloque in ((DatosBloqueHotkey)datosBloque).Bloques)
 					{
 						codigo.Append(ObtenerCodigo(bloque));
 					}
-					codigo.Append("} await Task.Delay(10); }});");
+					codigo.Append("} Task.Delay(1).Wait(); }});");
 					break;
 			}
 			return codigo.ToString();
