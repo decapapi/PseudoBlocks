@@ -49,7 +49,7 @@ namespace PseudoBlocks.Vista.Controles.Eventos
 
 		private void EstablecerTecla(object sender, EventArgs e)
 		{
-			if (e is MouseEventArgs mouseEvent)
+			if (e is MouseEventArgs)
 			{
 				Tecla = Keys.None;
 				esperandoTecla = true;
