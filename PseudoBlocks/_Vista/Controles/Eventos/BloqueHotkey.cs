@@ -49,14 +49,17 @@ namespace PseudoBlocks.Vista.Controles.Eventos
 
 		private void EstablecerTecla(object sender, EventArgs e)
 		{
-			Tecla = Keys.None;
-			esperandoTecla = true;
-			btn_seleccionar.Text = "Esperando tecla...";
-			while (esperandoTecla)
+			if (e is MouseEventArgs mouseEvent)
 			{
-				Application.DoEvents();
+				Tecla = Keys.None;
+				esperandoTecla = true;
+				btn_seleccionar.Text = "Esperando tecla...";
+				while (esperandoTecla)
+				{
+					Application.DoEvents();
+				}
+				esperandoTecla = false;
 			}
-			esperandoTecla = false;
 		}
 
 		private void CancelarCapturar(object sender, EventArgs e)
