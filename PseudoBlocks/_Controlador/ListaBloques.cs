@@ -11,17 +11,17 @@ using PseudoBlocks.Vista.Controles;
 
 namespace PseudoBlocks.Controlador
 {
-	public class ListaItems
+	public class ListaBloques
 	{
 		public List<Bloque> Bloques { get; private set; } = new List<Bloque>();
 		private Point margin;
 		private readonly bool libre;
 
-		public ListaItems() : this (new Point(5, 5)) { }
+		public ListaBloques() : this (new Point(5, 5)) { }
 
-		public ListaItems(bool libre) : this(new Point(5, 5), libre) { }
+		public ListaBloques(bool libre) : this(new Point(5, 5), libre) { }
 
-		public ListaItems(Point marging, bool libre = true)
+		public ListaBloques(Point marging, bool libre = true)
 		{
 			this.margin = marging;
 			this.libre = libre;
@@ -69,11 +69,6 @@ namespace PseudoBlocks.Controlador
 		public void Bajar(Bloque item)
 		{
 			this.Mover(item, 1);
-		}
-
-		public bool Existe(Bloque item)
-		{
-			return this.Bloques.Contains(item);
 		}
 
 		public Control Primero()
@@ -172,7 +167,7 @@ namespace PseudoBlocks.Controlador
 			this.Bloques.Clear();
 		}
 
-		~ListaItems()
+		~ListaBloques()
 		{
 			this.Bloques.ForEach(control => control.Dispose());
 			this.Bloques.Clear();

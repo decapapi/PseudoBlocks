@@ -12,6 +12,7 @@ using PseudoBlocks.Vista.Controles.Logica;
 using PseudoBlocks.Vista.Controles.Eventos;
 using PseudoBlocks.Controlador;
 using PseudoBlocks.Datos;
+using PseudoBlocks._Datos;
 
 namespace PseudoBlocks.Vista
 {
@@ -22,7 +23,7 @@ namespace PseudoBlocks.Vista
 			InitializeComponent();
 		}
 
-		public void AgregarComponente(object sender, EventArgs e)
+		public void AgregarBloque(object sender, EventArgs e)
 		{
 			if (sender is Control control)
 			{
@@ -178,13 +179,13 @@ namespace PseudoBlocks.Vista
 					datos.Add(control.GetDatos());
 			}
 
-			if (ProjectManager.ExportarProyecto(datos))
+			if (CompiladorBloques.ExportarProyecto(datos))
 			{
 				MessageBox.Show("Proyecto exportado correctamente.", "Exportar proyecto", MessageBoxButtons.OK, MessageBoxIcon.Information);
 			}
 			else
 			{
-				MessageBox.Show("Error al exportar el proyecto.", "Exportar proyecto", MessageBoxButtons.OK, MessageBoxIcon.Error);
+				MessageBox.Show(CompiladorBloques.Error, "¡Error!", MessageBoxButtons.OK, MessageBoxIcon.Error);
 			}
 		}
 

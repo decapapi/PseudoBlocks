@@ -2,6 +2,8 @@
 using PseudoBlocks.Vista.Controles;
 using System;
 using System.Collections.Generic;
+using System.Diagnostics;
+using System.IO.Compression;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -10,13 +12,18 @@ namespace PseudoBlocks._Datos
 {
 	class CompiladorBloques
 	{
-		static int contadorIds = 0;
+		public static string Error { get; private set; } = string.Empty;
+		private static int contadorIds = 0;
 
-		public static bool CompilarBloques(List<DatosBloque> bloques)
+		public static bool GenerarCodigo(List<DatosBloque> bloques)
 		{
 			string rutaControlador = @".\PseudoPlayer\_Controlador\ControlJuego.cs";
 
-			if (!File.Exists(rutaControlador)) return false;
+			if (!File.Exists(rutaControlador))
+			{
+				Error = "No se encontró el archivo de controlador.";
+				return false;
+			}
 
 			List<string> codigo = new List<string>();
 
@@ -24,7 +31,11 @@ namespace PseudoBlocks._Datos
 			{
 				codigo = File.ReadAllLines(rutaControlador).ToList();
 			}
-			catch { return false; }
+			catch 
+			{
+				Error = "Error al leer el archivo de controlador.";
+				return false; 
+			}
 
 			int indiceInicio = codigo.FindIndex(x => x.Contains("<INICIO>"));
 
@@ -42,7 +53,11 @@ namespace PseudoBlocks._Datos
 			{
 				File.WriteAllLines(rutaControlador, codigo);
 			}
-			catch { return false; }
+			catch 
+			{ 
+				Error = "Error al escribir el archivo de controlador.";
+				return false; 
+			}
 
 			return true;
 		}
@@ -114,6 +129,122 @@ namespace PseudoBlocks._Datos
 					break;
 			}
 			return codigo.ToString();
+		}
+
+
+		public static bool ExportarProyecto(List<DatosBloque> datos)
+		{
+			Process.GetProcessesByName("PseudoPlayer").ToList().ForEach(p => p.Kill());
+
+			if (!ExtraerProyecto())
+			{
+				Error = "Error al extraer el proyecto.";
+				return false;
+			}
+
+			string rutaProyecto = @".\PseudoPlayer\PseudoPlayer.csproj";
+
+			if (!File.Exists(rutaProyecto))
+			{
+				Error = "No se ha podido encontrar el archivo de proyecto.";
+				return false;
+			}
+
+			if (!GenerarCodigo(datos))
+			{
+				Error = "Error al generar el código.";
+				return false;
+			}
+
+			if (!CompilarProyecto(rutaProyecto))
+			{
+				Error = "Error al compilar el proyecto.";
+				return false;
+			}
+
+			if (!LimpiarCompilacion())
+			{
+				return false;
+			}
+
+			return true;
+		}
+
+		public static bool ExtraerProyecto()
+		{
+			byte[] zipFileBytes = Properties.Resources.PseudoPlayer;
+
+			if (File.Exists("PseudoPlayer.zip"))
+			{
+				try { File.Delete("PseudoPlayer.zip"); } catch { }
+			}
+
+			File.WriteAllBytes("PseudoPlayer.zip", zipFileBytes);
+
+			if (!File.Exists("PseudoPlayer.zip")) return false;
+
+			try
+			{
+				using (ZipArchive za = ZipFile.OpenRead("PseudoPlayer.zip"))
+				{
+					za.ExtractToDirectory("PseudoPlayer");
+					za.Dispose();
+				}
+			}
+			catch { return false; }
+
+
+			return true;
+		}
+
+		public static bool CompilarProyecto(string ruta)
+		{
+			bool compilado = false;
+			try
+			{
+				var proc = new Process
+				{
+					StartInfo = new ProcessStartInfo
+					{
+						FileName = @"C:\Windows\System32\cmd.exe",
+						Arguments = $"/c dotnet build {ruta} --configuration Release --property WarningLevel=1 > salida_compilacion.txt",
+						UseShellExecute = false,
+						CreateNoWindow = true,
+						WorkingDirectory = Application.StartupPath,
+						RedirectStandardOutput = true,
+					}
+				};
+
+				proc.Start();
+				proc.WaitForExit();
+
+				if (File.Exists("salida_compilacion.txt") 
+					&& File.ReadAllText("salida_compilacion.txt").Contains("0 Errores"))
+				{
+					compilado = true;
+				}
+			} catch { }
+
+			return compilado;
+		}
+
+		public static bool LimpiarCompilacion()
+		{
+			bool limpiado = true;
+			try { Directory.Delete("PseudoPlayer", true); }
+			catch 
+			{ 
+				Error = "Error al eliminar el proyecto compilado."; 
+				limpiado = false;
+			}
+
+			try  { File.Delete("PseudoPlayer.zip"); } 
+			catch 
+			{ 
+				Error = "Error al eliminar el archivo comprimido del proyecto."; 
+				limpiado = false;
+			}
+			return limpiado;
 		}
 	}
 }

@@ -199,7 +199,7 @@
 			btn_event_onload.Tag = "";
 			btn_event_onload.UseMnemonic = false;
 			btn_event_onload.UseVisualStyleBackColor = false;
-			btn_event_onload.Click += AgregarComponente;
+			btn_event_onload.Click += AgregarBloque;
 			// 
 			// btn_event_onpress
 			// 
@@ -211,7 +211,7 @@
 			btn_event_onpress.Tag = "";
 			btn_event_onpress.UseMnemonic = false;
 			btn_event_onpress.UseVisualStyleBackColor = false;
-			btn_event_onpress.Click += AgregarComponente;
+			btn_event_onpress.Click += AgregarBloque;
 			// 
 			// pnl_sonido
 			// 
@@ -237,7 +237,7 @@
 			btn_sound_play.Tag = "";
 			btn_sound_play.UseMnemonic = false;
 			btn_sound_play.UseVisualStyleBackColor = false;
-			btn_sound_play.Click += AgregarComponente;
+			btn_sound_play.Click += AgregarBloque;
 			// 
 			// btn_sound_playLoop
 			// 
@@ -249,7 +249,7 @@
 			btn_sound_playLoop.Tag = "";
 			btn_sound_playLoop.UseMnemonic = false;
 			btn_sound_playLoop.UseVisualStyleBackColor = false;
-			btn_sound_playLoop.Click += AgregarComponente;
+			btn_sound_playLoop.Click += AgregarBloque;
 			// 
 			// pnl_escenario
 			// 
@@ -276,7 +276,7 @@
 			btn_change_background.Tag = "";
 			btn_change_background.UseMnemonic = false;
 			btn_change_background.UseVisualStyleBackColor = false;
-			btn_change_background.Click += AgregarComponente;
+			btn_change_background.Click += AgregarBloque;
 			// 
 			// btn_change_character
 			// 
@@ -288,7 +288,7 @@
 			btn_change_character.Tag = "";
 			btn_change_character.UseMnemonic = false;
 			btn_change_character.UseVisualStyleBackColor = false;
-			btn_change_character.Click += AgregarComponente;
+			btn_change_character.Click += AgregarBloque;
 			// 
 			// btn_change_size
 			// 
@@ -300,7 +300,7 @@
 			btn_change_size.Tag = "";
 			btn_change_size.UseMnemonic = false;
 			btn_change_size.UseVisualStyleBackColor = false;
-			btn_change_size.Click += AgregarComponente;
+			btn_change_size.Click += AgregarBloque;
 			// 
 			// pnl_logica
 			// 
@@ -327,7 +327,7 @@
 			btn_logic_wait.Tag = "";
 			btn_logic_wait.UseMnemonic = false;
 			btn_logic_wait.UseVisualStyleBackColor = false;
-			btn_logic_wait.Click += AgregarComponente;
+			btn_logic_wait.Click += AgregarBloque;
 			// 
 			// btn_logic_repeat
 			// 
@@ -339,7 +339,7 @@
 			btn_logic_repeat.Tag = "";
 			btn_logic_repeat.UseMnemonic = false;
 			btn_logic_repeat.UseVisualStyleBackColor = false;
-			btn_logic_repeat.Click += AgregarComponente;
+			btn_logic_repeat.Click += AgregarBloque;
 			// 
 			// btn_logic_stopRepeating
 			// 
@@ -351,7 +351,7 @@
 			btn_logic_stopRepeating.Tag = "";
 			btn_logic_stopRepeating.UseMnemonic = false;
 			btn_logic_stopRepeating.UseVisualStyleBackColor = false;
-			btn_logic_stopRepeating.Click += AgregarComponente;
+			btn_logic_stopRepeating.Click += AgregarBloque;
 			// 
 			// pnl_movimiento
 			// 
@@ -380,7 +380,7 @@
 			btn_move_up.Tag = "";
 			btn_move_up.UseMnemonic = false;
 			btn_move_up.UseVisualStyleBackColor = false;
-			btn_move_up.Click += AgregarComponente;
+			btn_move_up.Click += AgregarBloque;
 			// 
 			// btn_move_down
 			// 
@@ -392,7 +392,7 @@
 			btn_move_down.Tag = "";
 			btn_move_down.UseMnemonic = false;
 			btn_move_down.UseVisualStyleBackColor = false;
-			btn_move_down.Click += AgregarComponente;
+			btn_move_down.Click += AgregarBloque;
 			// 
 			// btn_move_left
 			// 
@@ -404,7 +404,7 @@
 			btn_move_left.Tag = "";
 			btn_move_left.UseMnemonic = false;
 			btn_move_left.UseVisualStyleBackColor = false;
-			btn_move_left.Click += AgregarComponente;
+			btn_move_left.Click += AgregarBloque;
 			// 
 			// btn_move_right
 			// 
@@ -416,7 +416,7 @@
 			btn_move_right.Tag = "";
 			btn_move_right.UseMnemonic = false;
 			btn_move_right.UseVisualStyleBackColor = false;
-			btn_move_right.Click += AgregarComponente;
+			btn_move_right.Click += AgregarBloque;
 			// 
 			// btn_move_to
 			// 
@@ -428,7 +428,7 @@
 			btn_move_to.Tag = "";
 			btn_move_to.UseMnemonic = false;
 			btn_move_to.UseVisualStyleBackColor = false;
-			btn_move_to.Click += AgregarComponente;
+			btn_move_to.Click += AgregarBloque;
 			// 
 			// pnl_components
 			// 

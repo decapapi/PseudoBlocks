@@ -13,7 +13,7 @@ namespace PseudoBlocks.Vista.Controles
 {
 	public partial class BloquePanel : Bloque
 	{
-		protected readonly ListaItems listaItems = new ListaItems(false);
+		protected readonly ListaBloques listaItems = new ListaBloques(false);
 
 		public BloquePanel()
 		{

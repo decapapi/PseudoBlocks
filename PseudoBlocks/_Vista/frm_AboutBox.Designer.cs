@@ -32,7 +32,6 @@
 			logoPictureBox = new PictureBox();
 			labelProductName = new Label();
 			labelVersion = new Label();
-			labelCopyright = new Label();
 			textBoxDescription = new TextBox();
 			okButton = new Button();
 			tableLayoutPanel.SuspendLayout();
@@ -47,7 +46,6 @@
 			tableLayoutPanel.Controls.Add(logoPictureBox, 0, 0);
 			tableLayoutPanel.Controls.Add(labelProductName, 1, 0);
 			tableLayoutPanel.Controls.Add(labelVersion, 1, 1);
-			tableLayoutPanel.Controls.Add(labelCopyright, 1, 2);
 			tableLayoutPanel.Controls.Add(textBoxDescription, 1, 4);
 			tableLayoutPanel.Controls.Add(okButton, 1, 5);
 			tableLayoutPanel.Dock = DockStyle.Fill;
@@ -87,7 +85,7 @@
 			labelProductName.Name = "labelProductName";
 			labelProductName.Size = new Size(290, 25);
 			labelProductName.TabIndex = 19;
-			labelProductName.Text = "Nombre de producto";
+			labelProductName.Text = "PseudoBlocks";
 			labelProductName.TextAlign = ContentAlignment.MiddleLeft;
 			// 
 			// labelVersion
@@ -103,19 +101,6 @@
 			labelVersion.Text = "Versión";
 			labelVersion.TextAlign = ContentAlignment.MiddleLeft;
 			// 
-			// labelCopyright
-			// 
-			labelCopyright.Dock = DockStyle.Fill;
-			labelCopyright.Font = new Font("Lexend Deca Medium", 9F);
-			labelCopyright.Location = new Point(216, 60);
-			labelCopyright.Margin = new Padding(8, 0, 4, 0);
-			labelCopyright.MaximumSize = new Size(0, 25);
-			labelCopyright.Name = "labelCopyright";
-			labelCopyright.Size = new Size(290, 25);
-			labelCopyright.TabIndex = 21;
-			labelCopyright.Text = "Copyright";
-			labelCopyright.TextAlign = ContentAlignment.MiddleLeft;
-			// 
 			// textBoxDescription
 			// 
 			textBoxDescription.Dock = DockStyle.Fill;
@@ -125,11 +110,10 @@
 			textBoxDescription.Multiline = true;
 			textBoxDescription.Name = "textBoxDescription";
 			textBoxDescription.ReadOnly = true;
-			textBoxDescription.ScrollBars = ScrollBars.Both;
 			textBoxDescription.Size = new Size(290, 166);
 			textBoxDescription.TabIndex = 23;
 			textBoxDescription.TabStop = false;
-			textBoxDescription.Text = "Descripción\r\n";
+			textBoxDescription.Text = "Proyecto realizado por Pablo Gozálvez Ruiz como proyecto final de la asignatura de programación de 1.º de DAM en el curso 2023-24.\r\n";
 			// 
 			// okButton
 			// 
@@ -146,7 +130,7 @@
 			// frm_AboutBox
 			// 
 			AcceptButton = okButton;
-			AutoScaleDimensions = new SizeF(8F, 19F);
+			AutoScaleDimensions = new SizeF(10F, 24F);
 			AutoScaleMode = AutoScaleMode.Font;
 			ClientSize = new Size(534, 336);
 			Controls.Add(tableLayoutPanel);
@@ -173,7 +157,6 @@
 		private System.Windows.Forms.TableLayoutPanel tableLayoutPanel;
 		private System.Windows.Forms.PictureBox logoPictureBox;
 		private System.Windows.Forms.Label labelVersion;
-		private System.Windows.Forms.Label labelCopyright;
 		private System.Windows.Forms.TextBox textBoxDescription;
 		private System.Windows.Forms.Button okButton;
 		private Label labelProductName;
